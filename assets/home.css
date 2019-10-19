@@ -138,4 +138,7 @@ h6 {
 */
 .banner {
   background-image: url("../images/timothy-eberly-yuiJO6bvHi4-unsplash.min.jpg");
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center; /* optional, center the image */
 }
