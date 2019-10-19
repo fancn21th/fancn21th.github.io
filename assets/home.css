@@ -134,11 +134,31 @@ h6 {
 }
 
 /* 
-* banner
-*/
+ * banner
+ */
 .banner {
   background-image: url("../images/timothy-eberly-yuiJO6bvHi4-unsplash.min.jpg");
   background-size: cover; /* <------ */
   background-repeat: no-repeat;
   background-position: center center; /* optional, center the image */
+}
+
+/* 
+ * outline
+ */
+.outline-mask {
+  position: absolute;
+  z-index: 100;
+  padding-right: 15px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.outline-mask--content {
+  background-color: #efefef;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
 }
