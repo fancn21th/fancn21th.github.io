@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>链接</title>
+    <style>
+      /* 添加换行的样式 */
+      a::after {
+        content: "\A";
+        white-space: pre;
+      }
+      span {
+        position: relative;
+        top: 2000px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 绝对路径  -->
+    <a href="https://www.baidu.com">百度</a>
+    <!-- 相对路径 -->
+    <a href="div-span.html">Divisions & Spans</a>
+    <!-- 邮件 -->
+    <a href="mailto:fancn21th@aliyun.com?subject=你好">发邮件给我</a>
+    <!-- 新窗口打开  -->
+    <a href="https://www.tmall.com" target="_blank">天猫</a>
+    <!-- 锚点链接 -->
+    <a href="#bottom">到下面去</a>
+    <!-- 锚点 -->
+    <span id="bottom">我躲在好远好远的下面</span>
+  </body>
+</html>
