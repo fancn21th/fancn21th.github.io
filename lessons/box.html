@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>盒子模型</title>
+    <style>
+      div,
+      span {
+        border: 1px solid red;
+        min-height: 50px;
+      }
+      span:nth-of-type(2),
+      span:nth-of-type(3),
+      span:nth-of-type(4) {
+        display: inline-block;
+      }
+      div:nth-of-type(2) {
+        border: 6px solid #949599;
+        height: 100px;
+        margin: 20px;
+        padding: 20px;
+        width: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>div 1 { display:block }</h1>
+    <div>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere doloribus
+      sunt facilis excepturi accusamus odit, aspernatur tempore et quaerat cum
+      sequi neque, blanditiis maiores molestias! Dolorum, libero? Aut, assumenda
+      unde?
+    </div>
+    <h1>span 1 { display:inline }</h1>
+    <span
+      >Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+      animi quisquam in minima mollitia aperiam sapiente delectus odit iure
+      veniam. Optio debitis dolorem veritatis laborum vitae quas, voluptatum
+      voluptatem consequatur.</span
+    >
+    <h1>span 2 { display:inline-block }</h1>
+    <span
+      >Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+      animi quisquam in minima mollitia aperiam sapiente delectus odit iure
+      veniam. Optio debitis dolorem veritatis laborum vitae quas, voluptatum
+      voluptatem consequatur.</span
+    >
+
+    <h1>span 3,4 { display:inline-block }</h1>
+    <span>Lorem ipsum</span>
+    <span>Lorem ipsum </span>
+    <hr />
+    <h1>div 2 { display:block }</h1>
+    <div>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere doloribus
+      sunt facilis excepturi accusamus odit, aspernatur tempore et quaerat cum
+      sequi neque, blanditiis maiores molestias! Dolorum, libero? Aut, assumenda
+      unde?
+    </div>
+  </body>
+</html>
