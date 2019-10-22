@@ -16,6 +16,9 @@
       span:nth-of-type(4) {
         display: inline-block;
       }
+      span:nth-of-type(5) {
+        margin: 20px;
+      }
       div:nth-of-type(2) {
         border: 6px solid #949599;
         height: 100px;
@@ -26,21 +29,23 @@
     </style>
   </head>
   <body>
-    <h1>div 1 { display:block }</h1>
+    <!-- block, inline, inline-block -->
+    <h1>block, inline, inline-block</h1>
+    <h2>div 1 { display:block }</h2>
     <div>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere doloribus
       sunt facilis excepturi accusamus odit, aspernatur tempore et quaerat cum
       sequi neque, blanditiis maiores molestias! Dolorum, libero? Aut, assumenda
       unde?
     </div>
-    <h1>span 1 { display:inline }</h1>
+    <h2>span 1 { display:inline }</h2>
     <span
       >Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
       animi quisquam in minima mollitia aperiam sapiente delectus odit iure
       veniam. Optio debitis dolorem veritatis laborum vitae quas, voluptatum
       voluptatem consequatur.</span
     >
-    <h1>span 2 { display:inline-block }</h1>
+    <h2>span 2 { display:inline-block }</h2>
     <span
       >Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
       animi quisquam in minima mollitia aperiam sapiente delectus odit iure
@@ -48,16 +53,28 @@
       voluptatem consequatur.</span
     >
 
-    <h1>span 3,4 { display:inline-block }</h1>
+    <h2>span 3,4 { display:inline-block }</h2>
     <span>Lorem ipsum</span>
     <span>Lorem ipsum </span>
     <hr />
-    <h1>div 2 { display:block }</h1>
+    <!-- box model -->
+    <h1>box model</h1>
+    <h2>div 2 { display:block }</h2>
     <div>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere doloribus
       sunt facilis excepturi accusamus odit, aspernatur tempore et quaerat cum
       sequi neque, blanditiis maiores molestias! Dolorum, libero? Aut, assumenda
       unde?
     </div>
+    <hr />
+    <!-- margin -->
+    <h1>margin</h1>
+    <h2>span 5 { display:inline } 消失的...</h2>
+    <span
+      >Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+      animi quisquam in minima mollitia aperiam sapiente delectus odit iure
+      veniam. Optio debitis dolorem veritatis laborum vitae quas, voluptatum
+      voluptatem consequatur.</span
+    >
   </body>
 </html>
