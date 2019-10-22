@@ -29,11 +29,39 @@
       }
       div:nth-of-type(3) {
         border: none;
+        width: 200px;
+        height: 200px;
+        background-color: red;
+      }
+      div:nth-of-type(3) div {
+        border: none;
         width: 100px;
         height: 100px;
-        background-color: blue;
+        background-color: green;
         margin: 20px;
         padding: 20px;
+      }
+      div:nth-of-type(4),
+      div:nth-of-type(5),
+      div:nth-of-type(6),
+      div:nth-of-type(7) {
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        text-align: center;
+        line-height: 100px;
+      }
+      div:nth-of-type(4) {
+        border: 6px solid #949599;
+      }
+      div:nth-of-type(5) {
+        border: 6px dashed #949599;
+      }
+      div:nth-of-type(6) {
+        border: 6px dotted #949599;
+      }
+      div:nth-of-type(7) {
+        border: 6px double #949599;
       }
     </style>
   </head>
@@ -76,8 +104,8 @@
       unde?
     </div>
     <hr />
-    <!-- margin & padding -->
-    <h1>margin & padding</h1>
+    <!-- 外间距 与 内间距 margin & padding -->
+    <h1>外间距 与 内间距 margin & padding</h1>
     <h2>span 5 { display:inline } 消失的...</h2>
     <span
       >Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
@@ -89,12 +117,22 @@
     <!-- 背景色 -->
     <h1>背景色</h1>
     <blockquote>margin 父亲背景色 padding 自我背景色</blockquote>
-    <div></div>
+    <h2>div 3</h2>
+    <div>
+      <div></div>
+    </div>
     <hr />
+    <!-- 边框 border -->
+    <h1>边框 border</h1>
+    <h2>div 4</h2>
+    <div>solid</div>
+    <div>dashed</div>
+    <div>dotted</div>
+    <div>double</div>
     <!-- 三角形 -->
     <h1>三角形</h1>
     <iframe
-      width="300"
+      width="200"
       height="100"
       src="../cookbook/triangle.html"
       frameborder="0"
