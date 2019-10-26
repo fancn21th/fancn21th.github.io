@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics - 开始 -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=UA-150469501-1"
@@ -15,60 +15,106 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
       gtag("config", "UA-150469501-1");
     </script>
+    <!-- Global site tag (gtag.js) - Google Analytics - 结束 -->
     <title>文本</title>
+    <!-- CSS 重置 -->
+    <!-- <link rel="stylesheet" href="../assets/reset.css" /> -->
+    <!-- 站点样式 -->
+    <link rel="stylesheet" href="../assets/site.css" />
+    <!-- 外联样式 -->
+    <link rel="stylesheet" href="../assets/main.css" />
+    <!-- 内联样式 -->
     <style>
-      /* 分隔符样式 | 标签选择器 */
-      hr {
-        border-width: 0.5px;
-        border-style: dotted;
-      }
+      /* 当前页面的样式 */
     </style>
   </head>
   <body>
-    <!-- 以下是 普通文本 -->
+    <article id="headings" class="fan-sub">
+      <h1 class="fan-sub__title">
+        h1 - h6 标题
+      </h1>
 
-    <!-- h1 - h6 -->
-    <h1>标题1</h1>
-    <h2>标题2</h2>
-    <h3>标题3</h3>
-    <h4>标题4</h4>
-    <hr />
-    <!-- p -->
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio odio,
-      incidunt consectetur molestias facilis saepe excepturi. Aspernatur,
-      dignissimos rerum? Enim maiores nulla recusandae saepe sunt numquam
-      eveniet aspernatur ad impedit.
-    </p>
-    <hr />
-    <!-- i & b 斜体与加粗 -->
-    <span>我的 <i>名字</i> 叫 <b>贝克汉姆</b> </span>
-    <hr />
-    <!-- sup & sub 上标与下标 -->
-    <span>E = MC <sup>2</sup> </span>
-    <br />
-    <span>CO <sub>2</sub></span>
-    <hr />
-    <!-- blank & &nbsp; 空格 -->
-    <span>武汉 &nbsp; &nbsp; &nbsp; &nbsp; 欢迎您</span>
-    <hr />
-    <!-- br 换行 -->
-    <span>拜拜！</span> <br />
-    <span>明天见！</span>
-    <hr />
+      <section class="fan-sub__demo">
+        <h1>标题1</h1>
+        <h2>标题2</h2>
+        <h3>标题3</h3>
+        <h4>标题4</h4>
+        <h5>标题5</h5>
+        <h6>标题6</h6>
+      </section>
+    </article>
 
-    <!-- 以下是 语义化文本 -->
+    <article id="paragraphs" class="fan-sub">
+      <h1 class="fan-sub__title">
+        p 段落
+      </h1>
 
-    <!-- strong & em 加粗 与 强调 -->
-    <span>我的 <em>名字</em> 叫 <strong>贝克汉姆</strong> </span>
-    <hr />
-    <!-- blockquote & q 块引用 与 引用-->
-    <blockquote>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, nulla!
-    </blockquote>
-    <q>Design is how it works</q>
+      <section class="fan-sub__demo">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio odio,
+          incidunt consectetur molestias facilis saepe excepturi. Aspernatur,
+          dignissimos rerum? Enim maiores nulla recusandae saepe sunt numquam
+          eveniet aspernatur ad impedit.
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio odio,
+          incidunt consectetur molestias facilis saepe excepturi. Aspernatur,
+          dignissimos rerum? Enim maiores nulla recusandae saepe sunt numquam
+          eveniet aspernatur ad impedit.
+        </p>
+      </section>
+    </article>
+
+    <article id="bold" class="fan-sub">
+      <h1 class="fan-sub__title">
+        i & b 斜体与加粗
+      </h1>
+
+      <section class="fan-sub__demo">
+        <span>我的 <i>名字</i> 叫 <b>迈克尔 乔丹</b> </span>
+      </section>
+    </article>
+
+    <article id="superscript-subscript" class="fan-sub">
+      <h1 class="fan-sub__title">
+        上标与下标
+      </h1>
+
+      <section class="fan-sub__demo">
+        <span>E = MC <sup>2</sup> </span>
+        <br />
+        <span>CO <sub>2</sub></span>
+      </section>
+    </article>
+
+    <article id="white-space" class="fan-sub">
+      <h1 class="fan-sub__title">
+        &amp;nbsp;&blank &amp;nbsp;与空格
+      </h1>
+
+      <section class="fan-sub__demo">
+        <!-- 多个空格 以及 换行 只会被看作一个 空格 -->
+        <span>武汉 欢迎您</span>
+        <br />
+        <!-- 不建议在生产环境使用  -->
+        <span>武汉 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 欢迎您</span>
+      </section>
+    </article>
+
+    <article id="line-breaks" class="fan-sub">
+      <h1 class="fan-sub__title">
+        换行符和水平线
+      </h1>
+
+      <section class="fan-sub__demo">
+        <span>拜拜！</span>
+        <br />
+        <span>明天见！</span>
+        <hr />
+        <span>后天见！</span>
+      </section>
+    </article>
   </body>
 </html>
