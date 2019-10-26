@@ -45,6 +45,16 @@
         padding: 20px;
         width: 400px;
       }
+      #box-model-size div {
+        border: 6px solid #949599;
+        height: 100px;
+        margin: 20px;
+        padding: 20px;
+        width: 400px;
+      }
+      #box-model-size q {
+        display: block;
+      }
       #inline-element-margin-padding span {
         margin: 20px;
         padding: 20px;
@@ -145,6 +155,29 @@
       </h1>
 
       <section class="fan-sub__demo">
+        <div>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere
+          doloribus sunt facilis excepturi accusamus odit, aspernatur tempore et
+          quaerat cum sequi neque, blanditiis maiores molestias! Dolorum,
+          libero? Aut, assumenda unde?
+        </div>
+      </section>
+    </article>
+
+    <article id="box-model-size" class="fan-sub">
+      <h1 class="fan-sub__title">
+        box model size 盒模型的大小
+      </h1>
+
+      <section class="fan-sub__demo">
+        <q
+          >盒子的宽度 = margin-right + border-right + padding-right + width +
+          padding-left + border-left + margin-left</q
+        >
+        <q
+          >盒子的高度 = margin-top + border-top + padding-top + height +
+          padding-bottom + border-bottom + margin-bottom</q
+        >
         <div>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere
           doloribus sunt facilis excepturi accusamus odit, aspernatur tempore et
