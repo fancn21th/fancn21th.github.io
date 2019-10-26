@@ -15,57 +15,72 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
       gtag("config", "UA-150469501-1");
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics - 结束 -->
     <title>Divisions and Spans</title>
+    <!-- CSS 重置 -->
+    <!-- <link rel="stylesheet" href="../assets/reset.css" /> -->
+    <!-- 站点样式 -->
+    <link rel="stylesheet" href="../assets/site.css" />
+    <!-- 外联样式 -->
+    <link rel="stylesheet" href="../assets/main.css" />
+    <!-- 内联样式 -->
     <style>
-      * {
-        margin-bottom: 15px;
+      /* 当前页面的样式 */
+      #block div {
+        border: 1px solid red;
       }
-      div {
-        border: 3px solid darkred;
-        /* padding 是指内间距 */
-        height: 40px;
+      #inline span {
+        border: 1px solid blue;
       }
-      span {
-        border: 3px solid darkgreen;
-        line-height: 40px;
+      #inline-flow span {
+        border: 1px solid green;
       }
     </style>
   </head>
   <body>
-    <!-- div 块级元素 -->
-    <div>
-      这是一个DIV... Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Voluptatibus, quas.
-    </div>
-    <div>
-      这是一个DIV... Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Voluptatibus, quas.
-    </div>
-    <!-- span 内联元素 -->
-    <span>
-      这是一个SPAN...Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-      Est, accusantium!</span
-    >
-    <span>
-      这是一个SPAN...Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-      Est, accusantium!</span
-    >
-    <span>
-      这是一个SPAN...Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-      Est, accusantium!</span
-    >
-    <span>
-      这是一个SPAN...Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-      Est, accusantium!</span
-    >
-    <!-- div 块级元素 -->
-    <div>
-      这是一个DIV... Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Voluptatibus, quas.
-    </div>
+    <article id="block" class="fan-sub">
+      <h1 class="fan-sub__title">
+        块级元素 DIV
+      </h1>
+
+      <section class="fan-sub__demo">
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+          repellat non molestiae vitae veritatis. Sunt corporis pariatur aliquid
+          neque placeat eos itaque explicabo, autem accusantium blanditiis nemo
+          ea, animi eveniet!
+        </div>
+      </section>
+    </article>
+
+    <article id="inline" class="fan-sub">
+      <h1 class="fan-sub__title">
+        行内元素 SPAN
+      </h1>
+
+      <section class="fan-sub__demo">
+        <span>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+          repellat non molestiae vitae veritatis. Sunt corporis pariatur aliquid
+          neque placeat eos itaque explicabo, autem accusantium blanditiis nemo
+          ea, animi eveniet!
+        </span>
+      </section>
+    </article>
+
+    <article id="inline-flow" class="fan-sub">
+      <h1 class="fan-sub__title">
+        行内元素 SPAN 排列
+      </h1>
+
+      <section class="fan-sub__demo">
+        <span>Lorem, ipsum.</span>
+        <span>Lorem, ipsum dolor.</span>
+        <span>Lorem ipsum dolor sit.</span>
+        <span>Lorem ipsum dolor sit amet.</span>
+      </section>
+    </article>
   </body>
 </html>
