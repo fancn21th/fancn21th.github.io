@@ -1,0 +1,14 @@
+/* 副标题 */
+.fan-sub {
+}
+
+.fan-sub__title {
+  color: blue;
+}
+
+.fan-sub__title::after {
+  content: "\2192";
+}
+
+.fan-sub__demo {
+}

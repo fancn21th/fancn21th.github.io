@@ -11,7 +11,7 @@
 - 结构，布局，样式，功能
   - 渐进式更迭
 
-## 感谢这些伟大的开源贡献值们 / thanks to those contributing to the open source
+## 感谢这些伟大的开源贡献者们 / thanks to those contributing to the open source
 
 - bootstrap 4
 

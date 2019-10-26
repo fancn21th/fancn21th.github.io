@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics - 开始 -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=UA-150469501-1"
@@ -18,45 +18,89 @@
 
       gtag("config", "UA-150469501-1");
     </script>
+    <!-- Global site tag (gtag.js) - Google Analytics - 结束 -->
     <title>CSS 语法</title>
+    <!-- CSS 重置 -->
+    <!-- <link rel="stylesheet" href="../assets/reset.css" /> -->
+    <!-- 站点样式 -->
+    <link rel="stylesheet" href="../assets/site.css" />
     <!-- 外联样式 -->
-    <!-- <link rel="stylesheet" href="reset.css" /> -->
     <link rel="stylesheet" href="../assets/main.css" />
     <!-- 内联样式 -->
     <style>
-      /* 标签选择器 */
-      p {
-        color: darkblue;
+      /* 标签选择器 选择 p 标签 */
+      #type-selector p {
+        color: red;
       }
       /* 类选择器 */
-      .title {
-        font-weight: bolder;
+      #class-selector .title {
+        color: green;
+      }
+      #class-selector .foo {
         color: red;
       }
       /* ID选择器 */
     </style>
   </head>
   <body>
-    <h1>标题一</h1>
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima impedit
-      quaerat debitis praesentium ut ex nemo similique corporis! Excepturi
-      placeat accusamus consequuntur rem ea nobis, saepe reiciendis minima
-      temporibus consectetur!
-    </p>
-    <h2>标题二</h2>
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima impedit
-      quaerat debitis praesentium ut ex nemo similique corporis! Excepturi
-      placeat accusamus consequuntur rem ea nobis, saepe reiciendis minima
-      temporibus consectetur!
-    </p>
-    <h3>标题三</h3>
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima impedit
-      quaerat debitis praesentium ut ex nemo similique corporis! Excepturi
-      placeat accusamus consequuntur rem ea nobis, saepe reiciendis minima
-      temporibus consectetur!
-    </p>
+    <article id="type-selector" class="fan-sub">
+      <h1 class="fan-sub__title">
+        标签选择器
+      </h1>
+
+      <section class="fan-sub__demo">
+        <h1>标题一</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima
+          impedit quaerat debitis praesentium ut ex nemo similique corporis!
+          Excepturi placeat accusamus consequuntur rem ea nobis, saepe
+          reiciendis minima temporibus consectetur!
+        </p>
+        <h2>标题二</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima
+          impedit quaerat debitis praesentium ut ex nemo similique corporis!
+          Excepturi placeat accusamus consequuntur rem ea nobis, saepe
+          reiciendis minima temporibus consectetur!
+        </p>
+        <h3>标题三</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima
+          impedit quaerat debitis praesentium ut ex nemo similique corporis!
+          Excepturi placeat accusamus consequuntur rem ea nobis, saepe
+          reiciendis minima temporibus consectetur!
+        </p>
+      </section>
+    </article>
+
+    <article id="class-selector" class="fan-sub">
+      <h1 class="fan-sub__title">
+        类选择器
+      </h1>
+
+      <section class="fan-sub__demo">
+        <h1 class="title">标题一</h1>
+        <p class="foo">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima
+          impedit quaerat debitis praesentium ut ex nemo similique corporis!
+          Excepturi placeat accusamus consequuntur rem ea nobis, saepe
+          reiciendis minima temporibus consectetur!
+        </p>
+        <h2 class="title">标题二</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima
+          impedit quaerat debitis praesentium ut ex nemo similique corporis!
+          Excepturi placeat accusamus consequuntur rem ea nobis, saepe
+          reiciendis minima temporibus consectetur!
+        </p>
+        <h3 class="title">标题三</h3>
+        <p class="foo">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima
+          impedit quaerat debitis praesentium ut ex nemo similique corporis!
+          Excepturi placeat accusamus consequuntur rem ea nobis, saepe
+          reiciendis minima temporibus consectetur!
+        </p>
+      </section>
+    </article>
   </body>
 </html>
