@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Global site tag (gtag.js) - Google Analytics - 开始 -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-150469501-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-150469501-1");
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics - 结束 -->
+    <title>CSS 选择器</title>
+    <!-- CSS 重置 -->
+    <!-- <link rel="stylesheet" href="../assets/reset.css" /> -->
+    <!-- 站点样式 -->
+    <link rel="stylesheet" href="../assets/site.css" />
+    <!-- 外联样式 -->
+    <link rel="stylesheet" href="../assets/main.css" />
+    <!-- 内联样式 -->
+    <style>
+      /* 当前页面的样式 */
+      #cascade p {
+        color: red;
+      }
+      #cascade p {
+        color: blue;
+        color: green;
+      }
+      #specificity #foo {
+        color: red;
+      }
+      #specificity bar {
+        color: green;
+      }
+      #specificity div {
+        color: blue;
+      }
+      #combining-selector .chuancai p {
+        /* 川菜 */
+        background: red;
+        color: white;
+      }
+      /* 从最佳实践的角度，不应该在类样式前面增加 标签类型-预选选择器 */
+      #combining-selector .chuancai p.gongbaojidin {
+        /* 宫保鸡丁 */
+        background: blue;
+        color: white;
+      }
+      /* specificity */
+      /* 1-1-1 */
+      /* 1-2-1 */
+      #combining-selector-specificity .chuancai p.gongbaojidin {
+        /* 宫保鸡丁 */
+        background: blue;
+        color: white;
+      }
+      #combining-selector-specificity .chuancai p {
+        /* 川菜 */
+        background: red;
+        color: white;
+      }
+      #multiple-classes .btn {
+        display: inline-block;
+        width: 100px;
+        height: 40px;
+        color: white;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 5px;
+        text-decoration: none;
+      }
+      #multiple-classes .btn-success {
+        background-color: green;
+      }
+      #multiple-classes .btn-danger {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <article id="cascade" class="fan-sub">
+      <h1 class="fan-sub__title">
+        样式层叠 Cascade
+      </h1>
+
+      <section class="fan-sub__demo">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro eaque
+          et facilis est dolorem voluptatem rem voluptatum commodi veritatis
+          numquam. Autem recusandae vel exercitationem dignissimos consectetur
+          iusto, optio deleniti natus.
+        </p>
+      </section>
+    </article>
+
+    <article id="specificity" class="fan-sub">
+      <h1 class="fan-sub__title">
+        样式权重 Specificity
+      </h1>
+
+      <section class="fan-sub__demo">
+        <div id="foo" class="bar">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis
+          libero rerum ad nulla nihil, officiis sapiente repellat tempora nisi
+          accusamus ratione dolores, corporis vel voluptatibus qui, fugiat non
+          nobis earum!
+        </div>
+      </section>
+    </article>
+
+    <article id="combining-selector" class="fan-sub">
+      <h1 class="fan-sub__title">
+        组合选择器 Combining Selector
+      </h1>
+
+      <section class="fan-sub__demo">
+        <div class="chuancai">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
+            consequatur.
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, nam.
+          </p>
+          <p class="gongbaojidin">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Voluptatibus, repellendus!
+          </p>
+        </div>
+      </section>
+    </article>
+
+    <article id="combining-selector-specificity" class="fan-sub">
+      <h1 class="fan-sub__title">
+        组合选择器 样式权重 Specificity of Combining Selector
+      </h1>
+
+      <section class="fan-sub__demo">
+        <div class="chuancai">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
+            consequatur.
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, nam.
+          </p>
+          <p class="gongbaojidin">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Voluptatibus, repellendus!
+          </p>
+        </div>
+      </section>
+    </article>
+
+    <article id="multiple-classes" class="fan-sub">
+      <h1 class="fan-sub__title">
+        多个类样式选择器 Multiple Classes
+      </h1>
+
+      <section class="fan-sub__demo">
+        <a href="#" class="btn btn-success">foo</a>
+        <a href="#" class="btn btn-danger">bar</a>
+      </section>
+    </article>
+  </body>
+</html>
