@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics - 开始 -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=UA-150469501-1"
@@ -15,141 +15,198 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
       gtag("config", "UA-150469501-1");
     </script>
+    <!-- Global site tag (gtag.js) - Google Analytics - 结束 -->
     <title>盒子模型</title>
+    <!-- CSS 重置 -->
+    <!-- <link rel="stylesheet" href="../assets/reset.css" /> -->
+    <!-- 站点样式 -->
+    <link rel="stylesheet" href="../assets/site.css" />
+    <!-- 外联样式 -->
+    <link rel="stylesheet" href="../assets/main.css" />
+    <!-- 内联样式 -->
     <style>
-      div,
-      span {
+      #block-element div {
         border: 1px solid red;
-        min-height: 50px;
       }
-      span:nth-of-type(2),
-      span:nth-of-type(3),
-      span:nth-of-type(4) {
+      #inline-element span {
+        border: 1px solid blue;
+      }
+      #inline-block-element span,
+      #inline-block-element-flow span {
+        border: 1px solid green;
         display: inline-block;
       }
-      span:nth-of-type(5) {
-        margin: 20px;
-        padding: 20px;
-      }
-      div:nth-of-type(2) {
-        border: 6px solid #949599;
+      #box-model div {
+        border: 20px solid #949599;
         height: 100px;
         margin: 20px;
         padding: 20px;
         width: 400px;
       }
-      div:nth-of-type(3) {
-        border: none;
+      #inline-element-margin-padding span {
+        margin: 20px;
+        padding: 20px;
+      }
+      #margin-padding-background div {
         width: 200px;
         height: 200px;
         background-color: red;
       }
-      div:nth-of-type(3) div {
-        border: none;
+      #margin-padding-background div div {
         width: 100px;
         height: 100px;
-        background-color: green;
         margin: 20px;
         padding: 20px;
+        background-color: green;
       }
-      div:nth-of-type(4),
-      div:nth-of-type(5),
-      div:nth-of-type(6),
-      div:nth-of-type(7) {
+      #border-style div {
+        display: inline-block;
         width: 100px;
         height: 100px;
-        display: inline-block;
         text-align: center;
         line-height: 100px;
       }
-      div:nth-of-type(4) {
+      #border-style div:nth-of-type(1) {
         border: 6px solid #949599;
       }
-      div:nth-of-type(5) {
+      #border-style div:nth-of-type(2) {
         border: 6px dashed #949599;
       }
-      div:nth-of-type(6) {
+      #border-style div:nth-of-type(3) {
         border: 6px dotted #949599;
       }
-      div:nth-of-type(7) {
+      #border-style div:nth-of-type(4) {
         border: 6px double #949599;
       }
     </style>
   </head>
   <body>
-    <!-- block, inline, inline-block -->
-    <h1>block, inline, inline-block</h1>
-    <h2>div 1 { display:block }</h2>
-    <div>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere doloribus
-      sunt facilis excepturi accusamus odit, aspernatur tempore et quaerat cum
-      sequi neque, blanditiis maiores molestias! Dolorum, libero? Aut, assumenda
-      unde?
-    </div>
-    <h2>span 1 { display:inline }</h2>
-    <span
-      >Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-      animi quisquam in minima mollitia aperiam sapiente delectus odit iure
-      veniam. Optio debitis dolorem veritatis laborum vitae quas, voluptatum
-      voluptatem consequatur.</span
-    >
-    <h2>span 2 { display:inline-block }</h2>
-    <span
-      >Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-      animi quisquam in minima mollitia aperiam sapiente delectus odit iure
-      veniam. Optio debitis dolorem veritatis laborum vitae quas, voluptatum
-      voluptatem consequatur.</span
-    >
+    <article id="block-element" class="fan-sub">
+      <h1 class="fan-sub__title">
+        block element 块级元素
+      </h1>
 
-    <h2>span 3,4 { display:inline-block }</h2>
-    <span>Lorem ipsum</span>
-    <span>Lorem ipsum </span>
-    <hr />
-    <!-- 盒模型 box model -->
-    <h1>盒模型 box model</h1>
-    <h2>div 2 { display:block }</h2>
-    <div>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere doloribus
-      sunt facilis excepturi accusamus odit, aspernatur tempore et quaerat cum
-      sequi neque, blanditiis maiores molestias! Dolorum, libero? Aut, assumenda
-      unde?
-    </div>
-    <hr />
-    <!-- 外间距 与 内间距 margin & padding -->
-    <h1>外间距 与 内间距 margin & padding</h1>
-    <h2>span 5 { display:inline } 消失的...</h2>
-    <span
-      >Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-      animi quisquam in minima mollitia aperiam sapiente delectus odit iure
-      veniam. Optio debitis dolorem veritatis laborum vitae quas, voluptatum
-      voluptatem consequatur.</span
-    >
-    <hr />
-    <!-- 背景色 -->
-    <h1>背景色</h1>
-    <blockquote>margin 父亲背景色 padding 自我背景色</blockquote>
-    <h2>div 3</h2>
-    <div>
-      <div></div>
-    </div>
-    <hr />
-    <!-- 边框 border -->
-    <h1>边框 border</h1>
-    <h2>div 4</h2>
-    <div>solid</div>
-    <div>dashed</div>
-    <div>dotted</div>
-    <div>double</div>
-    <!-- 三角形 -->
-    <h1>三角形</h1>
-    <iframe
-      width="200"
-      height="100"
-      src="../cookbook/triangle.html"
-      frameborder="0"
-    ></iframe>
+      <section class="fan-sub__demo">
+        <div>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere
+          doloribus sunt facilis excepturi accusamus odit, aspernatur tempore et
+          quaerat cum sequi neque, blanditiis maiores molestias! Dolorum,
+          libero? Aut, assumenda unde?
+        </div>
+      </section>
+    </article>
+
+    <article id="inline-element" class="fan-sub">
+      <h1 class="fan-sub__title">
+        inline element 行内元素
+      </h1>
+
+      <section class="fan-sub__demo">
+        <span
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+          animi quisquam in minima mollitia aperiam sapiente delectus odit iure
+          veniam. Optio debitis dolorem veritatis laborum vitae quas, voluptatum
+          voluptatem consequatur.</span
+        >
+      </section>
+    </article>
+
+    <article id="inline-block-element" class="fan-sub">
+      <h1 class="fan-sub__title">
+        inline-block element 行内块级元素
+      </h1>
+
+      <section class="fan-sub__demo">
+        <span
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+          animi quisquam in minima mollitia aperiam sapiente delectus odit iure
+          veniam. Optio debitis dolorem veritatis laborum vitae quas, voluptatum
+          voluptatem consequatur.</span
+        >
+      </section>
+    </article>
+
+    <article id="inline-block-element-flow" class="fan-sub">
+      <h1 class="fan-sub__title">
+        inline-block element flow 行内块级元素 排列
+      </h1>
+
+      <section class="fan-sub__demo">
+        <span>Lorem ipsum</span>
+        <span>Lorem ipsum </span>
+      </section>
+    </article>
+
+    <article id="box-model" class="fan-sub">
+      <h1 class="fan-sub__title">
+        box model 盒模型
+      </h1>
+
+      <section class="fan-sub__demo">
+        <div>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere
+          doloribus sunt facilis excepturi accusamus odit, aspernatur tempore et
+          quaerat cum sequi neque, blanditiis maiores molestias! Dolorum,
+          libero? Aut, assumenda unde?
+        </div>
+      </section>
+    </article>
+
+    <article id="inline-element-margin-padding" class="fan-sub">
+      <h1 class="fan-sub__title">
+        inline element margin & padding 行内元素 外间距和内间距
+      </h1>
+
+      <section class="fan-sub__demo">
+        <span
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+          animi quisquam in minima mollitia aperiam sapiente delectus odit iure
+          veniam. Optio debitis dolorem veritatis laborum vitae quas, voluptatum
+          voluptatem consequatur.</span
+        >
+      </section>
+    </article>
+
+    <article id="margin-padding-background" class="fan-sub">
+      <h1 class="fan-sub__title">
+        margin & padding background-color 外间距和内间距 的 背景色
+      </h1>
+
+      <section class="fan-sub__demo">
+        <div>
+          <div></div>
+        </div>
+      </section>
+    </article>
+
+    <article id="border-style" class="fan-sub">
+      <h1 class="fan-sub__title">
+        border style 边框 样式
+      </h1>
+
+      <section class="fan-sub__demo">
+        <div>solid</div>
+        <div>dashed</div>
+        <div>dotted</div>
+        <div>double</div>
+      </section>
+    </article>
+
+    <article id="foo" class="fan-sub">
+      <h1 class="fan-sub__title">
+        三角形
+      </h1>
+
+      <section class="fan-sub__demo">
+        <iframe
+          width="200"
+          height="100"
+          src="../cookbook/triangle.html"
+          frameborder="0"
+        ></iframe>
+      </section>
+    </article>
   </body>
 </html>
