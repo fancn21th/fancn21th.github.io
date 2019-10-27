@@ -1,1 +1,7 @@
-/* left blank */
+/* clearfix */
+/* refer to https://www.w3schools.com/howto/howto_css_clearfix.asp */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
