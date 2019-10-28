@@ -28,11 +28,13 @@
     <!-- 内联样式 -->
     <style>
       /* 当前页面的样式 */
+      /* origin */
       #position-origin img {
         width: 200px;
         float: left;
         margin-right: 20px;
       }
+      /* left-right */
       #position-float-left-right code {
         background: green;
         border-radius: 5px;
@@ -61,7 +63,7 @@
         clear: both;
         margin-bottom: 0;
       }
-
+      /* multiple columns */
       #position-float-multiple-columns code {
         background: green;
         border-radius: 5px;
@@ -85,6 +87,42 @@
       #position-float-multiple-columns .footer {
         clear: both;
         margin-bottom: 0;
+      }
+      #position-float-inline-element span {
+        float: left;
+        width: 300px;
+        background-color: green;
+        margin: 20px 0;
+        color: white;
+        padding: 20px 0;
+      }
+      /* pitfall */
+      #position-float-pitfall code {
+        background: green;
+        border-radius: 5px;
+        color: white;
+        display: block;
+        font: 14px/24px "Source Code Pro", Inconsolata, "Lucida Console",
+          Terminal, "Courier New", Courier;
+        padding: 24px 15px;
+        text-align: center;
+      }
+      #position-float-pitfall .header,
+      #position-float-pitfall .section,
+      #position-float-pitfall .aside,
+      #position-float-pitfall .footer {
+        margin: 0 1% 24px 1%;
+      }
+      #position-float-pitfall .section {
+        float: left;
+      }
+      #position-float-pitfall .aside {
+        float: right;
+      }
+      #position-float-pitfall .footer code {
+        margin-bottom: 0;
+        background-color: blue;
+        text-align: left;
       }
     </style>
   </head>
@@ -153,6 +191,30 @@
       </section>
     </article>
 
+    <article id="position-float-inline-element" class="fan-sub">
+      <h1 class="fan-sub__title">
+        行内元素浮动 Float Inline Element
+      </h1>
+
+      <section class="fan-sub__demo">
+        <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </span>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit vel
+          voluptatem ad laudantium rerum provident natus minus pariatur beatae
+          asperiores, accusamus ipsam laborum ab, quibusdam quam deleniti,
+          quaerat atque saepe dolor impedit. Obcaecati assumenda neque ullam,
+          numquam, delectus in earum id quod ipsum quo dicta incidunt aperiam,
+          aliquid dolore possimus! Molestias quasi magnam temporibus autem
+          voluptatum optio suscipit? Ab itaque non quae deleniti doloremque
+          dicta tempore praesentium reiciendis, doloribus laborum ipsa eius
+          aspernatur esse in deserunt nobis. Amet consectetur porro at
+          accusantium cumque quisquam quia nulla recusandae, corporis repellat
+          provident, molestiae fugit ea voluptas atque modi saepe ratione
+          aspernatur dolores.
+        </p>
+      </section>
+    </article>
+
     <article id="position-float-multiple-columns" class="fan-sub">
       <h1 class="fan-sub__title">
         多列浮动 Float multiple columns
@@ -182,6 +244,46 @@
         </div>
         <div class="footer">
           <code>&#60;footer&#62;</code>
+        </div>
+      </section>
+    </article>
+
+    <article id="position-float-pitfall" class="fan-sub">
+      <h1 class="fan-sub__title">
+        浮动陷阱 Float Pitfall
+      </h1>
+
+      <section class="fan-sub__demo">
+        <div class="header">
+          <code>&#60;header&#62;</code>
+        </div>
+        <div class="section">
+          <code
+            >&#60;section&#62; <br />
+            float: left;</code
+          >
+        </div>
+        <div class="aside">
+          <code
+            >&#60;aside&#62; <br />
+            float: right;</code
+          >
+        </div>
+        <div class="footer">
+          <code
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+            blanditiis enim ratione dolore illo distinctio, esse accusantium
+            neque, veritatis totam, iusto vitae amet! Libero debitis quasi atque
+            quaerat possimus quos, vel eveniet eos, reprehenderit tempore
+            expedita iste, repellat placeat. Optio earum quod aspernatur
+            praesentium unde rem officiis temporibus suscipit debitis dolore,
+            cum sed illo aliquam molestias soluta minus labore laborum
+            repudiandae a fugiat natus doloremque quidem? Ipsum recusandae eaque
+            qui perferendis quasi debitis quidem ut, soluta libero facilis
+            nostrum quod iste id alias fugiat autem magni asperiores quaerat
+            deserunt quas neque molestiae adipisci eos non. Repudiandae
+            excepturi nam quia neque.</code
+          >
         </div>
       </section>
     </article>
