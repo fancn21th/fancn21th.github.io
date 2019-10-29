@@ -27,16 +27,7 @@
     <link rel="stylesheet" href="../assets/main.css" />
     <!-- 内联样式 -->
     <style>
-      /* 当前页面的样式 */
-      /* origin */
-      #position-origin img {
-        width: 200px;
-        float: left;
-        margin-right: 20px;
-      }
-
-      /* left-right */
-      #position-float-left-right code {
+      #position-inline-block code {
         background: green;
         border-radius: 5px;
         color: white;
@@ -46,27 +37,18 @@
         padding: 24px 15px;
         text-align: center;
       }
-      #position-float-left-right .header,
-      #position-float-left-right .section,
-      #position-float-left-right .aside,
-      #position-float-left-right .footer {
-        margin: 0 1% 24px 1%;
+      #position-inline-block header,
+      #position-inline-block section,
+      #position-inline-block aside,
+      #position-inline-block footer {
+        margin: 0 1.5% 24px 1.5%;
       }
-      #position-float-left-right .section {
-        float: left;
-        width: 63%;
-      }
-      #position-float-left-right .aside {
-        float: right;
+      #position-inline-block section > section {
+        display: inline-block;
         width: 30%;
       }
-      #position-float-left-right .footer {
-        clear: both;
-        margin-bottom: 0;
-      }
-
-      /* multiple columns */
-      #position-float-multiple-columns code {
+      /*  */
+      #position-inline-block-removing-space code {
         background: green;
         border-radius: 5px;
         color: white;
@@ -76,309 +58,93 @@
         padding: 24px 15px;
         text-align: center;
       }
-      #position-float-multiple-columns .header,
-      #position-float-multiple-columns .section,
-      #position-float-multiple-columns .aside,
-      #position-float-multiple-columns .footer {
-        margin: 0 1% 24px 1%;
+      #position-inline-block-removing-space header,
+      #position-inline-block-removing-space section,
+      #position-inline-block-removing-space aside,
+      #position-inline-block-removing-space footer {
+        margin: 0 1.5% 24px 1.5%;
       }
-      #position-float-multiple-columns .section {
-        float: left;
+      #position-inline-block-removing-space section > section {
+        display: inline-block;
         width: 30%;
-      }
-      #position-float-multiple-columns .footer {
-        clear: both;
-        margin-bottom: 0;
-      }
-      /* inline */
-      #position-float-inline-element span {
-        float: left;
-        width: 300px;
-        background-color: green;
-        margin: 20px 0;
-        color: white;
-        padding: 20px 0;
-      }
-      /* pitfall */
-      #position-float-pitfall code {
-        background: green;
-        border-radius: 5px;
-        color: white;
-        display: block;
-        font: 14px/24px "Source Code Pro", Inconsolata, "Lucida Console",
-          Terminal, "Courier New", Courier;
-        padding: 24px 15px;
-        text-align: center;
-      }
-      #position-float-pitfall .header,
-      #position-float-pitfall .section,
-      #position-float-pitfall .aside,
-      #position-float-pitfall .footer {
-        margin: 0 1% 24px 1%;
-      }
-      #position-float-pitfall .section {
-        float: left;
-      }
-      #position-float-pitfall .aside {
-        float: right;
-      }
-      #position-float-pitfall .footer code {
-        background-color: blue;
-        text-align: left;
-      }
-      #position-float-pitfall .footer {
-        margin-bottom: 0;
-      }
-      #position-float-pitfall .section,
-      #position-float-pitfall .aside {
-        margin: 24px;
-      }
-      /* Containing Floats */
-      #position-float-containing code {
-        background: green;
-        border-radius: 5px;
-        color: white;
-        display: block;
-        font: 14px/24px "Source Code Pro", Inconsolata, "Lucida Console",
-          Terminal, "Courier New", Courier;
-        padding: 24px 15px;
-        text-align: center;
-      }
-      #position-float-containing .header,
-      #position-float-containing .section,
-      #position-float-containing .aside,
-      #position-float-containing .footer {
-        margin: 0 1% 24px 1%;
-      }
-      #position-float-containing .section {
-        float: left;
-      }
-      #position-float-containing .aside {
-        float: right;
-      }
-      #position-float-containing .footer code {
-        background-color: blue;
-        text-align: left;
-      }
-      #position-float-containing .footer {
-        margin-bottom: 0;
-      }
-      #position-float-containing .group:before,
-      #position-float-containing .group:after {
-        content: "";
-        display: table;
-      }
-      #position-float-containing .group:after {
-        clear: both;
-      }
-      #position-float-containing .group {
-        clear: both;
-        *zoom: 1;
       }
     </style>
   </head>
   <body>
-    <!-- 浮动的起源 Float Origin -->
-    <article id="position-origin" class="fan-sub">
+    <!-- 行内块定位 positioning inline-block -->
+    <article id="position-inline-block" class="fan-sub">
       <h1 class="fan-sub__title">
-        浮动的起源 Float Origin
+        行内块定位 positioning inline-block
       </h1>
 
       <section class="fan-sub__demo">
-        <div class="container">
-          <img src="../images/El-Capitan.png" alt="" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
-            harum. Delectus cumque cum accusamus beatae dolores. Impedit dolor
-            ullam ad minima libero, sint aperiam quasi, et necessitatibus
-            exercitationem id, sunt nisi consectetur molestiae esse! Officia
-            dolores cupiditate ratione? Facere quas fuga cumque, unde iste
-            soluta quae ratione porro id provident veniam eius eaque quos
-            officia odio excepturi accusantium fugit ullam! Quas sit reiciendis
-            sed, consectetur repellat id nisi maxime qui provident delectus a et
-            ipsa impedit laudantium? Quo ipsum molestias est, earum commodi,
-            quisquam, error fugiat facere eaque iure sit. Voluptatum quam iure
-            ipsam numquam reiciendis! At officia corrupti porro perferendis?
-            Perspiciatis rem dolor eveniet tempore, culpa similique. Ducimus
-            voluptas, delectus vel doloribus consequuntur accusamus fugit
-            tempore! Vitae ad architecto temporibus, ab reprehenderit laudantium
-            sit voluptate possimus. Soluta aperiam hic eos ex sit ducimus
-            assumenda sed omnis. Voluptate, sequi doloremque nulla pariatur hic
-            aperiam quisquam dicta velit? Harum accusamus ex aperiam ipsum ut
-            natus iusto, necessitatibus explicabo impedit soluta cum assumenda
-            rerum temporibus culpa quasi quos amet? Provident architecto dolores
-            eligendi ea voluptatibus veritatis iusto vero pariatur, molestiae
-            esse aperiam et quaerat facilis voluptates quia dolore recusandae id
-            atque, voluptas sit praesentium! Placeat cumque voluptate aspernatur
-            fuga voluptatum nulla sequi?
-          </p>
-        </div>
-      </section>
-    </article>
-    <!-- 左右浮动 Float left&right -->
-    <article id="position-float-left-right" class="fan-sub">
-      <h1 class="fan-sub__title">
-        左右浮动 Float left&right
-      </h1>
-
-      <section class="fan-sub__demo">
-        <div class="header">
+        <header>
           <code>&#60;header&#62;</code>
-        </div>
-        <div class="section">
+        </header>
+
+        <section>
           <code
             >&#60;section&#62; <br />
-            float: left;</code
+            display: <br />
+            inline-block;</code
           >
-        </div>
-        <div class="aside">
+        </section>
+        <section>
           <code
-            >&#60;aside&#62; <br />
-            float: right;</code
+            >&#60;section&#62; <br />
+            display: <br />
+            inline-block;</code
           >
-        </div>
-        <div class="footer">
+        </section>
+        <section>
+          <code
+            >&#60;section&#62; <br />
+            display: <br />
+            inline-block;</code
+          >
+        </section>
+
+        <footer>
           <code>&#60;footer&#62;</code>
-        </div>
+        </footer>
       </section>
     </article>
-    <!-- 行内元素浮动 Float Inline Element -->
-    <article id="position-float-inline-element" class="fan-sub">
+    <!-- 行内块定位 positioning inline-block removing space -->
+    <article id="position-inline-block-removing-space" class="fan-sub">
       <h1 class="fan-sub__title">
-        行内元素浮动 Float Inline Element
+        行内块定位 去除间隔 positioning inline-block removing space
       </h1>
 
       <section class="fan-sub__demo">
-        <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </span>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit vel
-          voluptatem ad laudantium rerum provident natus minus pariatur beatae
-          asperiores, accusamus ipsam laborum ab, quibusdam quam deleniti,
-          quaerat atque saepe dolor impedit. Obcaecati assumenda neque ullam,
-          numquam, delectus in earum id quod ipsum quo dicta incidunt aperiam,
-          aliquid dolore possimus! Molestias quasi magnam temporibus autem
-          voluptatum optio suscipit? Ab itaque non quae deleniti doloremque
-          dicta tempore praesentium reiciendis, doloribus laborum ipsa eius
-          aspernatur esse in deserunt nobis. Amet consectetur porro at
-          accusantium cumque quisquam quia nulla recusandae, corporis repellat
-          provident, molestiae fugit ea voluptas atque modi saepe ratione
-          aspernatur dolores.
-        </p>
-      </section>
-    </article>
-    <!-- 多列浮动 Float multiple columns -->
-    <article id="position-float-multiple-columns" class="fan-sub">
-      <h1 class="fan-sub__title">
-        多列浮动 Float multiple columns
-      </h1>
-
-      <section class="fan-sub__demo">
-        <div class="header">
+        <header>
           <code>&#60;header&#62;</code>
-        </div>
-        <div class="section">
+        </header>
+
+        <section>
           <code
             >&#60;section&#62; <br />
-            float: left;</code
+            display: <br />
+            inline-block;</code
           >
-        </div>
-        <div class="section">
+        </section><!--  
+        --><section>
           <code
             >&#60;section&#62; <br />
-            float: left;</code
+            display: <br />
+            inline-block;</code
           >
-        </div>
-        <div class="section">
+        </section><!--  
+        --><section>
           <code
             >&#60;section&#62; <br />
-            float: left;</code
+            display: <br />
+            inline-block;</code
           >
-        </div>
-        <div class="footer">
+        </section>
+
+        <footer>
           <code>&#60;footer&#62;</code>
-        </div>
-      </section>
-    </article>
-    <!-- 浮动陷阱 Float Pitfall -->
-    <article id="position-float-pitfall" class="fan-sub">
-      <h1 class="fan-sub__title">
-        浮动陷阱 Float Pitfall
-      </h1>
-
-      <section class="fan-sub__demo">
-        <div class="header">
-          <code>&#60;header&#62;</code>
-        </div>
-        <div class="section">
-          <code
-            >&#60;section&#62; <br />
-            float: left;</code
-          >
-        </div>
-        <div class="aside">
-          <code
-            >&#60;aside&#62; <br />
-            float: right;</code
-          >
-        </div>
-        <div class="footer">
-          <code
-            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-            blanditiis enim ratione dolore illo distinctio, esse accusantium
-            neque, veritatis totam, iusto vitae amet! Libero debitis quasi atque
-            quaerat possimus quos, vel eveniet eos, reprehenderit tempore
-            expedita iste, repellat placeat. Optio earum quod aspernatur
-            praesentium unde rem officiis temporibus suscipit debitis dolore,
-            cum sed illo aliquam molestias soluta minus labore laborum
-            repudiandae a fugiat natus doloremque quidem? Ipsum recusandae eaque
-            qui perferendis quasi debitis quidem ut, soluta libero facilis
-            nostrum quod iste id alias fugiat autem magni asperiores quaerat
-            deserunt quas neque molestiae adipisci eos non. Repudiandae
-            excepturi nam quia neque.</code
-          >
-        </div>
-      </section>
-    </article>
-    <!--  -->
-    <article id="position-float-containing" class="fan-sub">
-      <h1 class="fan-sub__title">
-        包裹浮动 Containing Floats
-      </h1>
-
-      <section class="fan-sub__demo">
-        <div class="header">
-          <code>&#60;header&#62;</code>
-        </div>
-        <div class="group">
-          <div class="section">
-            <code
-              >&#60;section&#62; <br />
-              float: left;</code
-            >
-          </div>
-          <div class="aside">
-            <code
-              >&#60;aside&#62; <br />
-              float: right;</code
-            >
-          </div>
-        </div>
-        <div class="footer">
-          <code
-            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-            blanditiis enim ratione dolore illo distinctio, esse accusantium
-            neque, veritatis totam, iusto vitae amet! Libero debitis quasi atque
-            quaerat possimus quos, vel eveniet eos, reprehenderit tempore
-            expedita iste, repellat placeat. Optio earum quod aspernatur
-            praesentium unde rem officiis temporibus suscipit debitis dolore,
-            cum sed illo aliquam molestias soluta minus labore laborum
-            repudiandae a fugiat natus doloremque quidem? Ipsum recusandae eaque
-            qui perferendis quasi debitis quidem ut, soluta libero facilis
-            nostrum quod iste id alias fugiat autem magni asperiores quaerat
-            deserunt quas neque molestiae adipisci eos non. Repudiandae
-            excepturi nam quia neque.</code
-          >
-        </div>
+        </footer>
       </section>
     </article>
   </body>
