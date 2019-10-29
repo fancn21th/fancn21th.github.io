@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics - 开始 -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=UA-150469501-1"
@@ -15,12 +15,20 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
       gtag("config", "UA-150469501-1");
     </script>
+    <!-- Global site tag (gtag.js) - Google Analytics - 结束 -->
     <title>链接</title>
+    <!-- CSS 重置 -->
+    <!-- <link rel="stylesheet" href="../assets/reset.css" /> -->
+    <!-- 站点样式 -->
+    <link rel="stylesheet" href="../assets/site.css" />
+    <!-- 外联样式 -->
+    <link rel="stylesheet" href="../assets/main.css" />
+    <!-- 内联样式 -->
     <style>
-      /* 添加换行的样式 */
+      /* 当前页面的样式 */
+      /* 换行 */
       a::after {
         content: "\A";
         white-space: pre;
@@ -33,15 +41,60 @@
   </head>
   <body>
     <!-- 绝对路径  -->
-    <a href="https://www.baidu.com">百度</a>
-    <!-- 相对路径 -->
-    <a href="div-span.html">Divisions & Spans</a>
-    <!-- 邮件 -->
-    <a href="mailto:fancn21th@aliyun.com?subject=你好">发邮件给我</a>
+    <article id="link-absolute-path" class="fan-sub">
+      <h1 class="fan-sub__title">
+        绝对路径
+      </h1>
+
+      <section class="fan-sub__demo">
+        <a href="https://www.baidu.com">百度</a>
+      </section>
+    </article>
+
+    <!-- 相对路径  -->
+    <article id="link-relative-path" class="fan-sub">
+      <h1 class="fan-sub__title">
+        相对路径
+      </h1>
+
+      <section class="fan-sub__demo">
+        <a href="div-span.html">Divisions & Spans</a>
+      </section>
+    </article>
+
+    <!-- 邮件  -->
+    <article id="link-mail-to" class="fan-sub">
+      <h1 class="fan-sub__title">
+        邮件
+      </h1>
+
+      <section class="fan-sub__demo">
+        <a href="mailto:fancn21th@aliyun.com?subject=你好">发邮件给我</a>
+      </section>
+    </article>
+
     <!-- 新窗口打开  -->
-    <a href="https://www.tmall.com" target="_blank">天猫</a>
-    <!-- 锚点链接 -->
-    <a href="#bottom">到下面去</a>
+    <article id="link-relative-path" class="fan-sub">
+      <h1 class="fan-sub__title">
+        新窗口打开
+      </h1>
+
+      <section class="fan-sub__demo">
+        <a href="https://www.tmall.com" target="_blank">天猫</a>
+      </section>
+    </article>
+
+    <!-- 锚点链接  -->
+    <article id="link-relative-path" class="fan-sub">
+      <h1 class="fan-sub__title">
+        锚点链接
+      </h1>
+
+      <section class="fan-sub__demo">
+        <a href="#bottom">到下面去</a>
+      </section>
+    </article>
+
     <!-- 锚点 -->
     <span id="bottom">我躲在好远好远的下面</span>
   </body>
