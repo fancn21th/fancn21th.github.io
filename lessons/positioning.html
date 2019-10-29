@@ -34,6 +34,7 @@
         float: left;
         margin-right: 20px;
       }
+
       /* left-right */
       #position-float-left-right code {
         background: green;
@@ -63,6 +64,7 @@
         clear: both;
         margin-bottom: 0;
       }
+
       /* multiple columns */
       #position-float-multiple-columns code {
         background: green;
@@ -88,6 +90,7 @@
         clear: both;
         margin-bottom: 0;
       }
+      /* inline */
       #position-float-inline-element span {
         float: left;
         width: 300px;
@@ -130,10 +133,53 @@
       #position-float-pitfall .aside {
         margin: 24px;
       }
+      /* Containing Floats */
+      #position-float-containing code {
+        background: green;
+        border-radius: 5px;
+        color: white;
+        display: block;
+        font: 14px/24px "Source Code Pro", Inconsolata, "Lucida Console",
+          Terminal, "Courier New", Courier;
+        padding: 24px 15px;
+        text-align: center;
+      }
+      #position-float-containing .header,
+      #position-float-containing .section,
+      #position-float-containing .aside,
+      #position-float-containing .footer {
+        margin: 0 1% 24px 1%;
+      }
+      #position-float-containing .section {
+        float: left;
+      }
+      #position-float-containing .aside {
+        float: right;
+      }
+      #position-float-containing .footer code {
+        background-color: blue;
+        text-align: left;
+      }
+      #position-float-containing .footer {
+        margin-bottom: 0;
+      }
+      #position-float-containing .group:before,
+      #position-float-containing .group:after {
+        content: "";
+        display: table;
+      }
+      #position-float-containing .group:after {
+        clear: both;
+      }
+      #position-float-containing .group {
+        clear: both;
+        *zoom: 1;
+      }
     </style>
   </head>
   <body>
-    <article id="position-origin" class="fan-sub clearfix">
+    <!-- 浮动的起源 Float Origin -->
+    <article id="position-origin" class="fan-sub">
       <h1 class="fan-sub__title">
         浮动的起源 Float Origin
       </h1>
@@ -169,7 +215,7 @@
         </div>
       </section>
     </article>
-
+    <!-- 左右浮动 Float left&right -->
     <article id="position-float-left-right" class="fan-sub">
       <h1 class="fan-sub__title">
         左右浮动 Float left&right
@@ -196,7 +242,7 @@
         </div>
       </section>
     </article>
-
+    <!-- 行内元素浮动 Float Inline Element -->
     <article id="position-float-inline-element" class="fan-sub">
       <h1 class="fan-sub__title">
         行内元素浮动 Float Inline Element
@@ -220,7 +266,7 @@
         </p>
       </section>
     </article>
-
+    <!-- 多列浮动 Float multiple columns -->
     <article id="position-float-multiple-columns" class="fan-sub">
       <h1 class="fan-sub__title">
         多列浮动 Float multiple columns
@@ -253,7 +299,7 @@
         </div>
       </section>
     </article>
-
+    <!-- 浮动陷阱 Float Pitfall -->
     <article id="position-float-pitfall" class="fan-sub">
       <h1 class="fan-sub__title">
         浮动陷阱 Float Pitfall
@@ -274,6 +320,48 @@
             >&#60;aside&#62; <br />
             float: right;</code
           >
+        </div>
+        <div class="footer">
+          <code
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+            blanditiis enim ratione dolore illo distinctio, esse accusantium
+            neque, veritatis totam, iusto vitae amet! Libero debitis quasi atque
+            quaerat possimus quos, vel eveniet eos, reprehenderit tempore
+            expedita iste, repellat placeat. Optio earum quod aspernatur
+            praesentium unde rem officiis temporibus suscipit debitis dolore,
+            cum sed illo aliquam molestias soluta minus labore laborum
+            repudiandae a fugiat natus doloremque quidem? Ipsum recusandae eaque
+            qui perferendis quasi debitis quidem ut, soluta libero facilis
+            nostrum quod iste id alias fugiat autem magni asperiores quaerat
+            deserunt quas neque molestiae adipisci eos non. Repudiandae
+            excepturi nam quia neque.</code
+          >
+        </div>
+      </section>
+    </article>
+    <!--  -->
+    <article id="position-float-containing" class="fan-sub">
+      <h1 class="fan-sub__title">
+        包裹浮动 Containing Floats
+      </h1>
+
+      <section class="fan-sub__demo">
+        <div class="header">
+          <code>&#60;header&#62;</code>
+        </div>
+        <div class="group">
+          <div class="section">
+            <code
+              >&#60;section&#62; <br />
+              float: left;</code
+            >
+          </div>
+          <div class="aside">
+            <code
+              >&#60;aside&#62; <br />
+              float: right;</code
+            >
+          </div>
         </div>
         <div class="footer">
           <code
