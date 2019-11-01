@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>术语表</title>
+    <style>
+      .glossary-item {
+        display: inline-block;
+        margin-right: 20px;
+        margin-bottom: 20px;
+      }
+      .english-text,
+      .chinese-text {
+        color: white;
+        line-height: 30px;
+        display: inline-block;
+        padding: 0 5px;
+      }
+      .english-text {
+        background-color: #7aa2ff;
+        border-radius: 5px 0 0 5px;
+        border-right: 0.5px solid white;
+      }
+      .chinese-text {
+        background-color: #7464e8;
+        border-radius: 0 5px 5px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>术语表</h1>
+    <h6>注: 不支持IE11</h6>
+    <script id="glossary-item" type="text/x-handlebars-template">
+      <div class="glossary-item">
+        <span class="english-text">{{english}}</span><!--
+          remove space
+        --><span class="chinese-text">{{chinese}}</span>
+      </div>
+    </script>
+    <script src="../assets/handlebars.min-v4.5.1.js"></script>
+    <script>
+      var source = document.getElementById("glossary-item").innerHTML;
+      var template = Handlebars.compile(source);
+
+      window
+        .fetch("./glossary.json", {})
+        .then(function(result) {
+          return result.json();
+        })
+        .then(function(glossaries) {
+          var html = [];
+          glossaries.forEach(function(glossary) {
+            html.push(template(glossary));
+          });
+          return html;
+        })
+        .then(function(html) {
+          console.log(html);
+          document.body.innerHTML = html.join("");
+        });
+    </script>
+  </body>
+</html>

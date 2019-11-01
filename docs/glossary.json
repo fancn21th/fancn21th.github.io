@@ -1,0 +1,38 @@
+[
+  {
+    "english": "Cascading Style Sheet",
+    "chinese": "层叠样式表"
+  },
+  {
+    "english": "CSS syntax",
+    "chinese": "CSS 语法"
+  },
+  {
+    "english": "Selector",
+    "chinese": "选择器"
+  },
+  {
+    "english": "Property",
+    "chinese": "属性"
+  },
+  {
+    "english": "Value",
+    "chinese": "值"
+  },
+  {
+    "english": "Tag",
+    "chinese": "标签"
+  },
+  {
+    "english": "Margin",
+    "chinese": "外间距"
+  },
+  {
+    "english": "Padding",
+    "chinese": "内间距"
+  },
+  {
+    "english": "Border",
+    "chinese": "边框"
+  }
+]

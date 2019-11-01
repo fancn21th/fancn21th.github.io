@@ -5,3 +5,21 @@
   clear: both;
   display: table;
 }
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+.clearfix-v2:before,
+.clearfix-v2:after {
+  content: "";
+  display: table;
+}
+.clearfix-v2:after {
+  clear: both;
+}
+.clearfix-v2 {
+  clear: both;
+  *zoom: 1;
+}
