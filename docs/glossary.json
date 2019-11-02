@@ -1,6 +1,18 @@
 [
   {
-    "english": "Cascading Style Sheet",
+    "english": "HyperText Markup Language(HTML)",
+    "chinese": "超文本标记语言"
+  },
+  {
+    "english": "Tag",
+    "chinese": "标签"
+  },
+  {
+    "english": "Attribute",
+    "chinese": "属性"
+  },
+  {
+    "english": "Cascading Style Sheet(CSS)",
     "chinese": "层叠样式表"
   },
   {
@@ -20,8 +32,8 @@
     "chinese": "值"
   },
   {
-    "english": "Tag",
-    "chinese": "标签"
+    "english": "Box Model",
+    "chinese": "盒模型"
   },
   {
     "english": "Margin",
@@ -34,5 +46,21 @@
   {
     "english": "Border",
     "chinese": "边框"
+  },
+  {
+    "english": "Width",
+    "chinese": "宽度"
+  },
+  {
+    "english": "Height",
+    "chinese": "高度"
+  },
+  {
+    "english": "Relative",
+    "chinese": "相对"
+  },
+  {
+    "english": "Absolute",
+    "chinese": "绝对"
   }
 ]

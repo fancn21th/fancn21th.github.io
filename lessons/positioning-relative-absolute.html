@@ -29,38 +29,54 @@
     <style>
       /* 当前页面的样式 */
       /* 相对定位与块元素 */
-      #positioning-relative-block div {
+      #positioning-relative-block * {
         box-sizing: border-box;
+      }
+      #positioning-relative-block div {
         height: 100px;
         width: 100px;
-        background: green;
-        border-radius: 5px;
-        text-align: center;
-        padding-top: 44px;
         font-size: 10px;
         margin-bottom: 5px;
       }
       #positioning-relative-block code {
+        text-align: center;
+        border-radius: 5px;
+        display: block;
+        height: 100%;
+        background: green;
         color: white;
         border: 3px;
+        padding-top: 40px;
       }
-      #positioning-relative-block .relative {
-        padding-top: 0px;
+      /* 模拟原本文档流的位置 */
+      #positioning-relative-block .relative-offset {
         border: 3px dashed #dddddd;
-        background-color: transparent;
+        border-radius: 5px;
       }
-      #positioning-relative-block .relative code {
-        box-sizing: inherit;
+      #positioning-relative-block .relative-offset code {
         position: relative;
         left: 20px;
         top: 20px;
+        /* 层叠背景色 */
         background-color: red;
-        display: block;
-        height: 100px;
-        border-radius: 5px;
         padding-top: 30px;
       }
-      #bar {
+      /* 相对定位与行内元素 */
+      #positioning-relative-inline span {
+      }
+      #positioning-relative-inline span code {
+        color: white;
+        background-color: green;
+      }
+      #positioning-relative-inline .relative-offset {
+        border: 3px dashed #dddddd;
+      }
+      #positioning-relative-inline .relative-offset code {
+        position: relative;
+        left: 20px;
+        top: 20px;
+        /* 层叠背景色 */
+        background-color: red;
       }
     </style>
   </head>
@@ -72,13 +88,27 @@
 
       <section class="fan-sub__demo">
         <div><code>&#60;div&#62;</code></div>
-        <div class="relative">
+        <div class="relative-offset">
           <code
             >&#60;div class <br />
-            ="relative"&#62;</code
+            ="relative-offset"&#62;</code
           >
         </div>
         <div><code>&#60;div&#62;</code></div>
+      </section>
+    </article>
+
+    <article id="positioning-relative-inline" class="fan-sub">
+      <h1 class="fan-sub__title">
+        相对定位 与 行内 元素
+      </h1>
+
+      <section class="fan-sub__demo">
+        <span><code>&#60;div&#62;</code></span>
+        <span class="relative-offset">
+          <code>&#60;div class="relative-offset"&#62;</code>
+        </span>
+        <span><code>&#60;div&#62;</code></span>
       </section>
     </article>
 
