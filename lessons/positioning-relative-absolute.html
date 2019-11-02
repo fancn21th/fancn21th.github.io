@@ -30,7 +30,35 @@
       /* 当前页面的样式 */
       /* 相对定位与块元素 */
       #positioning-relative-block div {
-        
+        box-sizing: border-box;
+        height: 100px;
+        width: 100px;
+        background: green;
+        border-radius: 5px;
+        text-align: center;
+        padding-top: 44px;
+        font-size: 10px;
+        margin-bottom: 5px;
+      }
+      #positioning-relative-block code {
+        color: white;
+        border: 3px;
+      }
+      #positioning-relative-block .relative {
+        padding-top: 0px;
+        border: 3px dashed #dddddd;
+        background-color: transparent;
+      }
+      #positioning-relative-block .relative code {
+        box-sizing: inherit;
+        position: relative;
+        left: 20px;
+        top: 20px;
+        background-color: red;
+        display: block;
+        height: 100px;
+        border-radius: 5px;
+        padding-top: 30px;
       }
       #bar {
       }
@@ -44,7 +72,12 @@
 
       <section class="fan-sub__demo">
         <div><code>&#60;div&#62;</code></div>
-        <div><code>&#60;div&#62;</code></div>
+        <div class="relative">
+          <code
+            >&#60;div class <br />
+            ="relative"&#62;</code
+          >
+        </div>
         <div><code>&#60;div&#62;</code></div>
       </section>
     </article>
