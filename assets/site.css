@@ -12,3 +12,8 @@
 
 .fan-sub__demo {
 }
+
+.fan-main-typeface {
+  font: 14px/24px "Source Code Pro", Inconsolata, "Lucida Console", Terminal,
+    "Courier New", Courier;
+}

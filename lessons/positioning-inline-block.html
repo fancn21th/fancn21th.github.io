@@ -33,8 +33,6 @@
         border-radius: 5px;
         color: white;
         display: block;
-        font: 14px/24px "Source Code Pro", Inconsolata, "Lucida Console",
-          Terminal, "Courier New", Courier;
         padding: 24px 15px;
         text-align: center;
       }
@@ -54,8 +52,6 @@
         border-radius: 5px;
         color: white;
         display: block;
-        font: 14px/24px "Source Code Pro", Inconsolata, "Lucida Console",
-          Terminal, "Courier New", Courier;
         padding: 24px 15px;
         text-align: center;
       }
@@ -73,7 +69,7 @@
   </head>
   <body>
     <!-- 行内块定位 positioning inline-block -->
-    <article id="position-inline-block" class="fan-sub">
+    <article id="position-inline-block" class="fan-sub fan-main-typeface">
       <h1 class="fan-sub__title">
         行内块定位 positioning inline-block
       </h1>
@@ -111,7 +107,10 @@
       </section>
     </article>
     <!-- 行内块定位 positioning inline-block removing space -->
-    <article id="position-inline-block-removing-space" class="fan-sub">
+    <article
+      id="position-inline-block-removing-space"
+      class="fan-sub fan-main-typeface"
+    >
       <h1 class="fan-sub__title">
         行内块定位 去除间隔 positioning inline-block removing space
       </h1>
@@ -128,14 +127,16 @@
             inline-block;</code
           >
         </section><!--  
-        --><section>
+          remove space
+      --><section>
           <code
             >&#60;section&#62; <br />
             display: <br />
             inline-block;</code
           >
         </section><!--  
-        --><section>
+        remove space
+     --><section>
           <code
             >&#60;section&#62; <br />
             display: <br />
