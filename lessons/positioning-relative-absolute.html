@@ -80,6 +80,10 @@
         /* 层叠背景色 */
         background-color: red;
       }
+      #positioning-relative-inline {
+        /* 因为偏移，调整和下一个副主题单元的间距 */
+        margin-bottom: 40px;
+      }
 
       /* 绝对定位 与 块级 元素 */
       #positioning-absolute-block .parent {
@@ -109,6 +113,34 @@
         right: 20px;
         text-align: center;
         padding-top: 20px;
+      }
+
+      /* 绝对定位 与 行内 元素 */
+      #positioning-absolute-inline .parent {
+        width: 50%;
+        height: 200px;
+        background-color: #efefef;
+        border-radius: 5px;
+        position: relative;
+      }
+      #positioning-absolute-inline .absolute-offset,
+      #positioning-absolute-inline .absolute-offset code {
+        position: absolute;
+        border-radius: 5px;
+        /* 绝对定位 显示模式设置无效 */
+        display: inline;
+      }
+      #positioning-absolute-inline .absolute-offset {
+        border: 3px dashed darkgrey;
+        top: 0;
+        right: 0;
+      }
+      #positioning-absolute-inline .absolute-offset code {
+        background-color: green;
+        color: white;
+        top: 20px;
+        right: 20px;
+        text-align: center;
       }
     </style>
   </head>
@@ -157,6 +189,23 @@
               ="absolute-offset"&#62;</code
             >
           </div>
+        </div>
+      </section>
+    </article>
+
+    <article id="positioning-absolute-inline" class="fan-sub">
+      <h1 class="fan-sub__title">
+        绝对定位 与 行内 元素
+      </h1>
+
+      <section class="fan-sub__demo">
+        <div class="parent">
+          <span class="absolute-offset">
+            <code
+              >&#60;span class <br />
+              ="absolute-offset"&#62;</code
+            >
+          </span>
         </div>
       </section>
     </article>
