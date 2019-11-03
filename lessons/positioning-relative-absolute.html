@@ -28,29 +28,31 @@
     <!-- 内联样式 -->
     <style>
       /* 当前页面的样式 */
-      /* 相对定位与块元素 */
-      #positioning-relative-block * {
+      /* 全选选择器 */
+      *,
+      *::before,
+      *::after {
         box-sizing: border-box;
       }
+      /* 相对定位 与 块级 元素 */
       #positioning-relative-block div {
         height: 100px;
         width: 100px;
-        font-size: 10px;
         margin-bottom: 5px;
       }
       #positioning-relative-block code {
+        font-size: 10px;
         text-align: center;
         border-radius: 5px;
         display: block;
         height: 100%;
         background: green;
         color: white;
-        border: 3px;
         padding-top: 40px;
       }
-      /* 模拟原本文档流的位置 */
       #positioning-relative-block .relative-offset {
-        border: 3px dashed #dddddd;
+        /* 模拟原本文档流的位置 */
+        border: 3px dashed darkgrey;
         border-radius: 5px;
       }
       #positioning-relative-block .relative-offset code {
@@ -59,17 +61,17 @@
         top: 20px;
         /* 层叠背景色 */
         background-color: red;
-        padding-top: 30px;
+        padding-top: 20px;
       }
-      /* 相对定位与行内元素 */
-      #positioning-relative-inline span {
-      }
+
+      /* 相对定位 与 行内 元素 */
       #positioning-relative-inline span code {
         color: white;
         background-color: green;
       }
       #positioning-relative-inline .relative-offset {
-        border: 3px dashed #dddddd;
+        /* 模拟原本文档流的位置 */
+        border: 3px dashed darkgrey;
       }
       #positioning-relative-inline .relative-offset code {
         position: relative;
@@ -77,6 +79,36 @@
         top: 20px;
         /* 层叠背景色 */
         background-color: red;
+      }
+
+      /* 绝对定位 与 块级 元素 */
+      #positioning-absolute-block .parent {
+        width: 50%;
+        height: 200px;
+        background-color: #efefef;
+        border-radius: 5px;
+        position: relative;
+      }
+      #positioning-absolute-block .absolute-offset,
+      #positioning-absolute-block .absolute-offset code {
+        width: 200px;
+        height: 100px;
+        position: absolute;
+        border-radius: 5px;
+      }
+      #positioning-absolute-block .absolute-offset {
+        border: 3px dashed darkgrey;
+        top: 0;
+        right: 0;
+      }
+      #positioning-absolute-block .absolute-offset code {
+        display: block;
+        background-color: green;
+        color: white;
+        top: 20px;
+        right: 20px;
+        text-align: center;
+        padding-top: 20px;
       }
     </style>
   </head>
@@ -104,24 +136,28 @@
       </h1>
 
       <section class="fan-sub__demo">
-        <span><code>&#60;div&#62;</code></span>
+        <span><code>&#60;span&#62;</code></span>
         <span class="relative-offset">
-          <code>&#60;div class="relative-offset"&#62;</code>
+          <code>&#60;span class="relative-offset"&#62;</code>
         </span>
-        <span><code>&#60;div&#62;</code></span>
+        <span><code>&#60;span&#62;</code></span>
       </section>
     </article>
 
-    <article id="bar" class="fan-sub">
+    <article id="positioning-absolute-block" class="fan-sub">
       <h1 class="fan-sub__title">
-        绝对定位
+        绝对定位 与 块级 元素
       </h1>
 
       <section class="fan-sub__demo">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam
-        cupiditate quaerat quo optio magni molestias aut repudiandae temporibus,
-        recusandae asperiores quos saepe similique ullam excepturi, voluptas
-        numquam est et aperiam.
+        <div class="parent">
+          <div class="absolute-offset">
+            <code
+              >&#60;div class <br />
+              ="absolute-offset"&#62;</code
+            >
+          </div>
+        </div>
       </section>
     </article>
   </body>
