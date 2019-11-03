@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Global site tag (gtag.js) - Google Analytics - 开始 -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-150469501-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-150469501-1");
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics - 结束 -->
+    <title>安全字体</title>
+    <!-- CSS 重置 -->
+    <!-- <link rel="stylesheet" href="../assets/reset.css" /> -->
+    <!-- 站点样式 -->
+    <link rel="stylesheet" href="../assets/site.css" />
+    <!-- 外联样式 -->
+    <link rel="stylesheet" href="../assets/main.css" />
+    <!-- 内联样式 -->
+    <style>
+      /* 当前页面的样式 */
+      *::before {
+        color: red;
+        display: table;
+      }
+      #font-web-safe span {
+        display: block;
+      }
+      /* 英文 */
+      #font-web-safe .font1 {
+        font-family: Arial;
+      }
+      #font-web-safe .font1::before {
+        content: "Arial:";
+      }
+      #font-web-safe .font2 {
+        font-family: "Courier New", Courier;
+      }
+      #font-web-safe .font2::before {
+        content: "Courier New, Courier";
+      }
+      #font-web-safe .font3 {
+        font-family: Garamond;
+      }
+      #font-web-safe .font3::before {
+        content: "Garamond";
+      }
+      #font-web-safe .font4 {
+        font-family: Georgia;
+      }
+      #font-web-safe .font4::before {
+        content: "Georgia";
+      }
+      #font-web-safe .font5 {
+        font-family: "Lucida Sans", "Lucida Grande", "Lucida";
+      }
+      #font-web-safe .font5::before {
+        content: "Lucida Sans, Lucida Grande, Lucida";
+      }
+      #font-web-safe .font6 {
+        font-family: "Palatino Linotype";
+      }
+      #font-web-safe .font6::before {
+        content: "Palatino Linotype";
+      }
+      #font-web-safe .font7 {
+        font-family: Tahoma;
+      }
+      #font-web-safe .font7::before {
+        content: "Tahoma";
+      }
+      #font-web-safe .font8 {
+        font-family: "Times New Roman", Times;
+      }
+      #font-web-safe .font8::before {
+        content: "Times New Roman, Times";
+      }
+      #font-web-safe .font9::before {
+        content: "Default";
+      }
+      /* 中文 */
+      #font-web-safe-cn span {
+        display: block;
+      }
+      #font-web-safe-cn .font1 {
+        font-family: STXihei;
+      }
+      #font-web-safe-cn .font1::before {
+        content: "华文细黑 STXihei";
+      }
+      #font-web-safe-cn .font2 {
+        font-family: "Microsoft YaHei";
+      }
+      #font-web-safe-cn .font2::before {
+        content: "微软雅黑 Microsoft YaHei";
+      }
+      #font-web-safe-cn .font3 {
+        font-family: SimSun;
+      }
+      #font-web-safe-cn .font3::before {
+        content: "宋体 SimSun";
+      }
+      #font-web-safe-cn .font4 {
+        font-family: FangSong;
+      }
+      #font-web-safe-cn .font4::before {
+        content: "仿宋 FangSong";
+      }
+      #font-web-safe-cn .font5 {
+        font-family: STFangsong;
+      }
+      #font-web-safe-cn .font5::before {
+        content: "华文仿宋 STFangsong";
+      }
+      #font-web-safe-cn .font6 {
+        font-family: KaiTi;
+      }
+      #font-web-safe-cn .font6::before {
+        content: "楷体 KaiTi";
+      }
+      #font-web-safe-cn .font7::before {
+        content: "默认";
+      }
+    </style>
+  </head>
+  <body>
+    <article id="font-web-safe" class="fan-sub">
+      <h1 class="fan-sub__title">
+        安全字体
+      </h1>
+
+      <section class="fan-sub__demo">
+        <span class="font1">I Love Wuhan 我爱武汉</span>
+        <span class="font2">I Love Wuhan 我爱武汉</span>
+        <span class="font3">I Love Wuhan 我爱武汉</span>
+        <span class="font4">I Love Wuhan 我爱武汉</span>
+        <span class="font5">I Love Wuhan 我爱武汉</span>
+        <span class="font6">I Love Wuhan 我爱武汉</span>
+        <span class="font7">I Love Wuhan 我爱武汉</span>
+        <span class="font8">I Love Wuhan 我爱武汉</span>
+        <span class="font9">I Love Wuhan 我爱武汉</span>
+      </section>
+    </article>
+
+    <article id="font-web-safe-cn" class="fan-sub">
+      <h1 class="fan-sub__title">
+        安全字体 中文
+      </h1>
+
+      <section class="fan-sub__demo">
+        <span class="font1">I Love Wuhan 我爱武汉</span>
+        <span class="font2">I Love Wuhan 我爱武汉</span>
+        <span class="font3">I Love Wuhan 我爱武汉</span>
+        <span class="font4">I Love Wuhan 我爱武汉</span>
+        <span class="font5">I Love Wuhan 我爱武汉</span>
+        <span class="font6">I Love Wuhan 我爱武汉</span>
+        <span class="font7">I Love Wuhan 我爱武汉</span>
+      </section>
+    </article>
+  </body>
+</html>
