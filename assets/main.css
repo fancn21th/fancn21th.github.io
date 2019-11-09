@@ -1,5 +1,9 @@
-/* clearfix */
-/* refer to https://www.w3schools.com/howto/howto_css_clearfix.asp */
+/*
+  ========================================
+  Clearfix v1
+  refer to https://www.w3schools.com/howto/howto_css_clearfix.asp
+  ========================================
+*/
 .clearfix::after {
   content: "";
   clear: both;
@@ -8,7 +12,7 @@
 
 /*
   ========================================
-  Clearfix
+  Clearfix v2
   ========================================
 */
 .clearfix-v2:before,
