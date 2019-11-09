@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Global site tag (gtag.js) - Google Analytics - 开始 -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-150469501-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-150469501-1");
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics - 结束 -->
+    <title>图片</title>
+    <!-- CSS 重置 -->
+    <!-- <link rel="stylesheet" href="../assets/reset.css" /> -->
+    <!-- 站点样式 -->
+    <link rel="stylesheet" href="../assets/site.css" />
+    <!-- 外联样式 -->
+    <link rel="stylesheet" href="../assets/main.css" />
+    <!-- 内联样式 -->
+    <style>
+      /* 当前页面的样式 */
+      #image-tag img {
+        width: 200px;
+        border-radius: 5px;
+      }
+      #image-position-before-p img {
+        width: 200px;
+        border-radius: 5px;
+      }
+      #image-position-inside-p-head img {
+        width: 200px;
+        border-radius: 5px;
+      }
+      #image-position-inside-p-center img {
+        width: 200px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <article id="image-tag" class="fan-sub">
+      <h1 class="fan-sub__title">
+        图片标签
+      </h1>
+
+      <section class="fan-sub__demo">
+        <img src="../images/dog-01.png" alt="一只可爱的小柯基犬" />
+      </section>
+    </article>
+
+    <article id="image-position-before-p" class="fan-sub">
+      <h1 class="fan-sub__title">
+        图片的位置 在块级元素 前
+      </h1>
+
+      <section class="fan-sub__demo">
+        <img src="../images/dog-01.png" alt="一只可爱的小柯基犬" />
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque odit
+          officia animi ducimus in praesentium suscipit, modi dolorum molestias
+          velit, minima atque ea aliquid, soluta dolorem eos incidunt quae!
+          Recusandae eaque in quam quibusdam porro necessitatibus voluptate
+          dolorum nemo placeat laudantium maxime praesentium, labore, assumenda
+          aut minima aspernatur! Vitae, magnam.
+        </p>
+      </section>
+    </article>
+
+    <article id="image-position-inside-p-head" class="fan-sub">
+      <h1 class="fan-sub__title">
+        图片的位置 在块级元素 内部的头部
+      </h1>
+
+      <section class="fan-sub__demo">
+        <p>
+          <img src="../images/dog-01.png" alt="一只可爱的小柯基犬" />
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque odit
+          officia animi ducimus in praesentium suscipit, modi dolorum molestias
+          velit, minima atque ea aliquid, soluta dolorem eos incidunt quae!
+          Recusandae eaque in quam quibusdam porro necessitatibus voluptate
+          dolorum nemo placeat laudantium maxime praesentium, labore, assumenda
+          aut minima aspernatur! Vitae, magnam.
+        </p>
+      </section>
+    </article>
+
+    <article id="image-position-inside-p-center" class="fan-sub">
+      <h1 class="fan-sub__title">
+        图片的位置 在块级元素 内部的中部
+      </h1>
+
+      <section class="fan-sub__demo">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque odit
+          officia animi ducimus in praesentium suscipit, modi dolorum molestias
+          velit, minima atque ea aliquid,
+          <img src="../images/dog-01.png" alt="一只可爱的小柯基犬" /> soluta
+          dolorem eos incidunt quae! Recusandae eaque in quam quibusdam porro
+          necessitatibus voluptate dolorum nemo placeat laudantium maxime
+          praesentium, labore, assumenda aut minima aspernatur! Vitae, magnam.
+        </p>
+      </section>
+    </article>
+  </body>
+</html>
