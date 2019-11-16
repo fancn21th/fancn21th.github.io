@@ -1,9 +1,26 @@
 /* 副标题 */
+body {
+  counter-reset: subtitle;
+}
+
 .fan-sub {
 }
 
 .fan-sub__title {
-  color: blue;
+  color: #8fa7ff;
+}
+
+.fan-sub__title::before {
+  counter-increment: subtitle;
+  content: counter(subtitle);
+  display: inline-block;
+  text-align: center;
+  line-height: 1.5em;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  background-color: #82e8ad;
+  color: white;
 }
 
 .fan-sub__title::after {

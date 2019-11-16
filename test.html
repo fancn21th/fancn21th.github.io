@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        counter-reset: section;
+      }
+      h4::before {
+        counter-increment: section;
+        content: counter(section);
+        display: block;
+        background-color: lightgreen;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h4>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+      optio cum amet sunt voluptas tenetur, expedita quae fuga. Asperiores
+      dolores at, distinctio officia ducimus eveniet possimus culpa iure error
+      repellat.
+    </h4>
+    <h4>
+      Laborum facilis dolorum quis, voluptatum, culpa maiores qui possimus
+      corrupti aliquam nihil, dignissimos temporibus cumque at accusantium ab
+      soluta? Consequatur tenetur pariatur velit sit. Aut accusamus numquam
+      earum quo quas.
+    </h4>
+    <h4>
+      Voluptas, cupiditate nesciunt et facilis rem eaque doloribus quae,
+      distinctio at voluptates natus harum possimus repellendus placeat eveniet
+      ducimus laudantium necessitatibus ipsum quidem libero id. Cupiditate
+      quisquam id error eveniet.
+    </h4>
+  </body>
+</html>
