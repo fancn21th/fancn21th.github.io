@@ -138,9 +138,9 @@ h6 {
  */
 .banner {
   background-image: url("../images/Autumn.jpg");
-  background-size: cover; /* <------ */
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center; /* optional, center the image */
+  background-position: center center; 
 }
 
 /* 
