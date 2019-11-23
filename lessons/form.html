@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Global site tag (gtag.js) - Google Analytics - 开始 -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-150469501-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-150469501-1");
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics - 结束 -->
+    <title>表单</title>
+    <!-- CSS 重置 -->
+    <!-- <link rel="stylesheet" href="../assets/reset.css" /> -->
+    <!-- 站点样式 -->
+    <link rel="stylesheet" href="../assets/site.css" />
+    <!-- 外联样式 -->
+    <link rel="stylesheet" href="../assets/main.css" />
+    <!-- 内联样式 -->
+    <style>
+      /* 当前页面的样式 */
+      /* input-common-types */
+      #input-common-types textarea {
+        width: 50%;
+        height: 150px;
+      }
+      /* input-h5-types */
+      #input-h5-types input {
+        display: block;
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <article id="simple-form" class="fan-sub">
+      <h1 class="fan-sub__title">
+        简单的表单
+      </h1>
+
+      <section class="fan-sub__demo">
+        <form name="simpleForm">
+          <input type="text" name="bar" />
+          <button type="submit">提交</button>
+        </form>
+      </section>
+    </article>
+
+    <article id="input-common-types" class="fan-sub">
+      <h1 class="fan-sub__title">
+        常见 文本 & 文本域 输入类型
+      </h1>
+
+      <section class="fan-sub__demo">
+        <h3>text 文本</h3>
+        <input type="text" name="name" />
+        <h3>password 密码</h3>
+        <input type="password" name="psw" />
+        <h3>textarea 文本域</h3>
+        <textarea name="comment">Add your comment here</textarea>
+      </section>
+    </article>
+
+    <article id="input-h5-types" class="fan-sub">
+      <h1 class="fan-sub__title">
+        常见 HTML5 输入类型
+      </h1>
+
+      <section class="fan-sub__demo">
+        <h3>date 日期</h3>
+        <input type="date" name="birthday" />
+        <h3>time 时间</h3>
+        <input type="time" name="game-time" />
+        <h3>email 电子邮件</h3>
+        <input type="email" name="email-address" />
+        <h3>url</h3>
+        <input type="url" name="website" />
+        <h3>number 数字</h3>
+        <input type="number" name="cost" />
+        <h3>tel 电话</h3>
+        <input type="tel" name="phone-number" />
+      </section>
+    </article>
+
+    <article id="input-multiple-types" class="fan-sub">
+      <h1 class="fan-sub__title">
+        多选 输入类型
+      </h1>
+
+      <section class="fan-sub__demo">
+        <h3>Radio Buttons 单选按钮</h3>
+        <input type="radio" name="day" value="Friday" checked /> 周五
+        <input type="radio" name="day" value="Saturday" /> 周六
+        <input type="radio" name="day" value="Sunday" /> 周日
+        <h3>Check Boxes 多选框</h3>
+        <input type="checkbox" name="day" value="Friday" checked /> 周五
+        <input type="checkbox" name="day" value="Saturday" /> 周六
+        <input type="checkbox" name="day" value="Sunday" /> 周日
+        <h3>Drop-Down Lists 下拉列表</h3>
+        <select name="day">
+          <option value="Friday" selected>周五</option>
+          <option value="Saturday">周六</option>
+          <option value="Sunday">周日</option>
+        </select>
+        <h3>Multiple Selections Drop-Down Lists 下拉列表</h3>
+        <select name="day" multiple>
+          <option value="Friday" selected>周五</option>
+          <option value="Saturday">周六</option>
+          <option value="Sunday">周日</option>
+        </select>
+      </section>
+    </article>
+
+    <article id="form-buttons" class="fan-sub">
+      <h1 class="fan-sub__title">
+        表单按钮
+      </h1>
+
+      <section class="fan-sub__demo">
+        <form name="buttonForm">
+          <input type="text" name="baz" />
+          <button type="submit">提交信息</button>
+          <button type="submit"><strong>提交</strong> 信息</button>
+        </form>
+      </section>
+    </article>
+
+    <article id="input-other-types" class="fan-sub">
+      <h1 class="fan-sub__title">
+        其他 输入类型
+      </h1>
+
+      <section class="fan-sub__demo">
+        <h3>Hidden Input 隐藏输入类型 （开发工具查看）</h3>
+        <input type="hidden" name="tracking-code" value="abc-123" />
+        <h3>File Input 文件输入类型</h3>
+        <input type="file" name="file" />
+      </section>
+    </article>
+
+    <article id="label" class="fan-sub">
+      <h1 class="fan-sub__title">
+        标签 Label
+      </h1>
+
+      <section class="fan-sub__demo">
+        <h3>普通标签</h3>
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" />
+        <h3>包裹标签</h3>
+        <label>
+          <input type="radio" name="day" value="Friday" checked /> 周五
+        </label>
+        <label> <input type="radio" name="day" value="Saturday" /> 周六 </label>
+        <label> <input type="radio" name="day" value="Sunday" /> 周日 </label>
+      </section>
+    </article>
+
+    <article id="fieldset" class="fan-sub">
+      <h1 class="fan-sub__title">
+        字段集合 Fieldset
+      </h1>
+
+      <section class="fan-sub__demo">
+        <fieldset>
+          <label>
+            用户名
+            <input type="text" name="username" />
+          </label>
+          <label>
+            密码
+            <input type="text" name="password" />
+          </label>
+        </fieldset>
+      </section>
+    </article>
+
+    <article id="legend" class="fan-sub">
+      <h1 class="fan-sub__title">
+        说明 Legend
+      </h1>
+
+      <section class="fan-sub__demo">
+        <fieldset>
+          <legend>登录</legend>
+          <label>
+            用户名
+            <input type="text" name="username" />
+          </label>
+          <label>
+            密码
+            <input type="text" name="password" />
+          </label>
+        </fieldset>
+      </section>
+    </article>
+
+    <article id="form-input-attributes" class="fan-sub">
+      <h1 class="fan-sub__title">
+        表单 输入字段 属性
+      </h1>
+
+      <section class="fan-sub__demo">
+        <h3>disabled 禁用</h3>
+        <label>
+          用户名
+          <input type="text" name="username" disabled />
+        </label>
+        <h3>disabled 禁用</h3>
+        <label>
+          电子邮箱
+          <input
+            type="email"
+            name="email-address"
+            placeholder="your-email@email-account.com"
+          />
+        </label>
+        <h3>required 必填</h3>
+        <label>
+          <label>
+            电子邮箱
+            <input type="email" name="email-address" required />
+          </label>
+        </label>
+      </section>
+    </article>
+
+    <script>
+      // simple-form
+      // 打印 simpleForm 表单 bar 元素 的 value 值
+      simpleForm.onsubmit = function(e) {
+        e.preventDefault();
+        alert(document.simpleForm.bar.value);
+      };
+      // form-buttons
+      buttonForm.onsubmit = function(e) {
+        e.preventDefault();
+        alert(document.buttonForm.baz.value);
+      };
+    </script>
+  </body>
+</html>
