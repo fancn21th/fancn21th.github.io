@@ -29,20 +29,29 @@
     <style>
       /* 当前页面的样式 */
       @font-face {
-        font-family: PuHuiTi;
-        src: url("../assets/fonts/Alibaba-PuHuiTi-Bold.ttf"),
+        /* 字体名 首字母小写以兼容IE */
+        font-family: puHuiTi;
+        src: url("../assets/fonts/Alibaba-PuHuiTi-Regular.ttf");
+      }
+      @font-face {
+        /* 字体名 首字母小写以兼容IE */
+        font-family: puHuiTi;
+        src: url("../assets/fonts/Alibaba-PuHuiTi-Bold.ttf");
+        font-weight: bold;
+      }
+      /* 
+          url("../assets/fonts/Alibaba-PuHuiTi-Bold.ttf"),
           url("../assets/fonts/Alibaba-PuHuiTi-Heavy.ttf"),
           url("../assets/fonts/Alibaba-PuHuiTi-Light.ttf"),
           url("../assets/fonts/Alibaba-PuHuiTi-Medium.ttf"),
           url("../assets/fonts/Alibaba-PuHuiTi-Regular.ttf");
-      }
+       */
       #font-alibaba-puhui {
-        font-family: PuHuiTi;
-        font-weight: lighter;
+        font-family: SimSun puHuiTi;
         font-size: 40px;
       }
       #font-alibaba-defult {
-        font-weight: lighter;
+        font-family: SimSun;
         font-size: 40px;
       }
     </style>
@@ -53,9 +62,7 @@
         阿里巴巴普惠体
       </h1>
 
-      <section class="fan-sub__demo">
-        汉体书写信息技术标准兼容
-      </section>
+      <section class="fan-sub__demo">汉体书写信息技术<b>标准兼容</b></section>
     </article>
 
     <article id="font-alibaba-defult" class="fan-sub">
@@ -63,9 +70,7 @@
         默认字体
       </h1>
 
-      <section class="fan-sub__demo">
-        汉体书写信息技术标准兼容
-      </section>
+      <section class="fan-sub__demo">汉体书写信息技术<b>标准兼容</b></section>
     </article>
   </body>
 </html>
