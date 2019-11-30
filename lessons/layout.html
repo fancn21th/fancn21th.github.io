@@ -28,8 +28,25 @@
     <!-- 内联样式 -->
     <style>
       /* 当前页面的样式 */
-      #foo {
+      #layout-elements h4 code {
       }
+      #layout-elements .inline-elements {
+      }
+      #layout-elements .inline-elements * {
+        line-height: 40px;
+        background-color: #eee;
+        border-radius: 5px;
+      }
+      #layout-elements .inline-elements *::before,
+      #layout-elements .inline-elements *::after {
+        content: "";
+        display: table;
+      }
+      #layout-elements .block-elements * {
+        background-color: #eee;
+        border-radius: 5px;
+      }
+
       #bar {
       }
     </style>
@@ -40,7 +57,42 @@
         布局的元素
       </h2>
 
-      <section class="fan-sub__demo"></section>
+      <section class="fan-sub__demo">
+        <h3>行内元素</h3>
+        <h4>
+          <code>&#60;img&#62;</code>
+          <code>&#60;b&#62;</code>
+          <code>&#60;i&#62;</code>
+        </h4>
+        <div class="inline-elements">
+          <img src="" alt="这是一张图片" />
+          <b>Lorem, ipsum.</b>
+          <i>Lorem, ipsum.</i>
+        </div>
+        <h3>行内元素</h3>
+        <h4>
+          <code>&#60;h6&#62;</code>
+          <code>&#60;p&#62;</code>
+          <code>&#60;ul/li&#62;</code>
+        </h4>
+        <div class="block-elements">
+          <h6>Lorem, ipsum.</h6>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+            assumenda asperiores nisi omnis ducimus, atque dolore amet
+            laudantium voluptatem incidunt architecto sunt dolor esse. Cumque
+            distinctio consequatur alias et suscipit?
+          </p>
+          <ul>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Fugit doloribus illum accusamus fuga.</li>
+            <li>Optio beatae velit sed atque!</li>
+            <li>Odit possimus iusto veritatis aspernatur.</li>
+            <li>Repellat neque possimus excepturi autem?</li>
+            <li>Officiis natus accusantium vel commodi!</li>
+          </ul>
+        </div>
+      </section>
     </article>
 
     <article id="bar" class="fan-sub">
