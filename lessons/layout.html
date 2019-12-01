@@ -124,6 +124,21 @@
         left: 3em;
         top: 3em;
       }
+      /* float-pitfall */
+      #float-pitfall .container {
+        border: 1px solid red;
+        border-radius: 5px;
+      }
+      #float-pitfall .container:hover {
+        width: 100%;
+        overflow: auto;
+      }
+      #float-pitfall p {
+        background-color: #eee;
+        border-radius: 5px;
+        padding: 5px;
+        float: left;
+      }
     </style>
   </head>
   <body>
@@ -284,17 +299,20 @@
         </div>
       </section>
     </article>
-
-    <article id="bar" class="fan-sub">
+    <!--  float-pitfall -->
+    <article id="float-pitfall" class="fan-sub">
       <h2 class="fan-sub__title">
-        副主题标题 2
+        浮动陷阱
       </h2>
 
       <section class="fan-sub__demo">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam
-        cupiditate quaerat quo optio magni molestias aut repudiandae temporibus,
-        recusandae asperiores quos saepe similique ullam excepturi, voluptas
-        numquam est et aperiam.
+        <h3>移动到 p 元素清除 浮动导致父元素的塌陷</h3>
+        <div class="container">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia,
+            ratione!
+          </p>
+        </div>
       </section>
     </article>
 
