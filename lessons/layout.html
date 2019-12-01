@@ -83,6 +83,47 @@
         height: 100px;
         background: rgba(255, 165, 0, 0.8);
       }
+      /* overlap */
+      #overlap .container {
+        /* 避免塌陷 */
+        height: 13em;
+        position: relative;
+      }
+      #overlap .layer1,
+      .layer2,
+      .layer3,
+      .layer4 {
+        width: 10em;
+        height: 10em;
+        border-radius: 5px;
+        position: absolute;
+      }
+      #overlap .layer1:hover,
+      .layer2:hover,
+      .layer3:hover,
+      .layer4:hover {
+        z-index: 1;
+      }
+      #overlap .layer1 {
+        background-color: #ffa8dd;
+        left: 0;
+        top: 0;
+      }
+      #overlap .layer2 {
+        background-color: #e8c599;
+        left: 1em;
+        top: 1em;
+      }
+      #overlap .layer3 {
+        background-color: #ebffb5;
+        left: 2em;
+        top: 2em;
+      }
+      #overlap .layer4 {
+        background-color: #87ffeb;
+        left: 3em;
+        top: 3em;
+      }
     </style>
   </head>
   <body>
@@ -224,6 +265,22 @@
             quia illo laboriosam doloribus eligendi, pariatur consequuntur
             labore perspiciatis eos quasi dolores magnam facilis?
           </p>
+        </div>
+      </section>
+    </article>
+    <!-- overlap -->
+    <article id="overlap" class="fan-sub">
+      <h2 class="fan-sub__title">
+        重叠 与 z-index
+      </h2>
+
+      <section class="fan-sub__demo">
+        <h3>移动到 1-4 层改变z-index</h3>
+        <div class="container">
+          <div class="layer1">第一层</div>
+          <div class="layer2">第二层</div>
+          <div class="layer3">第三层</div>
+          <div class="layer4">第四层</div>
         </div>
       </section>
     </article>
