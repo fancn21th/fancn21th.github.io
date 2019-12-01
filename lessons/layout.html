@@ -46,12 +46,28 @@
         background-color: #eee;
         border-radius: 5px;
       }
-
-      #bar {
+      /* contain-nested */
+      #contain-nested .son {
+        background-color: #abffa8;
+        border-radius: 5px;
+      }
+      #contain-nested .father {
+        padding: 0 1em 1em 1em;
+        border-radius: 5px;
+        background-color: #b7e899;
+      }
+      #contain-nested .grand-father {
+        padding: 0 1em 1em 1em;
+        background-color: #ebffb5;
+      }
+      #contain-nested .grand-father > span {
+        position: relative;
+        left: 1em;
       }
     </style>
   </head>
   <body>
+    <!-- layout-elements -->
     <article id="layout-elements" class="fan-sub">
       <h2 class="fan-sub__title">
         布局的元素
@@ -69,7 +85,7 @@
           <b>Lorem, ipsum.</b>
           <i>Lorem, ipsum.</i>
         </div>
-        <h3>行内元素</h3>
+        <h3>块级元素</h3>
         <h4>
           <code>&#60;h6&#62;</code>
           <code>&#60;p&#62;</code>
@@ -91,6 +107,46 @@
             <li>Repellat neque possimus excepturi autem?</li>
             <li>Officiis natus accusantium vel commodi!</li>
           </ul>
+        </div>
+      </section>
+    </article>
+    <!-- contain-nested -->
+    <article id="contain-nested" class="fan-sub">
+      <h2 class="fan-sub__title">
+        包含与嵌套
+      </h2>
+
+      <section class="fan-sub__demo">
+        <h3>包含</h3>
+        <h4>
+          <code>&#60;div&#62;</code>
+          <code>&#60;div&#62;</code>
+          <code>&#60;/div&#62;</code>
+          <code>&#60;/div&#62;</code>
+        </h4>
+        <div class="contain">
+          <div class="father">
+            <span>父</span>
+            <div class="son">子</div>
+          </div>
+        </div>
+        <h3>嵌套</h3>
+        <h4>
+          <code>&#60;div&#62;</code>
+          <code>&#60;div&#62;</code>
+          <code>&#60;div&#62;</code>
+          <code>&#60;/div&#62;</code>
+          <code>&#60;/div&#62;</code>
+          <code>&#60;/div&#62;</code>
+        </h4>
+        <div class="contain">
+          <div class="grand-father">
+            <span>祖</span>
+            <div class="father">
+              <span>父</span>
+              <div class="son">子</div>
+            </div>
+          </div>
         </div>
       </section>
     </article>

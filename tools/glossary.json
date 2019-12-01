@@ -62,5 +62,13 @@
   {
     "english": "Absolute",
     "chinese": "绝对"
+  },
+  {
+    "english": "Inline",
+    "chinese": "行内"
+  },
+  {
+    "english": "Block",
+    "chinese": "块级"
   }
 ]
