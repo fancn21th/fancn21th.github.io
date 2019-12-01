@@ -64,6 +64,7 @@
         position: relative;
         left: 1em;
       }
+      /* positioning */
       #positioning .container {
         width: 300px;
         height: 300px;
@@ -71,6 +72,7 @@
         border-radius: 5px;
         padding: 15px;
         position: relative;
+        overflow: hidden;
       }
       #positioning .title {
         padding: 15px;
@@ -79,6 +81,7 @@
         border-style: double;
         width: 100px;
         height: 100px;
+        background: rgba(255, 165, 0, 0.8);
       }
     </style>
   </head>
@@ -202,10 +205,25 @@
           onchange="updatePos(this.value)"
         />
         固定
+        <input
+          type="radio"
+          name="position-type"
+          value="float"
+          onchange="updatePos(this.value)"
+        />
+        浮动
         <div class="container">
           <div class="title" id="pos-title">
             我的位置会随着改动定位方式变化
           </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+            quaerat a nemo ullam maiores labore assumenda nihil velit, nisi
+            doloribus unde aspernatur neque repellat, quae tenetur deserunt
+            saepe quas commodi delectus quibusdam eaque laborum! Delectus fugit
+            quia illo laboriosam doloribus eligendi, pariatur consequuntur
+            labore perspiciatis eos quasi dolores magnam facilis?
+          </p>
         </div>
       </section>
     </article>
@@ -226,10 +244,18 @@
     <script>
       var posTitle = document.getElementById("pos-title");
       var updatePos = function(value) {
-        posTitle.style.position = value;
-        posTitle.style.left = 0;
-        posTitle.style.top = 0;
-        posTitle.style.backgroundColor = value === "static" ? "" : "orange";
+        // reset
+        posTitle.style.position = "static";
+        posTitle.style.float = "none";
+        if (value !== "float") {
+          // position set
+          posTitle.style.position = value;
+          posTitle.style.left = "5px";
+          posTitle.style.top = "5px";
+        } else {
+          // float set
+          posTitle.style.float = "left";
+        }
       };
     </script>
   </body>
