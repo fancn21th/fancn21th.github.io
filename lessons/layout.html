@@ -64,6 +64,22 @@
         position: relative;
         left: 1em;
       }
+      #positioning .container {
+        width: 300px;
+        height: 300px;
+        background-color: #eee;
+        border-radius: 5px;
+        padding: 15px;
+        position: relative;
+      }
+      #positioning .title {
+        padding: 15px;
+        border-radius: 5px;
+        border-color: red;
+        border-style: double;
+        width: 100px;
+        height: 100px;
+      }
     </style>
   </head>
   <body>
@@ -150,6 +166,49 @@
         </div>
       </section>
     </article>
+    <!-- positioning -->
+    <article id="positioning" class="fan-sub">
+      <h2 class="fan-sub__title">
+        定位
+      </h2>
+
+      <section class="fan-sub__demo">
+        <input
+          type="radio"
+          name="position-type"
+          value="static"
+          checked
+          onchange="updatePos(this.value)"
+        />
+        普通
+        <input
+          type="radio"
+          name="position-type"
+          value="relative"
+          onchange="updatePos(this.value)"
+        />
+        相对
+        <input
+          type="radio"
+          name="position-type"
+          value="absolute"
+          onchange="updatePos(this.value)"
+        />
+        绝对
+        <input
+          type="radio"
+          name="position-type"
+          value="fixed"
+          onchange="updatePos(this.value)"
+        />
+        固定
+        <div class="container">
+          <div class="title" id="pos-title">
+            我的位置会随着改动定位方式变化
+          </div>
+        </div>
+      </section>
+    </article>
 
     <article id="bar" class="fan-sub">
       <h2 class="fan-sub__title">
@@ -163,5 +222,15 @@
         numquam est et aperiam.
       </section>
     </article>
+
+    <script>
+      var posTitle = document.getElementById("pos-title");
+      var updatePos = function(value) {
+        posTitle.style.position = value;
+        posTitle.style.left = 0;
+        posTitle.style.top = 0;
+        posTitle.style.backgroundColor = value === "static" ? "" : "orange";
+      };
+    </script>
   </body>
 </html>
