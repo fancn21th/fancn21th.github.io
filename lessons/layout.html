@@ -83,6 +83,35 @@
         height: 100px;
         background: rgba(255, 165, 0, 0.8);
       }
+      /* 这是一个非常复杂的组合选择器 */
+      /* 
+        这里包括
+          1. 属性选择器
+          2. 伪类状态选择器
+          3. 兄弟元素选择器
+          4. 后代选择器
+      
+       */
+      #positioning input[value="static"]:checked ~ .container .title {
+        position: static;
+      }
+      #positioning input[value="relative"]:checked ~ .container .title {
+        position: relative;
+        top: 5px;
+        left: 5px;
+      }
+      #positioning input[value="absolute"]:checked ~ .container .title {
+        position: absolute;
+      }
+      #positioning input[value="fixed"]:checked ~ .container .title {
+        position: fixed;
+        top: 5px;
+        left: 5px;
+      }
+      #positioning input[value="float"]:checked ~ .container .title {
+        float: left;
+        margin-right: 5px;
+      }
       /* overlap */
       #overlap .container {
         /* 避免塌陷 */
@@ -315,23 +344,5 @@
         </div>
       </section>
     </article>
-
-    <script>
-      var posTitle = document.getElementById("pos-title");
-      var updatePos = function(value) {
-        // reset
-        posTitle.style.position = "static";
-        posTitle.style.float = "none";
-        if (value !== "float") {
-          // position set
-          posTitle.style.position = value;
-          posTitle.style.left = "5px";
-          posTitle.style.top = "5px";
-        } else {
-          // float set
-          posTitle.style.float = "left";
-        }
-      };
-    </script>
   </body>
 </html>
