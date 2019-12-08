@@ -27,7 +27,10 @@
     <link rel="stylesheet" href="../assets/main.css" />
     <!-- 内联样式 -->
     <style>
-      /* 当前页面的样式 */
+      /* viewport-size */
+      #viewport-size {
+        height: 500px;
+      }
       #viewport-size .desktop,
       #viewport-size .tablet,
       #viewport-size .mobile {
@@ -57,6 +60,24 @@
         bottom: 0;
         font-size: 100px;
       }
+      /* above-the-fold */
+      #above-the-fold .page,
+      #above-the-fold .content {
+        border-radius: 5px;
+      }
+      #above-the-fold .page {
+        width: 600px;
+        height: 300px;
+        border: 3px dashed #46b8e8;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding: 5px;
+      }
+      #above-the-fold .content {
+        width: 100%;
+        height: 600px;
+        border: 3px dashed #4dff98;
+      }
     </style>
   </head>
   <body>
@@ -78,16 +99,35 @@
       </section>
     </article>
 
-    <article id="bar" class="fan-sub">
+    <article id="above-the-fold" class="fan-sub">
       <h2 class="fan-sub__title">
-        副主题标题 2
+        首屏 Above the fold
       </h2>
 
       <section class="fan-sub__demo">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam
-        cupiditate quaerat quo optio magni molestias aut repudiandae temporibus,
-        recusandae asperiores quos saepe similique ullam excepturi, voluptas
-        numquam est et aperiam.
+        <div class="page">
+          <div class="content">
+            <h3>Lorem ipsum dolor sit amet.</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Temporibus quo blanditiis praesentium illo soluta obcaecati ea,
+              nulla dolore doloremque eveniet earum assumenda ipsum nisi
+              laboriosam rem, atque placeat ullam aperiam? Facere iure magnam
+              deserunt necessitatibus doloremque, recusandae culpa dolore,
+              maiores perferendis iusto cupiditate blanditiis facilis dicta
+              voluptatem, vero at impedit!
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Temporibus quo blanditiis praesentium illo soluta obcaecati ea,
+              nulla dolore doloremque eveniet earum assumenda ipsum nisi
+              laboriosam rem, atque placeat ullam aperiam? Facere iure magnam
+              deserunt necessitatibus doloremque, recusandae culpa dolore,
+              maiores perferendis iusto cupiditate blanditiis facilis dicta
+              voluptatem, vero at impedit!
+            </p>
+          </div>
+        </div>
       </section>
     </article>
   </body>
