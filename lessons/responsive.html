@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Global site tag (gtag.js) - Google Analytics - 开始 -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-150469501-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-150469501-1");
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics - 结束 -->
+    <title>响应式</title>
+    <!-- CSS 重置 -->
+    <!-- <link rel="stylesheet" href="../assets/reset.css" /> -->
+    <!-- 站点样式 -->
+    <link rel="stylesheet" href="../assets/site.css" />
+    <!-- 外联样式 -->
+    <link rel="stylesheet" href="../assets/main.css" />
+    <!-- 内联样式 -->
+    <style>
+      /* 当前页面的样式 */
+      #viewport-size .desktop,
+      #viewport-size .tablet,
+      #viewport-size .mobile {
+        transform: scale(0.5, 0.5);
+        transform-origin: 0 0;
+        border-radius: 15px;
+        position: relative;
+      }
+      #viewport-size .desktop {
+        width: 1280px;
+        height: 800px;
+        border: 10px dashed #ff937d;
+      }
+      #viewport-size .tablet {
+        width: 1024px;
+        height: 768px;
+        border: 10px dashed #e746e8;
+      }
+      #viewport-size .mobile {
+        width: 640px;
+        height: 960px;
+        border: 10px dashed #6f59ff;
+      }
+      #viewport-size span {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        font-size: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <article id="viewport-size" class="fan-sub">
+      <h2 class="fan-sub__title">
+        不同分辨率的视窗大小
+      </h2>
+
+      <section class="fan-sub__demo">
+        <div class="desktop">
+          <span>桌面 <br />1280 x 800</span>
+          <div class="tablet">
+            <span>平板 <br />1024 x 768</span>
+            <div class="mobile">
+              <span>手机 <br />640 * 960</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <article id="bar" class="fan-sub">
+      <h2 class="fan-sub__title">
+        副主题标题 2
+      </h2>
+
+      <section class="fan-sub__demo">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam
+        cupiditate quaerat quo optio magni molestias aut repudiandae temporibus,
+        recusandae asperiores quos saepe similique ullam excepturi, voluptas
+        numquam est et aperiam.
+      </section>
+    </article>
+  </body>
+</html>
