@@ -198,6 +198,7 @@
         /* bg */
         background-color: rgba(0, 255, 0, 0.5);
         /* tta */
+        /* 变形方法的调用 有先后次序 */
         transform: rotateY(-90deg) translateZ(100px);
       }
       #spin-cube .right {
@@ -242,11 +243,11 @@
 
       <section class="fan-sub__demo">
         <input type="radio" name="position-type" value="100" />
-        perspective 100
+        perspective = 100
         <input type="radio" name="position-type" value="600" checked />
-        perspective 600
+        perspective = 600
         <input type="radio" name="position-type" value="1600" />
-        perspective 1600
+        perspective = 1600
         <div class="scene">
           <div class="face"></div>
         </div>
