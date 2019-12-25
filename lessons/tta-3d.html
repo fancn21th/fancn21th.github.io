@@ -56,6 +56,103 @@
       }
       /* /透视 */
 
+      /* 翻牌 */
+      #flip-card .scene {
+        width: 250px;
+        height: 349px;
+        margin: 40px;
+        /* tta */
+        perspective: 600px;
+      }
+
+      #flip-card .card:hover {
+        transform: rotateY(180deg);
+      }
+
+      #flip-card .card {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        /* tta */
+        transition: transform 1s;
+        transform-style: preserve-3d;
+      }
+
+      #flip-card .face {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        backface-visibility: hidden;
+      }
+
+      #flip-card .front {
+        background: url(../images/card-j.jpg) no-repeat;
+        background-size: cover;
+        /* tta */
+        transform: rotateY(180deg);
+      }
+
+      #flip-card .back {
+        background-color: #fff;
+        border: 1px solid black;
+        border-radius: 12px;
+        text-align: center;
+        line-height: 349px;
+        font-size: 24px;
+        font-weight: 700;
+      }
+
+      /* /翻牌 */
+
+      /* 滑动翻牌 */
+      #slide-flip-card .scene {
+        width: 250px;
+        height: 349px;
+        margin: 40px;
+        /* tta */
+        perspective: 600px;
+      }
+
+      #slide-flip-card .card:hover {
+        transform: translateX(-100%) rotateY(180deg);
+      }
+
+      #slide-flip-card .card {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        /* tta */
+        transition: transform 1s;
+        transform-style: preserve-3d;
+        transform-origin: center right;
+      }
+
+      #slide-flip-card .face {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        backface-visibility: hidden;
+      }
+
+      #slide-flip-card .front {
+        background: url(../images/card-j.jpg) no-repeat;
+        background-size: cover;
+        /* tta */
+        transform: rotateY(180deg);
+      }
+
+      #slide-flip-card .back {
+        background-color: #fff;
+        border: 1px solid black;
+        border-radius: 12px;
+        text-align: center;
+        line-height: 349px;
+        font-size: 18px;
+        font-weight: 700;
+      }
+
+      /* /滑动翻牌 */
+
       /* 旋转的立方 */
       #spin-cube .scene {
         width: 200px;
@@ -105,7 +202,7 @@
       }
       #spin-cube .right {
         /* bg */
-        background-color: rgba(128, 0, 128, 0.5);
+        background-color: rgba(0, 0, 255, 0.5);
         /* tta */
         transform: rotateY(90deg) translateZ(100px);
       }
@@ -157,6 +254,42 @@
     </article>
     <!-- /透视 -->
 
+    <!-- 翻牌 -->
+    <article id="flip-card" class="fan-sub">
+      <h2 class="fan-sub__title">
+        翻牌
+      </h2>
+      <section class="fan-sub__demo">
+        <div class="scene">
+          <div class="card">
+            <div class="face front"></div>
+            <div class="face back">
+              移动到 这里“翻牌”
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+    <!-- /翻牌 -->
+
+    <!-- 滑动翻牌 -->
+    <article id="slide-flip-card" class="fan-sub">
+      <h2 class="fan-sub__title">
+        滑动翻牌
+      </h2>
+      <section class="fan-sub__demo">
+        <div class="scene">
+          <div class="card">
+            <div class="face front"></div>
+            <div class="face back">
+              移动到 这里“滑动翻牌”
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+    <!-- /滑动翻牌 -->
+
     <!-- 旋转的立方 -->
     <article id="spin-cube" class="fan-sub">
       <h2 class="fan-sub__title">
@@ -165,12 +298,12 @@
       <section class="fan-sub__demo">
         <div class="scene">
           <div class="cube">
-            <div class="face left">左面</div>
-            <div class="face right">右面</div>
             <div class="face top">上面</div>
             <div class="face bottom">下面</div>
+            <div class="face left">左面</div>
+            <div class="face right">右面</div>
             <div class="face front">前面</div>
-            <div class="face end">后面</div>
+            <div class="face back">后面</div>
           </div>
         </div>
       </section>
