@@ -84,12 +84,12 @@
         background: rgba(255, 165, 0, 0.8);
       }
       /* 
-        这是一个非常复杂的组合选择器
-        包括:
+        这是一个复杂的 组合选择器
+        其包括:
           1. 属性选择器
-          2. 伪类状态选择器
+          2. 伪类(状态)选择器
           3. 兄弟元素选择器
-          4. 后代选择器
+          4. 后代元素选择器
        */
       #positioning input[value="static"]:checked ~ .container .title {
         position: static;
@@ -263,45 +263,19 @@
       </h2>
 
       <section class="fan-sub__demo">
-        <input
-          type="radio"
-          name="position-type"
-          value="static"
-          checked
-          onchange="updatePos(this.value)"
-        />
+        <input type="radio" name="position-type" value="static" checked />
         普通
-        <input
-          type="radio"
-          name="position-type"
-          value="relative"
-          onchange="updatePos(this.value)"
-        />
+        <input type="radio" name="position-type" value="relative" />
         相对
-        <input
-          type="radio"
-          name="position-type"
-          value="absolute"
-          onchange="updatePos(this.value)"
-        />
+        <input type="radio" name="position-type" value="absolute" />
         绝对
-        <input
-          type="radio"
-          name="position-type"
-          value="fixed"
-          onchange="updatePos(this.value)"
-        />
+        <input type="radio" name="position-type" value="fixed" />
         固定
-        <input
-          type="radio"
-          name="position-type"
-          value="float"
-          onchange="updatePos(this.value)"
-        />
+        <input type="radio" name="position-type" value="float" />
         浮动
         <div class="container">
           <div class="title" id="pos-title">
-            我的位置会随着改动定位方式变化
+            我的位置会随着 定位方式 的 改变 而 变化
           </div>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
