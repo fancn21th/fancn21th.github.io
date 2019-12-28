@@ -35,12 +35,13 @@
       #carousel .sliders {
         width: 400px;
         height: 100px;
-        border: 1px dashed red;
         overflow: hidden;
       }
       #carousel .slider-wrapper {
         width: 300%;
         height: 100px;
+      }
+      #carousel .slider-wrapper { 
         /* tta */
         animation-name: sliding;
         animation-duration: 10s;
@@ -78,7 +79,7 @@
       #carousel .slider-5 {
         background-color: rgba(0, 0, 128, 0.3);
       }
-      /* 5个slide，就有5个状态  */
+      /* 5个slide，就有 5个状态  */
       @keyframes sliding {
         0% {
           transform: translateX(0);
@@ -100,6 +101,68 @@
         }
       }
       /* /走马灯 */
+
+      /* 下拉菜单 动画 */
+      #drop-down ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      #drop-down .nav {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+      }
+      #drop-down .nav__item {
+        /* layout */
+        border: 1px solid #eee;
+        padding: 5px 15px;
+        /* pos */
+        display: inline-block;
+      }
+      #drop-down .down {
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-top: 4px solid black;
+        border-left: solid transparent;
+        border-right: solid transparent;
+        border-bottom: solid transparent;
+      }
+      #drop-down .drop-down {
+        /* layout */
+        width: 400px;
+        max-height: 0;
+        /* pos */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        overflow: hidden;
+        /* tta */
+        transform: translateY(1px);
+      }
+      #drop-down .nav__item:hover {
+        background-color: #000;
+        color: #fff;
+      }
+      #drop-down .nav__item:hover .drop-down {
+        max-height: 1000px;
+      }
+      #drop-down .drop-down {
+        /* tta */
+        transition: max-height .5s linear;
+      }
+      #drop-down .drop-down__item {
+        border: 1px solid #eee;
+        padding: 20px;
+        background-color: #fff;
+        color: #000;
+      }
+      #drop-down .drop-down__item h3 {
+        padding-bottom: 15px;
+        border-bottom: 1px dotted #eee;
+      }
+      /* /下拉菜单 动画 */
     </style>
   </head>
   <body>
@@ -112,16 +175,16 @@
         <div class="carousel clearfix">
           <div class="sliders">
             <div class="slider-wrapper">
-              <div class="slider slider-1">slider 1</div>
-              <div class="slider slider-2">slider 2</div>
-              <div class="slider slider-3">slider 3</div>
-              <div class="slider slider-4">slider 4</div>
-              <div class="slider slider-5">slider 5</div>
-              <div class="slider slider-1">slider 1</div>
-              <div class="slider slider-2">slider 2</div>
-              <div class="slider slider-3">slider 3</div>
-              <div class="slider slider-4">slider 4</div>
-              <div class="slider slider-5">slider 5</div>
+              <div class="slider slider-1">滑块 1</div>
+              <div class="slider slider-2">滑块 2</div>
+              <div class="slider slider-3">滑块 3</div>
+              <div class="slider slider-4">滑块 4</div>
+              <div class="slider slider-5">滑块 5</div>
+              <div class="slider slider-1">滑块 1</div>
+              <div class="slider slider-2">滑块 2</div>
+              <div class="slider slider-3">滑块 3</div>
+              <div class="slider slider-4">滑块 4</div>
+              <div class="slider slider-5">滑块 5</div>
             </div>
           </div>
           <div class="controls"></div>
@@ -129,17 +192,45 @@
       </section>
     </article>
 
-    <article id="bar" class="fan-sub">
+    <article id="drop-down" class="fan-sub">
       <h2 class="fan-sub__title">
-        副主题标题 2
+        下拉菜单 动画
       </h2>
 
       <section class="fan-sub__demo">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam
-        cupiditate quaerat quo optio magni molestias aut repudiandae temporibus,
-        recusandae asperiores quos saepe similique ullam excepturi, voluptas
-        numquam est et aperiam.
+        <ul class="nav">
+          <li class="nav__item">男装 <b class="down"></b>
+            <ul class="drop-down">
+              <li class="drop-down__item">
+                <h3>上衣</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, laboriosam, ipsum officia quo molestiae placeat deserunt molestias, quam iusto illo esse. Voluptas dolor totam quasi veritatis perferendis natus itaque inventore?</p>
+                <h3>裤子</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, laboriosam, ipsum officia quo molestiae placeat deserunt molestias, quam iusto illo esse. Voluptas dolor totam quasi veritatis perferendis natus itaque inventore?</p>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item">女装 <b class="down"></b>
+            <ul class="drop-down">
+              <li class="drop-down__item">
+                <h3>大衣</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, laboriosam, ipsum officia quo molestiae placeat deserunt molestias, quam iusto illo esse. Voluptas dolor totam quasi veritatis perferendis natus itaque inventore?</p>
+                <h3>裙子</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, laboriosam, ipsum officia quo molestiae placeat deserunt molestias, quam iusto illo esse. Voluptas dolor totam quasi veritatis perferendis natus itaque inventore?</p>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item">童装 <b class="down"></b>
+            <ul class="drop-down">
+              <li class="drop-down__item">
+                <h3>帽子</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, laboriosam, ipsum officia quo molestiae placeat deserunt molestias, quam iusto illo esse. Voluptas dolor totam quasi veritatis perferendis natus itaque inventore?</p>
+                <h3>手套</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, laboriosam, ipsum officia quo molestiae placeat deserunt molestias, quam iusto illo esse. Voluptas dolor totam quasi veritatis perferendis natus itaque inventore?</p>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </section>
     </article>
+    </html>
   </body>
-</html>
