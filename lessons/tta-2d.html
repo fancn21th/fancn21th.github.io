@@ -18,7 +18,7 @@
       gtag("config", "UA-150469501-1");
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics - 结束 -->
-    <title>Transforms Transitions Animations 2D</title>
+    <title>2D 变形 过渡 动画</title>
     <!-- CSS 重置 -->
     <!-- <link rel="stylesheet" href="../assets/reset.css" /> -->
     <!-- 站点样式 -->
@@ -28,23 +28,104 @@
     <!-- 内联样式 -->
     <style>
       /* 当前页面的样式 */
-      #foo {
+      /* 走马灯 */
+      #carousel > * {
+        box-sizing: border-box;
       }
-      #bar {
+      #carousel .sliders {
+        width: 400px;
+        height: 100px;
+        border: 1px dashed red;
+        overflow: hidden;
       }
+      #carousel .slider-wrapper {
+        width: 300%;
+        height: 100px;
+        /* tta */
+        animation-name: sliding;
+        animation-duration: 10s;
+        animation-timing-function: ease;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+      }
+      #carousel .slider {
+        /* box */
+        width: 100px;
+        height: 100px;
+        /* bg */
+        background-color: #eee;
+        /* pos */
+        float: left;
+        /* text */
+        text-align: center;
+        line-height: 100px;
+        font-size: 24px;
+        font-weight: 600;
+        color: white;
+      }
+      #carousel .slider-1 {
+        background-color: rgba(255, 0, 0, 0.3);
+      }
+      #carousel .slider-2 {
+        background-color: rgba(0, 0, 255, 0.3);
+      }
+      #carousel .slider-3 {
+        background-color: rgba(0, 255, 0, 0.3);
+      }
+      #carousel .slider-4 {
+        background-color: rgba(0, 128, 0, 0.3);
+      }
+      #carousel .slider-5 {
+        background-color: rgba(0, 0, 128, 0.3);
+      }
+      /* 5个slide，就有5个状态  */
+      @keyframes sliding {
+        0% {
+          transform: translateX(0);
+        }
+        20% {
+          transform: translateX(-100px);
+        }
+        40% {
+          transform: translateX(-200px);
+        }
+        60% {
+          transform: translateX(-300px);
+        }
+        80% {
+          transform: translateX(-400px);
+        }
+        100% {
+          transform: translateX(-500px);
+        }
+      }
+      /* /走马灯 */
     </style>
   </head>
   <body>
-    <article id="foo" class="fan-sub">
+    <article id="carousel" class="fan-sub">
       <h2 class="fan-sub__title">
-        副主题标题 1
+        走马灯
       </h2>
 
       <section class="fan-sub__demo">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-        tempore temporibus, provident voluptas aspernatur nulla unde earum quas.
-        Labore dolorem laborum doloribus blanditiis eveniet repudiandae est nemo
-        accusantium voluptatem unde.
+        <div class="carousel clearfix">
+          <div class="sliders">
+            <div class="slider-wrapper">
+              <div class="slider slider-1">slider 1</div>
+              <div class="slider slider-2">slider 2</div>
+              <div class="slider slider-3">slider 3</div>
+              <div class="slider slider-4">slider 4</div>
+              <div class="slider slider-5">slider 5</div>
+              <div class="slider slider-1">slider 1</div>
+              <div class="slider slider-2">slider 2</div>
+              <div class="slider slider-3">slider 3</div>
+              <div class="slider slider-4">slider 4</div>
+              <div class="slider slider-5">slider 5</div>
+            </div>
+          </div>
+          <div class="controls"></div>
+        </div>
       </section>
     </article>
 
