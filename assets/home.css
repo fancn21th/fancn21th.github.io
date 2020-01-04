@@ -137,11 +137,47 @@ h6 {
  * banner
  */
 .banner {
-  background-image: url("../images/XMas.jpg");
-  background-size: cover;
+  background-image: url("../images/chinese-new-year.png");
+  background-size: none;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: left top;
   text-shadow: 2px 2px 3px white;
+  /* tta */
+  animation-name: background-moving;
+  animation-duration: 30s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes background-moving {
+  0% {
+    background-position: left top;
+  }
+
+  20% {
+    background-position: right top;
+  }
+
+  40% {
+    background-position: center center;
+  }
+
+  60% {
+    background-position: right bottom;
+  }
+
+  80% {
+    background-position: center center;
+  }
+
+  100% {
+    background-position: left bottom;
+  }
+}
+
+body:hover .banner {
 }
 
 /* 
