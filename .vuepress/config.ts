@@ -7,13 +7,13 @@ export default defineUserConfig({
   locales: {
     "/": {
       lang: "en-US",
-      title: "Theme Demo",
-      description: "A demo for vuepress-theme-hope",
+      title: "Learn FE the smart way",
+      description: "where you can learn FE the smart way",
     },
     "/zh/": {
       lang: "zh-CN",
-      title: "主题演示",
-      description: "vuepress-theme-hope 的演示",
+      title: "快学前端",
+      description: "一个学前端的好地方",
     },
   },
 
