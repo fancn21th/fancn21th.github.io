@@ -6,7 +6,8 @@
   "scripts": {
     "docs:build": "vuepress build .",
     "docs:clean-dev": "vuepress dev . --clean-cache",
-    "docs:dev": "vuepress dev ."
+    "docs:dev": "vuepress dev .",
+    "dev": "npm run docs:dev"
   },
   "devDependencies": {
     "@vuepress/client": "^2.0.0-beta.48",
