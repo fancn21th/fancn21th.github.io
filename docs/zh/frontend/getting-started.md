@@ -88,3 +88,53 @@ ui = fn(state) // 将前端编程比喻成一个数学公式，实际上这也�
 我可以想象 仅仅 基于 `hello world` 案例来理解 这个 `隐喻` 是不够的， 没有关系， 理解 `把大象放进冰箱` 这一步 同样也不容易。
 
 但是不管怎么样 这第一个隐喻将贯穿整个教程，慢慢的你会相信 这个 `隐喻` 并不牵强。
+
+### 声明式 vs 命令式
+
+::: tip
+
+[原文](https://dev.to/ruizb/declarative-vs-imperative-4a7l#:~:text=Declarative%20programming%20is%20a%20paradigm,which%20mutate%20the%20program's%20state.)
+
+感谢原文作者精彩的解释，我这里简单翻译一下重点
+
+Declarative programming is a paradigm describing WHAT the program does, without explicitly specifying its control flow.
+
+声明式编程是描述 `做什么` 的编程范式。
+
+Imperative programming is a paradigm describing HOW the program should do something by explicitly specifying each instruction (or statement) step by step, which mutate the program's state.
+
+命令式编程是描述 `怎么做` 的的编程范式。 它显示地去描述每一个步骤与每一条指令。
+
+This "what vs how" is often used to compare both of these approaches because... Well, it is actually a good way to describe them.
+
+`做什么` vs `怎么做`
+
+:::
+
+- 命令式
+
+```html{5}
+<html>
+  <body></body>
+</html>
+<script>
+  // 这里调用了一条指令，通过这条指令的 API文档 我们能清楚知道 到底做了什么
+  document.body.insertAdjacentHTML("afterbegin", `hello world!`);
+</script>
+```
+
+- 声明式
+
+```html{5-6}
+<html>
+  <body></body>
+</html>
+<script>
+  // 通过 语义化的 方法名 我们不用去查阅 API 文档就能知道下面程序是干啥的
+  // 当然 前提是你有一定的 HTML 基础知识 知道 什么叫 first element 这是 dom 编程的术语
+  function showTextOnPageAsFirstElement(text) {
+    document.body.insertAdjacentHTML("afterbegin", text);
+  }
+  showTextOnPageAsFirstElement('hello world!')
+</script>
+```
