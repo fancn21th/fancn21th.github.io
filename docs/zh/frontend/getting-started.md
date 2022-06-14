@@ -10,7 +10,7 @@
 
 ## 隐喻
 
-> [隐喻](https://zh.wikipedia.org/wiki/%E9%9A%90%E5%96%BB)
+> [隐喻](https://www.grammarly.com/blog/metaphor/)
 
 ::: tip
 
@@ -29,10 +29,10 @@
 那么我正式开始学习 本文第一个 `隐喻`
 
 ```bash
-ui = fn(state)
+ui = fn(state) // 将前端编程比喻成一个数学公式，实际上这也是 React 函数式编程思想
 ```
 
-### Hello World!
+### 从 Hello World 开始
 
 > [Hello World](https://zh.wikipedia.org/wiki/Hello_World) 是程序员躲不开的魔咒 :ghost:
 
@@ -67,3 +67,24 @@ ui = fn(state)
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
 :::
+
+### 解释
+
+::: tip
+如何把大象 :elephant: 放进冰箱
+
+1. 打开冰箱
+2. 把大象放进冰箱
+3. 关上冰箱
+
+:::
+
+我们基于 `hello world` 这个简单的程序来解释一下这个 `ui = fn(state)` 隐喻， 首先我来做一个简单的翻译 `界面 = 方法(状态)`。
+
+- **步骤 A**: 首先我们要有一个状态 也就是 state 在这里 它等于 `hello world!`
+- **步骤 B**: 然后我们要想办法 把这个状态 处理好 加工一下，例如我们可以把状态做一个 格式转换（在这个例子里面我们并没有这么做）
+- **步骤 C**: 最后我们要把这个 经过加工的 最终状态在 浏览器中 呈现出来， 这个呈现 或者 叫渲染，就是 ui 代表的含义，也就是 `hello world!` 实际呈现在 浏览器里 的样子
+
+我可以想象 仅仅 基于 `hello world` 案例来理解 这个 `隐喻` 是不够的， 没有关系， 理解 `把大象放进冰箱` 这一步 同样也不容易。
+
+但是不管怎么样 这第一个隐喻将贯穿整个教程，慢慢的你会相信 这个 `隐喻` 并不牵强。
