@@ -200,7 +200,9 @@ This "what vs how" is often used to compare both of these approaches because... 
 
 再来看 第 35 行, 末尾我增加了 [模板字符串](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Template_literals) 它是由一对 `` 组成，以后你会经常遇见它， 以至于你不用刻意记忆你也忘不了它的语法规则。
 
-以上就是所有的变化。 但是它们都属于 `fn` 的变化， 而 `state` 没有变，是的，这里你要区分 一个前端程序的 `状态` 和 `对状态的操作`。`fn` 代表对 `状态` 也就是 `state`的操作。 但是它并非一定发生在 `function` 内部，对于样式的定义，我们也可以认为是 `fn` 的变化。
+以上就是所有的变化。 但是它们都属于 `fn` 的变化， 而 `state` 没有变。
+
+是的，这里你要区分 一个前端程序的 `状态` 和 `对状态的操作`。`fn` 代表对 `状态` 也就是 `state` 的操作。 但是它并非一定发生在 `function` 内部，对于样式的定义，我们也可以认为是 `fn` 的变化。
 
 你是在忽悠我吧？:dizzy_face:
 
@@ -208,7 +210,16 @@ This "what vs how" is often used to compare both of these approaches because... 
 
 再看看这个例子，如果状态没有变，而是 其他的部分发生了变化， 仔细看看界面上到底发生了什么样的变化？ 又是什么变了？
 
-`state` 也就是状态 往往是 文本信息或者图片信息。 `fn` 泛指对 `state` 的操作和加工， 比如直接修改 `state` 例如对 文字进行过滤，或者 对图片进行截取，或者只是给 `state` 增加样式，让它具有更好的 `外观`。
+::: danger 重点
+
+- `state` 也就是状态 往往是 文本信息或者图片信息。
+- `fn` 泛指对 `state` 的操作和加工
+  - 比如直接修改 `state` 例如对 文字进行过滤，或者 对图片进行截取
+  - 亦或者只是给 `state` 增加样式，让它具有更好的 `外观`。
+
+:::
+
+对了， 我们还不经意间又解锁了 [CSS 动画](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Animations)。 我打赌你很喜欢这一块的内容。
 
 ```html{2-30,35}
 <html>
@@ -263,3 +274,11 @@ This "what vs how" is often used to compare both of these approaches because... 
    ></iframe>
 
 :::
+
+### ui 的变化
+
+> 前因后果
+
+聪明如你，`state` 变化了，`ui` 就会变化。 `fn` 变化了，`ui` 也会变化。
+
+`ui` 变化 背后是因为 `浏览器` 能响应 `state` 与 `fn` 的变化。 `浏览器` 又做了什么? `浏览器` 里 大有文章。 但是如果和 `隐喻` 没有关系，其中奥秘待你自己去揭开。
