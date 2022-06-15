@@ -70,9 +70,10 @@ ui = fn(state) // 将前端编程比喻成一个数学公式，实际上源于 R
 
 ### 三个步骤
 
-> 按部就班 - 原意是写文章时篇章结构安排得体,用字造句合乎规范 。后来引申为照章办事,依次进行,不越轨,不逾格。也指按老规矩办事,缺乏创新精神。:broken_heart:
+> 按部就班
 
 ::: tip
+
 如何把大象 :elephant: 放进冰箱
 
 1. 打开冰箱
@@ -166,3 +167,99 @@ This "what vs how" is often used to compare both of these approaches because... 
 :::
 
 这里看上去离我们的 第一个 `ui = fn(state)` 的隐喻更接近了一些。是的，这里我们并不需要对号入座 亦或者 一一对应，更重在理解这个 `隐喻` 的内涵。
+
+### state 的变化
+
+> 大同小异
+
+不难理解如果我们改变了 `showTextOnPageAsFirstElementInBody` function 的入参，屏幕上的结果会发生什么样的变化。 我甚至怀疑你已经在 `代码沙盒` 中已经动过手脚了。
+什么？ 你还没有？ :anger: 本教程期望你通过不断实践 解锁各项前端技能。
+
+不要犹豫，动手吧。你甚至不用在你的电脑上搭建开发环境。 `代码沙盒` 是你学会搭建开发环境前最简单的实践方式。
+
+不管 `入参` 怎么变化 我相信你可以不假思索想象到 浏览器中呈现的样子。当然这我们没有考虑 `边界场景 Edge Cases`，但是很可能这一直都没有关系。
+
+```html{8-9}
+<html>
+  <body></body>
+</html>
+<script>
+  function showTextOnPageAsFirstElementInBody(text) {
+    document.body.insertAdjacentHTML("afterbegin", text);
+  }
+  // hello world! ==> hello frontend
+  showTextOnPageAsFirstElementInBody('hello frontend')
+</script>
+```
+
+### fn 的变化
+
+> 脱胎换骨
+
+这次我对代码做了较大的改变， 从 第 2 行 到 第 30 行 添加了 [内部样式表](https://developer.mozilla.org/zh-CN/docs/Learn/CSS/First_steps/How_CSS_is_structured#%E5%86%85%E9%83%A8%E6%A0%B7%E5%BC%8F%E8%A1%A8) 这属于 [CSS](https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/CSS_basics) 的知识，现在你只需要知道它给 `hello world` 添加了 `样式` 就可以了。
+
+再来看 第 35 行, 末尾我增加了 [模板字符串](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Template_literals) 它是由一对 `` 组成，以后你会经常遇见它， 以至于你不用刻意记忆你也忘不了它的语法规则。
+
+以上就是所有的变化。 但是它们都属于 `fn` 的变化， 而 `state` 没有变，是的，这里你要区分 一个前端程序的 `状态` 和 `对状态的操作`。`fn` 代表对 `状态` 也就是 `state`的操作。 但是它并非一定发生在 `function` 内部，对于样式的定义，我们也可以认为是 `fn` 的变化。
+
+你是在忽悠我吧？:dizzy_face:
+
+我们回过头来想想， 在上一节，如果 单纯是状态发生了 改变， 界面上会发生什么样的变化？ 是什么变了？
+
+再看看这个例子，如果状态没有变，而是 其他的部分发生了变化， 仔细看看界面上到底发生了什么样的变化？ 又是什么变了？
+
+`state` 也就是状态 往往是 文本信息或者图片信息。 `fn` 泛指对 `state` 的操作和加工， 比如直接修改 `state` 例如对 文字进行过滤，或者 对图片进行截取，或者只是给 `state` 增加样式，让它具有更好的 `外观`。
+
+```html{2-30,35}
+<html>
+  <style>
+    /* The animation code */
+    @keyframes rotate {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    @keyframes move-right {
+      100% {
+        transform: translate(450px);
+      }
+    }
+    div {
+      width: 150px;
+      height: 150px;
+      background-color: red;
+      text-align: center;
+      line-height: 150px;
+      color: white;
+      font-weight: 900;
+      border-radius: 10px;
+      animation-name: rotate, move-right;
+      animation-duration: 4s;
+      animation-timing-function: ease;
+      animation-delay: 1s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+  </style>
+  <body></body>
+</html>
+<script>
+  function showTextOnPageAsFirstElementInBody(text) {
+    document.body.insertAdjacentHTML("afterbegin", `<div>${text}</div>`);
+  }
+  // hello world! ==> hello frontend
+  showTextOnPageAsFirstElementInBody("hello frontend");
+</script>
+
+```
+
+::: details fn 发生变化 （点击展开）
+
+<iframe src="https://codesandbox.io/embed/03-hello-dom-animated-5osrl0?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="03-hello-dom-animated"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
+
+:::
