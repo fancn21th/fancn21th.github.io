@@ -1,4 +1,8 @@
 const { defaultTheme } = require("@vuepress/theme-default");
+const { path } = require("@vuepress/utils");
+const {
+  registerComponentsPlugin,
+} = require("@vuepress/plugin-register-components");
 const { googleAnalyticsPlugin } = require("@vuepress/plugin-google-analytics");
 
 module.exports = {
@@ -88,6 +92,9 @@ module.exports = {
     googleAnalyticsPlugin({
       // 配置项
       id: "UA-150469501-1",
+    }),
+    registerComponentsPlugin({
+      componentsDir: path.resolve(__dirname, "./components"),
     }),
   ],
 };
