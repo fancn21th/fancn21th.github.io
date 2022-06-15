@@ -20,11 +20,11 @@
 
 不管目标如何，先把 `基础` 打牢往往是一部分人的共识，大家往往会去市场上寻觅各种 宝典秘籍，而且越是厚实的书，大家越希望收入囊中。古今中外，放一本宝典与床头，反复阅读似乎是最常见的 `套路`. 是的，前端领域确实有这样的书， 例如 `犀牛书`。
 
-<img src="https://images-na.ssl-images-amazon.com/images/I/51HbNW6RzhL._SX218_BO1,204,203,200_QL40_FMwebp_.jpg" class="img"/>
+<MyImage src="https://images-na.ssl-images-amazon.com/images/I/51HbNW6RzhL._SX218_BO1,204,203,200_QL40_FMwebp_.jpg" alt="犀牛书"/>
 
 以及 `红宝书`。
 
-<img src="https://m.media-amazon.com/images/I/61b03PRisyL._AC_UY436_FMwebp_QL65_.jpg" class="img"/>
+<MyImage src="https://m.media-amazon.com/images/I/61b03PRisyL._AC_UY436_FMwebp_QL65_.jpg" alt="红宝书"/>
 
 此外也有另外一些人，他们会从网站上， 例如 `B站`， 找到热门博主的 前端教程，边学边练，并且从此开始了自己的前端职业生涯。
 
@@ -34,17 +34,4 @@
 
 简单来说， 先学会 骑`平衡车` 再学 `自行车` 就非常简单了。
 
-<img src="https://m.media-amazon.com/images/I/71r3hsNkTxL._AC_SX679_.jpg"  class="img img_taller"/>
-
-<style scoped>
-  .img {
-    width: 10rem;
-    height: auto;
-    border: 1px solid lightgray;
-    box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
-    box-sizing: border-box;
-  }
-  .img_taller {
-    padding: 1rem
-  }
-</style>
+<MyImage src="https://m.media-amazon.com/images/I/71r3hsNkTxL._AC_SX679_.jpg" alt="平衡车" :tall="true"/>
