@@ -117,6 +117,8 @@ This "what vs how" is often used to compare both of these approaches because... 
 
 - 命令式
 
+我们第一个 `hello world` 范例里面是典型的 `命令式` 编程范式。如果你不熟悉 相关的 API 你光看代码不知道开发人员到底要干什么。
+
 ```html{5}
 <html>
   <body></body>
@@ -128,6 +130,16 @@ This "what vs how" is often used to compare both of these approaches because... 
 ```
 
 - 声明式
+
+我们来对这段代码做一点改进，我们创建了一个方法，语义化的方法名，然后我们调用了它。
+
+::: warning
+
+准确的来说 这个调用方式 是 javascript functions 的四种调用方式之一 `The Function Invocation Pattern` 不同于其他语言 在 Javascript 里 Function 调用有不同的模式，后面会着重讲解，更多内容请参考 `JavaScript: The Good Parts: The Good Parts` 一书
+
+<MyImage src="https://m.media-amazon.com/images/I/81kqrwS1nNL._AC_UY436_FMwebp_QL65_.jpg" alt="the good parts" />
+
+:::
 
 ```html{5-6}
 <html>
@@ -152,3 +164,5 @@ This "what vs how" is often used to compare both of these approaches because... 
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
 :::
+
+这里看上去离我们的 第一个 `ui = fn(state)` 的隐喻更接近了一些。是的，这里我们并不需要对号入座 亦或者 一一对应，更重在理解这个 `隐喻` 的内涵。
