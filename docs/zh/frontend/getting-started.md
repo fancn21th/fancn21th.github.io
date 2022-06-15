@@ -10,7 +10,7 @@
 
 ## 隐喻
 
-> [隐喻](https://www.grammarly.com/blog/metaphor/)
+> [隐喻](https://www.grammarly.com/blog/metaphor/) 是指把一个事物 描述 成另外一个事物的语言表现手法， 常见于把不常见的事物比喻成常见的事物从而解释新事物的形态，特点 等等。
 
 ::: tip
 
@@ -29,16 +29,16 @@
 那么我正式开始学习 本文第一个 `隐喻`
 
 ```bash
-ui = fn(state) // 将前端编程比喻成一个数学公式，实际上这也是 React 函数式编程思想
+ui = fn(state) // 将前端编程比喻成一个数学公式，实际上源于 React 函数式编程思想
 ```
 
 ### 从 Hello World 开始
 
-> [Hello World](https://zh.wikipedia.org/wiki/Hello_World) 是程序员躲不开的魔咒 :ghost:
+> [Hello World](https://zh.wikipedia.org/wiki/Hello_World) 是程序员自我修炼中躲不开的魔咒 :ghost:
 
 为了解释第一个 `隐喻`， 我们从 `实践` 开始。以下你看到的是一个非常简单的代码片段， 当然它是可执行的， 你可以在 `代码沙盒` 中看到它运行在 浏览器 中的效果。是的 我们是 `程序员` 当然不能不从 `hello world` 开始。
 
-虽然代码很简单，但是涉及到以下技术点， 我把它们列举出来，但是你依然暂时不需要去在意它们。你只需要知道 我们做了 一件了不起的事情，在浏览器里面 显示了 `hello world!` :100:
+虽然代码很简单，但是涉及到以下技术点， 我把它们列举出来，但是你暂时不需要去在意它们。此时只需要知道 我们做了一件了不起的事情，在浏览器里面 显示了 `hello world!` :100:
 
 技术点:
 
@@ -58,7 +58,7 @@ ui = fn(state) // 将前端编程比喻成一个数学公式，实际上这也�
 </script>
 ```
 
-::: details 代码沙盒
+::: details 代码沙盒 （点击展开）
 
 <iframe src="https://codesandbox.io/embed/hello-dom-mnfed7?fontsize=14&hidenavigation=1&theme=dark"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
@@ -68,7 +68,9 @@ ui = fn(state) // 将前端编程比喻成一个数学公式，实际上这也�
    ></iframe>
 :::
 
-### 解释
+### 三个步骤
+
+> 按部就班 - 原意是写文章时篇章结构安排得体,用字造句合乎规范 。后来引申为照章办事,依次进行,不越轨,不逾格。也指按老规矩办事,缺乏创新精神。:broken_heart:
 
 ::: tip
 如何把大象 :elephant: 放进冰箱
@@ -79,23 +81,25 @@ ui = fn(state) // 将前端编程比喻成一个数学公式，实际上这也�
 
 :::
 
-我们基于 `hello world` 这个简单的程序来解释一下这个 `ui = fn(state)` 隐喻， 首先我来做一个简单的翻译 `界面 = 方法(状态)`。
+基于 `hello world` 这个简单的程序我来解释一下这个 `ui = fn(state)` 的隐喻， 我先做一个简单的翻译 `界面 = 方法(状态)`。
 
 - **步骤 A**: 首先我们要有一个状态 也就是 state 在这里 它等于 `hello world!`
-- **步骤 B**: 然后我们要想办法 把这个状态 处理好 加工一下，例如我们可以把状态做一个 格式转换（在这个例子里面我们并没有这么做）
-- **步骤 C**: 最后我们要把这个 经过加工的 最终状态在 浏览器中 呈现出来， 这个呈现 或者 叫渲染，就是 ui 代表的含义，也就是 `hello world!` 实际呈现在 浏览器里 的样子
+- **步骤 B**: 然后我们要想办法 把这个状态 处理好 加工一下，例如我们可以把状态做一个 格式转换（后面的例子里面我们会这样做）
+- **步骤 C**: 最后我们要把这个 经过加工的 最终状态在 浏览器中 呈现出来， 这个呈现也常叫做 渲染，就是 ui 代表的含义，也就是 `hello world!` 实际呈现在 浏览器里 的样子
 
-我可以想象 仅仅 基于 `hello world` 案例来理解 这个 `隐喻` 是不够的， 没有关系， 理解 `把大象放进冰箱` 这一步 同样也不容易。
+我可以想象 仅仅 基于 `hello world` 案例来理解 这个 `隐喻` 是远远不够的， 没有关系， 理解 `把大象放进冰箱` 这一步 同样也不容易。
 
-但是不管怎么样 这第一个隐喻将贯穿整个教程，慢慢的你会相信 这个 `隐喻` 并不牵强。
+第一个隐喻将贯穿整个教程，接下来我们逐步来展开并解释它， 相信 最后你会觉得 这个 `隐喻` 并不牵强。
 
 ### 声明式 vs 命令式
 
+> 殊途同归
+
 ::: tip
 
-[原文](https://dev.to/ruizb/declarative-vs-imperative-4a7l#:~:text=Declarative%20programming%20is%20a%20paradigm,which%20mutate%20the%20program's%20state.)
+[声明式 vs 命令式](https://dev.to/ruizb/declarative-vs-imperative-4a7l#:~:text=Declarative%20programming%20is%20a%20paradigm,which%20mutate%20the%20program's%20state.)
 
-感谢原文作者精彩的解释，我这里简单翻译一下重点
+感谢原文作者精彩的解释，简单翻译一下重点
 
 Declarative programming is a paradigm describing WHAT the program does, without explicitly specifying its control flow.
 
@@ -107,7 +111,7 @@ Imperative programming is a paradigm describing HOW the program should do someth
 
 This "what vs how" is often used to compare both of these approaches because... Well, it is actually a good way to describe them.
 
-`做什么` vs `怎么做`
+简单说就是 `做什么` 与 `怎么做` 的比较
 
 :::
 
@@ -118,7 +122,7 @@ This "what vs how" is often used to compare both of these approaches because... 
   <body></body>
 </html>
 <script>
-  // 这里调用了一条指令，通过这条指令的 API文档 我们能清楚知道 到底做了什么
+  // 这里调用了一条指令，把 `hello world` 插入到 `body` 的开头
   document.body.insertAdjacentHTML("afterbegin", `hello world!`);
 </script>
 ```
@@ -130,11 +134,21 @@ This "what vs how" is often used to compare both of these approaches because... 
   <body></body>
 </html>
 <script>
+  // 注意: 理解这里 要求你至少学过一门计算机语言 知道什么是 方法调用
   // 通过 语义化的 方法名 我们不用去查阅 API 文档就能知道下面程序是干啥的
-  // 当然 前提是你有一定的 HTML 基础知识 知道 什么叫 first element 这是 dom 编程的术语
-  function showTextOnPageAsFirstElement(text) {
+  function showTextOnPageAsFirstElementInBody(text) {
     document.body.insertAdjacentHTML("afterbegin", text);
   }
-  showTextOnPageAsFirstElement('hello world!')
+  showTextOnPageAsFirstElementInBody('hello world!')
 </script>
 ```
+
+::: details 声明式的 `hello world` （点击展开）
+
+<iframe src="https://codesandbox.io/embed/02-hello-dom-declarative-wmzevg?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="02-hello-dom-declarative"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
+:::
