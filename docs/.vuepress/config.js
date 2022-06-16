@@ -38,7 +38,11 @@ module.exports = {
           "/frontend/": [
             {
               text: "前端概览",
-              children: ["/frontend/README.md", "/frontend/getting-started.md"],
+              children: [
+                "/frontend/README.md",
+                "/frontend/getting-started.md",
+                "/frontend/todo-list.md",
+              ],
             },
           ],
         },
@@ -61,6 +65,7 @@ module.exports = {
               children: [
                 "/zh/frontend/README.md",
                 "/zh/frontend/getting-started.md",
+                "/zh/frontend/todo-list.md",
               ],
             },
           ],
