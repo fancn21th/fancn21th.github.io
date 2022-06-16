@@ -18,7 +18,7 @@ features:
   - title: 权威参考
     details: 前端 多位大师的 心智模型，设计模式，经典著作 供你参考，知其所以然。
   - title: 授人以渔
-    details: 学无止境，所以穷举一切不如指点迷津。
+    details: 学无止境，穷举一切不如指点迷津。
 
 footer: MIT Licensed | Copyright © 2022-present Yijie Fan
 ---
