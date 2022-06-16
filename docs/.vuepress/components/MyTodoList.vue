@@ -33,12 +33,14 @@ const now = new Date();
 
 function addTodo(evt) {
   const newTodoTitle = evt.target.value.trim();
+  // 非空 并且 不重复
   if (newTodoTitle && !store.has(newTodoTitle)) {
     store.add(evt.target.value);
     newTodo.value.value = "";
     newTodo.value.focus();
   }
 }
+
 function removeTodo(title) {
   store.remove(title);
 }
@@ -46,12 +48,12 @@ function removeTodo(title) {
 
 <style scoped>
 * {
-  background-color: #efefef;
+  background-color: rgb(240, 241, 242);
   font-size: 1rem;
 }
 div {
   width: 400px;
-  padding: 2rem 1rem;
+  padding: 1.5rem 1rem;
   display: flex;
   flex-direction: column;
 }
@@ -90,7 +92,7 @@ em {
   font-size: 1rem;
 }
 cite {
-  margin-top: 2rem;
+  margin-top: 3rem;
   font-size: 0.5rem;
   align-self: flex-end;
 }
