@@ -22,4 +22,18 @@ To help solve this problem, we created TodoMVC - a project which offers the same
 
 :::
 
+## 范例
+
+首先我们来看看 一个 Todo List 的例子， 这个例子是用 [Vue 3](https://staging-cn.vuejs.org/guide/introduction.html) 编写的。
+
+它的功能清单如下:
+
+- 新增一个 待办事项
+
+  - 空输入或者重复的事项无法输入
+
+- 删除一个 待办事项
+
+相较于 [Todo MVC Vue 版本](https://todomvc.com/examples/vue/) 这个范例的功能做了简化。
+
 <MyTodoList/>

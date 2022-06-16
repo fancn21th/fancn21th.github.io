@@ -1,5 +1,7 @@
 <template>
   <div>
+    <em>我的待办（范例）</em>
+    <hr />
     <!-- add todo -->
     <input
       ref="newTodo"
@@ -13,6 +15,9 @@
         {{ todo.title }} (<span @click="removeTodo(todo.title)">X</span>)
       </li>
     </ul>
+    <cite>
+      {{ now }}
+    </cite>
   </div>
 </template>
 
@@ -23,6 +28,8 @@ import { store } from "./MyTodoList.store";
 const newTodo = ref(null);
 
 const todos = store.state.todos;
+
+const now = new Date();
 
 function addTodo(evt) {
   const newTodoTitle = evt.target.value.trim();
@@ -40,6 +47,7 @@ function removeTodo(title) {
 <style scoped>
 * {
   background-color: #efefef;
+  font-size: 1rem;
 }
 div {
   width: 400px;
@@ -48,8 +56,10 @@ div {
   flex-direction: column;
 }
 input {
+  margin-top: 1rem;
   border: none;
   border-bottom: 1px solid black;
+  font-size: 0.9rem;
 }
 input:focus {
   outline: none;
@@ -74,5 +84,14 @@ span:hover {
   animation: rotate 0.4s ease;
   animation-fill-mode: both;
   cursor: pointer;
+}
+em {
+  width: 50%;
+  font-size: 1rem;
+}
+cite {
+  margin-top: 2rem;
+  font-size: 0.5rem;
+  align-self: flex-end;
 }
 </style>
