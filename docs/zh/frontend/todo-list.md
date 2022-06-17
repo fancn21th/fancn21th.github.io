@@ -319,7 +319,7 @@ input.i-am-a-pseudo-class:focus + span::before {
 
   很多著名的 `CSS` 架构方案， 例如 [ITCSS](https://csswizardry.com/2018/11/itcss-and-skillshare/) 都尝试解决 `选择器` 滥用 导致的 `CSS` 架构层面的 问题。
 
-  `CSS` 最负责的技术问题莫过于此。 我们会在后面介绍一些 优秀的解决方案。
+  `CSS` 最复杂的技术问题莫过于此。 我们会在后面介绍一些 优秀的解决方案。
 
 ::: warning
 
@@ -343,12 +343,24 @@ input.i-am-a-pseudo-class:focus + span::before {
 
 > TBD
 
+本节最后我想补充一些基本的 开发调试技能...
+
 ## state
 
 > 看到的不一定就是真相
 
-但是 这应该也叫做 `边界场景 Edge Cases` 你完全可以说 `内容` 和 `样式` 分别由 `HTML` 和 `CSS`
+`fn` 是外衣， `state` 才是灵魂。 我们来分析一下， 在 `范例` 里面到底有多少内容需要显示。
 
+这些 内容 和 [ui = fn(state)](/zh/frontend/getting-started.html#ui-fn-state) 范例中 内容 有什么区别？
+
+### 分析
+
+对于新人而言， 第一步去做 静态还原 是 `理所当然` 的事情。 状态分析... :roll_eyes:
+
+- 新增待办事项
+  页面上需要用户输入新待办事项的标题， 这显然是一个明显的 `线索`。
+
+<!-- 本文档的样式部分  -->
 <style scoped>
 div.i-am-a-pseudo-element::before {
   background-color: rgb(30,33,39);
