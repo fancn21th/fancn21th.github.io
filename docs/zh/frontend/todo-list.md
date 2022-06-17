@@ -192,6 +192,20 @@ MyTodoList.store.js
 - 从第 8 行 到 第 58 行全部都是 `CSS` 代码 （高亮部分）
 - 其他全部都是 `HTML` 代码
 
+### 语义化
+
+先从 `HTML` 开始，`HTML` 是 `三剑客` 里面 需要 `活学` 知识最少的一位。也就是 `三剑客` 的软肋和短板。 这是开玩笑。
+
+现阶段 我觉得 `HTML` 所需要掌握的知识点如下：
+
+- 常用的的 `元素` 或者叫 `标签` 从 `样式` 角度来看 几乎可以认为都是完全一样的。
+
+  这意味着 我们可以通过 `样式` 把 常用标签 装扮地 `不分你我`
+
+- 因此，[语义化](https://www.w3schools.com/html/html5_semantic_elements.asp) 是 `HTML` 编写的一个重要 原则。
+
+  简单来说，不同的 `标签` 名 代表了不同的 `业务` 含义。 自然会有 `人` 去消费这些 `语义`。 例如 最典型的例子就是 [Google 爬虫](https://developers.google.com/search/docs/advanced/crawling/overview-google-crawlers)。 它会根据 页面 里面 特定 `标签` 的内容做分析和排名。
+
 ### 伪元素
 
 `HTML` 与 `CSS` 分别 负责 定义 网页上的 `内容` 和 `样式` 尽管 这并非绝对的。
@@ -273,7 +287,61 @@ input.i-am-a-pseudo-class:focus + span::before {
 
 如果你能理解 这两节内容。 恭喜你！你的速度 堪比 :rocket: `CSS` 的 [语法](https://www.w3schools.com/css/css_syntax.asp) 你完全掌握了！
 
-不过 `CSS` 远不止 `语法` 这一个重要的知识点。
+不过 `CSS` 远不止 `语法` 这一个重要的知识点。 但是，你掌握了 `CSS` 最基础 最核心的 知识点 你解锁了一项 里程碑 式的技能。:checkered_flag:
+
+### 动画
+
+> TBD
+
+### 最佳实践
+
+> Best Practices
+
+你应该注意到 在案例里面 我们用到的是 [Internal CSS](https://www.w3schools.com/css/css_howto.asp) 以及 大部分都是 [元素选择器](https://www.w3schools.com/css/css_selectors.asp)
+
+这两点在教学层面是没有问题的，但是在 真实项目里面 我们并不会这么做。
+
+如下所示， 对于初学者，我觉得有必要让你 及早知道 为什么 这不是 好的实践方式。
+
+- `Internal CSS`
+
+  显然如果把大量的 `CSS` 和 `HTML` 写在一起 这违法了 编程的 `单一职责 原则` [SRP in 100 seconds](https://dev.to/richardwynn/single-responsibility-principle-srp-in-100-seconds-3b1d)
+
+  不过在 `浏览器性能优化` 领域 把 `CSS` 通过 `<style></style>` 内联 到 `HTML` 确也是一种 必要的手段。
+
+  编程世界里面 没有 `绝对`， 适用场景很关键。 但是一般而言 从 代码编写和组织角度来讲， 把文件分开 一直都是 正确 的选择。 因为， 有很多种技术手段可以自动达到 `性能优化` 的目标。
+
+- `元素选择器`
+
+  元素选择器 拥有 较低的 [CSS 选择器权重](https://css-tricks.com/specifics-on-css-specificity/)。因此 它会选中 所有相同的 `元素` 不管它在哪里。
+
+  显然这容易带来很多问题， 这是 [CSS 层叠样式表 特性](https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance) 决定的。
+
+  很多著名的 `CSS` 架构方案， 例如 [ITCSS](https://csswizardry.com/2018/11/itcss-and-skillshare/) 都尝试解决 `选择器` 滥用 导致的 `CSS` 架构层面的 问题。
+
+  `CSS` 最负责的技术问题莫过于此。 我们会在后面介绍一些 优秀的解决方案。
+
+::: warning
+
+一般而言 `CSS 选择器权重` 是一个必讲的知识点， 它看上去那么的 `技术`。但是我不打算讲它， 也不建议你精通， 只需要理解就可以了。
+
+因为在后面会讲到的 `CSS` 各种 最佳工程实践中，你几乎不需要知道有 `CSS 选择器权重` 这件事情存在。
+
+:::
+
+```html
+<!-- 这是 Internal CSS -->
+<style>
+  /* 这是 元素选择器 Element Selector */
+  div {
+    ...;
+  }
+</style>
+```
+
+### 调试技巧
+
+> TBD
 
 ## state
 
