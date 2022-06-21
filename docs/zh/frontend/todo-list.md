@@ -452,11 +452,100 @@ console.log(state.newTodo);
 state.newTodo = "我是初始值";
 ```
 
-::: details 响应式（ES6） （点击展开）
+::: details 新待办事项 （点击展开）
 
 <iframe src="https://codesandbox.io/embed/05-vanilla-es6-todo-list-stateful-01-xzm1xn?fontsize=14&hidenavigation=1&theme=dark"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
      title="05-vanilla-es6-todo-list-stateful-01"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
+:::
+
+### 待办列表 的实现
+
+如果你感觉到这里学起来都很费劲，恭喜你上路了。
+
+```javascript
+// 存储副作用函数的桶
+const bucket = new Set();
+
+// todo 模板
+const getTodoListItemTemplate = (todo) => {
+  return `<li>${todo} (<span>X</span>)</li>`;
+};
+
+// todos 模板
+const getTodoListTemplate = (todos) =>
+  todos.map((todo) => getTodoListItemTemplate(todo)).join("");
+
+// 原始数据
+const data = {
+  newTodo: null,
+  todos: [],
+};
+
+// 对原始数据的代理
+const state = new Proxy(data, {
+  // 拦截读取操作
+  get(target, key) {
+    // 将副作用函数 effect 添加到存储副作用函数的桶中
+    bucket.add(effect);
+    // 返回属性值
+    return target[key];
+  },
+  // 拦截设置操作
+  set(target, key, newVal) {
+    // 设置属性值
+    target[key] = newVal;
+    // 把副作用函数从桶里取出并执行
+    bucket.forEach((fn) => fn());
+  },
+});
+
+// 副作用
+function effect() {
+  document.getElementById("newTodo").value = state.newTodo;
+  document.getElementById("todoList").innerHTML = getTodoListTemplate(
+    state.todos
+  );
+}
+
+// 更新 todo, newTodo 状态
+function updateState(content) {
+  state.todos = [...state.todos, content];
+  state.newTodo = "";
+}
+
+// 响应用户在页面上的回车事件
+document.addEventListener("keydown", function (e) {
+  if (e.code === "Enter") {
+    console.log("回车被触发");
+    const newVal = e.target.value && e.target.value.trim();
+    if (newVal) {
+      console.log("回车被有效触发");
+      updateState(newVal);
+    }
+  }
+});
+
+// 响应用户在文本框输入
+document.getElementById("newTodo").onchange = function (e) {
+  updateState(e.target.value);
+};
+
+// 先关联副作用函数
+console.log(state.newTodo);
+
+// 第一次设置
+state.newTodo = "我是初始值";
+```
+
+::: details 待办列表 （点击展开）
+
+<iframe src="https://codesandbox.io/embed/06-vanilla-es6-todo-list-stateful-02-9silw5?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="06-vanilla-es6-todo-list-stateful-02"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
