@@ -57,11 +57,22 @@ module.exports = {
         selectLanguageName: "简体中文",
         selectLanguageText: "选择语言",
         selectLanguageAriaLabel: "选择语言",
+        //  navbar
+        navbar: [
+          {
+            text: "前端",
+            link: "/zh/frontend/",
+          },
+          {
+            text: "Vue",
+            link: "/zh/vue/",
+          },
+        ],
         // sidebar
         sidebar: {
           "/zh/frontend/": [
             {
-              text: "目录",
+              text: "前端",
               children: [
                 "/zh/frontend/README.md",
                 "/zh/frontend/getting-started.md",
@@ -71,7 +82,7 @@ module.exports = {
           ],
           "/zh/vue/": [
             {
-              text: "目录",
+              text: "Vue",
               children: ["/zh/vue/README.md", "/zh/vue/getting-started.md"],
             },
           ],
