@@ -69,6 +69,12 @@ module.exports = {
               ],
             },
           ],
+          "/zh/vue/": [
+            {
+              text: "目录",
+              children: ["/zh/vue/README.md", "/zh/vue/getting-started.md"],
+            },
+          ],
         },
         // page meta
         editLinkText: "在 GitHub 上编辑此页",
