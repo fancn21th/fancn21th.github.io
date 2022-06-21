@@ -59,15 +59,11 @@ MyTodoList.store.js
 
 :::
 
-## fn
+## 静态还原
 
 > 眼见为实
 
-::: tip
-
-从本节开始 我们将 实践 和 `ui = fn(state)` 隐喻相结合 逐步 一起探索 前端开发的 `本质`
-
-:::
+接下来我们用 [ES6](https://babeljs.io/docs/en/learn) 来说重新实现这个 `范例`。 你需要开始掌握一些基础的 [HTML](https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Introduction_to_HTML) 和 [CSS](https://developer.mozilla.org/zh-CN/docs/Learn/CSS/First_steps) 知识， 不过你可以先继续看完本节。
 
 ::: tip
 
@@ -80,9 +76,7 @@ MyTodoList.store.js
 
 :::
 
-首先我们要把 `界面` 静态地 渲染出来。这时候你需要开始掌握一些基础的 [HTML](https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Introduction_to_HTML) 和 [CSS](https://developer.mozilla.org/zh-CN/docs/Learn/CSS/First_steps) 知识， 不过你可以先继续看完本节。
-
-以下是 把 `界面` 实现的源代码，这里 不涉及到 `Javascript`， 它 100% 还原了 上一节的 范例 `静态` 渲染的 部分。 而 `动态` 的部分 留在下一节处理。
+以下是 源代码，这里 不涉及到 `Javascript`， 它 100% 还原了 上一节的 范例 `静态` 渲染的 部分。 而 `动态` 的部分 留在下一节处理。
 
 ::: tip
 
@@ -92,8 +86,6 @@ MyTodoList.store.js
 - `state` 也就是 `状态` 本身发生了变化。
 
 :::
-
-`fn` 部分的部分源代码
 
 ```html{8-58}
 <!DOCTYPE html>
@@ -185,16 +177,16 @@ MyTodoList.store.js
    ></iframe>
 :::
 
-下面我来解释这些代码中重要的部分，这里我假设你或多或少已经了解了一些非常基础的 `HTML` `CSS` 概念，我会把重点放在这些基础之上，那些你需要掌握，但是要花很长时间才能掌握的内容：
-
-首先我们很容易区分：
+很明显：
 
 - 从第 8 行 到 第 58 行全部都是 `CSS` 代码 （高亮部分）
 - 其他全部都是 `HTML` 代码
 
+接下来我们来展开一些你需要掌握并且不容易被掌握的部分：
+
 ### 语义化
 
-先从 `HTML` 开始，`HTML` 是 `三剑客` 里面 需要 `活学` 知识最少的一位。也就是 `三剑客` 的软肋和短板。 这是开玩笑。
+`HTML` 是 `三剑客` 里面 能被 `活学` 知识最少的一位。也就是 `三剑客` 的软肋和短板。 这是开玩笑。
 
 现阶段 我觉得 `HTML` 所需要掌握的知识点如下：
 
@@ -202,7 +194,13 @@ MyTodoList.store.js
 
   这意味着 我们可以通过 `样式` 把 常用标签 装扮地 `不分你我`
 
-- 因此，[语义化](https://www.w3schools.com/html/html5_semantic_elements.asp) 是 `HTML` 编写的一个重要 原则。
+  ```html
+  <!-- 理论上来讲， 通过 css 属性，可以让以下两个不同类型的标签 外观样式完全一样 -->
+  <div></div>
+  <span></span>
+  ```
+
+- 因此标签的区别 在我看来主要在于 [语义化](https://www.w3schools.com/html/html5_semantic_elements.asp) 的区别 它 是 `HTML` 编写的一个重要 原则。
 
   简单来说，不同的 `标签` 名 代表了不同的 `业务` 含义。 自然会有 `人` 去消费这些 `语义`。 例如 最典型的例子就是 [Google 爬虫](https://developers.google.com/search/docs/advanced/crawling/overview-google-crawlers)。 它会根据 页面 里面 特定 `标签` 的内容做分析和排名。
 
@@ -349,16 +347,120 @@ input.i-am-a-pseudo-class:focus + span::before {
 
 > 看到的不一定就是真相
 
-`fn` 是外衣， `state` 才是灵魂。 我们来分析一下， 在 `范例` 里面到底有多少内容需要显示。
+`fn` 是外衣， `state` 才是灵魂。 上一节， 我们静态还原了 [范例](/zh/frontend/todo-list.html#范例)。 但是，很显然这个 界面是不会 `动` 的。你在文本输入框 输入任何内容都不会导致 待办列表的变化。
 
-这些 内容 和 [ui = fn(state)](/zh/frontend/getting-started.html#ui-fn-state) 范例中 内容 有什么区别？
+这一节，我们就来考虑 `动` 的部分。
 
-### 分析
+### 响应式
 
-对于新人而言， 第一步去做 静态还原 是 `理所当然` 的事情。 状态分析... :roll_eyes:
+谈实现，先聊一下设计目标，假设如果有一个 `容器` 能存放 `新待办事项的标题`，另外有一个 `容器` 能存放 所有 `待办事项`。并且对 `新待办事项的标题` 或者 `待办事项` 的操作 能自动 反映到 `界面` 上。
 
-- 新增待办事项
-  页面上需要用户输入新待办事项的标题， 这显然是一个明显的 `线索`。
+这个容器就是 [变量](https://zh.javascript.info/variables) 。类型分别是 [String 类型](https://zh.javascript.info/types#string-lei-xing) 以及 [数组](https://zh.javascript.info/array)。 一样一个就够了。
+
+刚才说的是 `状态` 改变 可以 导致 `ui` 变化。 但是单这一个方向是不够的的，比如， 用户在文本输入框里面输入内容，它改变了 `ui`，如果 `state` 能随着 `ui` 变化而变化那就更好了。
+
+这样 变化就是双向的。 它 也被称为 `双向绑定`。
+
+如何实现呢？现在是 `2022` 年 我就不赘述 10 年前的 `JQuery` 时代的实现方式了。
+
+这里我们引入 [响应式](https://cn.vuejs.org/v2/guide/reactivity.html) 的概念，你可以继续读完本章后再回过头来看它。
+
+### 新待办事项 的实现
+
+我们先来实现 `新待办事项` 的双向绑定。
+
+我们设计了一个数据状态 `data.newTodo`（5-7 行）
+当我们往这个状态里面设置内容 58 行，你可以看到 这段内容出现在了 文本输入框内。
+
+继续往下看 如果我们往输入框输入内容，那么 `state.newTodo` 就会变化。
+而这是由 37-52 行代码决定的， 在这里需要掌握 前端编程里面最重要的 概念 [事件](https://zh.javascript.info/events)
+
+事件在前端领域非常重要，现在你只需要记住 `事件 等于 用户输入`，不过如果你能理解 [异步回调](https://zh.javascript.info/callbacks)，那恭喜你离前端入门已经不远了。
+
+::: warning
+
+前端 `动态` 离不开 [JavaScript](https://zh.javascript.info/)，虽然 你很可能学过其他编程语言，比如 `Java`，甚至掌握了 `循环`，`函数`，`对象` 等等基本编程概念。
+
+但是 `JavaScript` 有很多不同与其他编程语言的地方，必须引起你的注意，你无需记忆他们。 而是理解他们的设计意图。
+
+例如 `异步回调` 只不过是 前端领域 处理用户操作的一种编程范式。此外 `作用域`，`上下文`，`闭包` 都是非常基础的概念，他们在 `Javascript` 语言 `运行时` 中的特性才是你需要关注的地方。
+
+换句话说他们并不是一些通用的 编程语言概念 而是和 `运行时` 相关的 概念。
+
+<MyImage src="https://m.media-amazon.com/images/I/81kqrwS1nNL._AC_UY436_FMwebp_QL65_.jpg" alt="the good parts" />
+
+:::
+
+```javascript{5-7,37-52,57-58}
+// 存储副作用函数的桶
+const bucket = new Set();
+
+// 原始数据
+const data = {
+  newTodo: null,
+};
+
+// 对原始数据的代理
+const state = new Proxy(data, {
+  // 拦截读取操作
+  get(target, key) {
+    // 将副作用函数 effect 添加到存储副作用函数的桶中
+    bucket.add(effect);
+    // 返回属性值
+    return target[key];
+  },
+  // 拦截设置操作
+  set(target, key, newVal) {
+    // 设置属性值
+    target[key] = newVal;
+    // 把副作用函数从桶里取出并执行
+    bucket.forEach((fn) => fn());
+  },
+});
+
+// 副作用
+function effect() {
+  document.getElementById("newTodo").value = state.newTodo;
+}
+
+// 更新 newTodo 状态
+function updateNewTodo(content) {
+  state.newTodo = content || "";
+}
+
+// 响应用户在页面上的回车事件
+document.addEventListener("keydown", function (e) {
+  if (e.code === "Enter") {
+    console.log("回车被触发");
+    const newVal = e.target.value && e.target.value.trim();
+    if (newVal) {
+      console.log("回车被有效触发");
+      updateNewTodo(newVal);
+    }
+  }
+});
+
+// 响应用户在文本框输入
+document.getElementById("newTodo").onchange = function (e) {
+  updateNewTodo(e.target.value);
+};
+
+// 先关联副作用函数
+console.log(state.newTodo);
+
+// 第一次设置
+state.newTodo = "我是初始值";
+```
+
+::: details 响应式（ES6） （点击展开）
+
+<iframe src="https://codesandbox.io/embed/05-vanilla-es6-todo-list-stateful-01-xzm1xn?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="05-vanilla-es6-todo-list-stateful-01"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
+:::
 
 <!-- 本文档的样式部分  -->
 <style scoped>

@@ -61,7 +61,7 @@ module.exports = {
         sidebar: {
           "/zh/frontend/": [
             {
-              text: "指南",
+              text: "目录",
               children: [
                 "/zh/frontend/README.md",
                 "/zh/frontend/getting-started.md",
