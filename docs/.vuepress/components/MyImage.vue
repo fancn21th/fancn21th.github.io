@@ -1,5 +1,10 @@
 <template>
-  <img :src="src" :alt="alt" class="img" :class="{ 'img--taller': tall }" />
+  <img
+    :src="src"
+    :alt="alt"
+    class="img"
+    :class="{ 'img--taller': tall, 'img--bigger': big }"
+  />
 </template>
 
 <script>
@@ -17,6 +22,10 @@ export default {
       type: Boolean,
       default: false,
     },
+    big: {
+      type: Boolean,
+      default: false,
+    },
   },
 };
 </script>
@@ -31,5 +40,8 @@ export default {
 }
 .img--taller {
   padding: 1rem;
+}
+.img--bigger {
+  width: 20rem;
 }
 </style>
