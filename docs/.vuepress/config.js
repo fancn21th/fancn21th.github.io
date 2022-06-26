@@ -64,6 +64,10 @@ module.exports = {
             link: "/zh/frontend/",
           },
           {
+            text: "Javascript",
+            link: "/zh/javascript/",
+          },
+          {
             text: "Vue",
             link: "/zh/vue/",
           },
@@ -77,6 +81,15 @@ module.exports = {
                 "/zh/frontend/README.md",
                 "/zh/frontend/getting-started.md",
                 "/zh/frontend/todo-list.md",
+              ],
+            },
+          ],
+          "/zh/javascript/": [
+            {
+              text: "Javascript",
+              children: [
+                "/zh/javascript/README.md",
+                "/zh/javascript/getting-started.md",
               ],
             },
           ],
