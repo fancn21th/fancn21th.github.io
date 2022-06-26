@@ -19,9 +19,3 @@
 学习它们，首先你需要掌握 [JavaScript](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/A_re-introduction_to_JavaScript#%E6%A6%82%E8%A7%88) 的基础。并且掌握一些 `JavaScript` 的 [新语法](https://gist.github.com/gaearon/683e676101005de0add59e8bb345340c)。 然后我建议你继续读完它们，当然学完 `Vue`的就足够了， `React` 的入门资料只是用来对比。
 
 在接下来章节里面我将列举出常用的 `Vue` 的 `习语` 和 `模式`。
-
-## SFC
-
-[SFC](https://cn.vuejs.org/v2/guide/single-file-components.html) 是 `Vue` 中非常重要的概念。如同谈到 `网站` 我们就会想到 `网页` 一样。谈到 `Vue` 程序 我们就很容易联想到 一个个 `SFC` 组件。
-
-## 受控组件

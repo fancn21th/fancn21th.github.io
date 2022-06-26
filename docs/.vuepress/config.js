@@ -90,13 +90,19 @@ module.exports = {
               children: [
                 "/zh/javascript/README.md",
                 "/zh/javascript/getting-started.md",
+                "/zh/javascript/action.md",
               ],
             },
           ],
           "/zh/vue/": [
             {
               text: "Vue",
-              children: ["/zh/vue/README.md", "/zh/vue/getting-started.md"],
+              children: [
+                "/zh/vue/README.md",
+                "/zh/vue/getting-started.md",
+                "/zh/vue/essentials.md",
+                "/zh/vue/advanced.md",
+              ],
             },
           ],
         },
