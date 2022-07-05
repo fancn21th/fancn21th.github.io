@@ -13,7 +13,7 @@ module.exports = {
     "/": {
       lang: "en-US",
       title: "Learn FE a smart way",
-      description: "where learning frontend programming in a smart way",
+      description: "English Version is in progress...",
     },
     "/zh/": {
       lang: "zh-CN",
