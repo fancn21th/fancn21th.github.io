@@ -20,5 +20,5 @@ features:
   - title: Mental Model
     details:
 
-footer: MIT Licensed | Copyright © 2022-present Yijie Fan
+footer: MIT Licensed | Copyright © 2022-present FAN YIJIE
 ---
