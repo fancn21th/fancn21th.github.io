@@ -7,14 +7,20 @@
 - object literal
 
 ```javascript
-var person = {
-  name: "John",
-  age: 30,
-  hobbies: ["Sports", "Cooking"],
+const foo = {
+  a: 1,
+  b: 2,
+  c: 3,
 };
 ```
 
 ### Functions
+
+```javascript
+const foo = function (params) {
+  console.log(params);
+};
+```
 
 ### Inheritance
 
