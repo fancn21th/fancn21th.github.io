@@ -1,8 +1,18 @@
-# 什么是 Javascript
+# 硬核
 
 ## Good Parts
 
 ### Objects
+
+- object literal
+
+```javascript
+var person = {
+  name: "John",
+  age: 30,
+  hobbies: ["Sports", "Cooking"],
+};
+```
 
 ### Functions
 
@@ -45,3 +55,7 @@
 ## TypeScript
 
 > TBD
+
+```
+
+```
