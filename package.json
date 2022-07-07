@@ -9,7 +9,8 @@
     "dev": "npm run docs:dev",
     "build": "npm run docs:build",
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "deploy": "sh ./deploy.sh"
   },
   "devDependencies": {
     "@vuepress/plugin-google-analytics": "2.0.0-beta.48",
