@@ -20,5 +20,5 @@ features:
   - title: 授人以渔
     details: 学无止境，穷举一切不如指点迷津。
 
-footer: MIT Licensed | Copyright © 2022-present Yijie Fan
+footer: MIT Licensed | Copyright © 2022-present 范范
 ---
