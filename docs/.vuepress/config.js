@@ -7,7 +7,6 @@ const { googleAnalyticsPlugin } = require("@vuepress/plugin-google-analytics");
 
 module.exports = {
   base: "/",
-  lang: "zh-CN",
   // site-level locales config
   locales: {
     "/": {
