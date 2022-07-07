@@ -6,7 +6,8 @@
   "author": "fancn21th <fancn21th@aliyun.com> (http://fancn21th.cn/)",
   "license": "MIT",
   "scripts": {
-    "dev": "yarn docs:dev",
+    "dev": "npm run docs:dev",
+    "build": "npm run docs:build",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },
