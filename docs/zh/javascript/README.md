@@ -1,41 +1,32 @@
 # 介绍
 
+[Javascript](https://en.wikipedia.org/wiki/JavaScript) 语言诞生之初 就注定了她的 `不凡`。 因为 她 天生就是 [互联网](https://en.wikipedia.org/wiki/World_Wide_Web) 的语言。
+
 ::: tip
 
-下文摘自 [Douglas Crockford](https://www.crockford.com/books.html) `JavaScript: The Good Parts: The Good Parts` 一书, 注意这本书出版于 2008 年. 以下的论述是基于当年的市场环境. 这本书早已在国内翻译出版, 我只是简单翻译重点. 原文在 第一章 的 `Why Javascript` 这一节
-
-Javascript 是一门重要的语言因为她是浏览器的语言 (也就是互联网的语言). 同时她也是最被 `despised` 鄙视的编程语言. (2008 年最流行的编程语言是 C 语言). [BOM API & DOM](https://zh.javascript.info/browser-environment) 设计的相当糟糕. 但是 `DOM` 不管用什么语言实现, 用起来都会很痛苦.
-
-Javascript 被 `鄙视` 的一个主要的原因是因为 如果你已经精通一门编程语言, 只是你必须要编写 Web 程序, 你不得不使用 Javascript, 而大部分人一开始都不屑于先去学习她, 然而不久就会发现 Javascript 和 你所精通的语言 有巨大的不同.
-
-Javascript 最神奇的地方在于 不怎么懂 Javascript 甚至不怎么懂 编程 就能把事情搞定了. 她是有着非常强表现力的语言.
+下文摘要自 [Douglas Crockford](https://www.crockford.com/books.html) `JavaScript: The Good Parts: The Good Parts` （这本书出版于 2008 年）第一章 第一节 `Why Javascript`
 
 <MyImage src="https://m.media-amazon.com/images/I/81kqrwS1nNL._AC_UY436_FMwebp_QL65_.jpg" alt="the good parts" />
 
+- [Javascript](https://www.javascript.com/) 是浏览器的语言，所以她很重要 (言下之意就是 她是 互联网的语言)
+- 彼时彼刻 `Javascript` 被严重鄙视
+  - [BOM API & DOM](https://zh.javascript.info/browser-environment) 设计地 相当糟糕 (不管用什么语言实现都会很糟糕)
+  - `其他语言` 和 `Javascript` 的差异 恰恰是 `Javascript` 的重点，而很多新手不削于去学习 `Javascript` 而被迫 用 `Javascript` 去开发 Web 应用
+  - `Javascript` 最神奇的地方在于 仅仅掌握了 和 `其他语言` 相似的部分 就能把 Web 应用开发搞定了
+
+**注意**：这一节的内容对新人来说还是特别晦涩的， 此物的引用出于让你关注 `Javascript` 不为你所知部分的重要性。
+
 :::
-
-大部分编程语言都包含有好的设计和不好的设计. Javascript 亦是如此.
-
-- 她是第一个 成为主流的 [lambada](https://stackoverflow.com/questions/3865335/what-is-a-lambda-language) 语言.
-
-- 她是弱类型的语言.
-
-- 她提供了强大的 `字面量 literal` 表达方式. 其为 [JSON](https://www.json.org/json-zh.html) 的设计带去灵感. 而 `JSON` 本身又成为了 互联网标准 传输格式.
-
-- 她提供了 [原型继承](https://zh.javascript.info/prototype-inheritance), 因此很多人不得不学习这种新的继承方式, 或者 基于它去模仿 [类继承](https://zh.javascript.info/class-inheritance) (注意 这里链接是 ES6 的新特性, 在 2008 年 JavaScript 并不支持 类继承).
-
-Javascript 不好的设计容易让人轻视 这门语言, 例如一下这个经典的案例。
 
 ::: warning
-
-并不是只有 Javascript 有这个问题，主要是她是最 `出名` 的一个。
-
+带着 [惯性思维](https://baike.baidu.com/item/%E6%80%9D%E7%BB%B4%E5%AE%9A%E5%8A%BF/9263375) 去学习 很容易 犯 一些主观性的 错误。
 :::
 
-```javascript
-// 这个问题叫做 floating-point math
-console.log(0.1 + 0.2 === 0.3); // false
-console.log(0.1 + 0.2 === 0.30000000000000004); // true
-console.log(0.1 + 0.2 === 0.30000000000000005); // true
-console.log(0.1 + 0.2 === 0.30000000000000006); // true
-```
+[Joe Barnard](https://bps.space/pages/about) 是一个 `音乐高材生`， 在 2015 年 他受到 `SpaceX` 的启发，毅然决然地 开始了他 独立 `造火箭` 的崭新人生。 我第一次看到这个新闻的时候， 作者讲述了 他做的第一件事 就是凑钱 买书。 购买大量相关的专业书籍。
+
+因此 我也给你推荐了一些我认为非常好的资料如下:
+
+- [Ilya Kantor]() 的 [Javascript.info](https://javascript.info/) （中文版）
+- [Dan Abramov]() 的 [JJS](https://justjavascript.com)（英文版）
+- [Marijn Haverbeke]() 的 [Eloquent javascript](https://eloquentjavascript.net/)（英文版）
+- [Kyle Simpson]() 的 [You Don't Know JS Yet (book series) - 2nd Edition](https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/get-started/README.md)（英文版）
