@@ -4,7 +4,7 @@
 
 ::: tip
 
-下文摘要自 [Douglas Crockford](https://www.crockford.com/books.html) `JavaScript: The Good Parts: The Good Parts` （这本书出版于 2008 年）第一章 第一节 `Why Javascript`
+下文摘要自 [Douglas Crockford](https://www.crockford.com/books.html) `JavaScript: The Good Parts: The Good Parts` 一书 的 第一章 第一节 `Why Javascript` （该书出版于 2008 年）
 
 <MyImage src="https://m.media-amazon.com/images/I/81kqrwS1nNL._AC_UY436_FMwebp_QL65_.jpg" alt="the good parts" />
 
@@ -14,7 +14,7 @@
   - `其他语言` 和 `Javascript` 的差异 恰恰是 `Javascript` 的重点，而很多新手不削于去学习 `Javascript` 而被迫 用 `Javascript` 去开发 Web 应用
   - `Javascript` 最神奇的地方在于 仅仅掌握了 和 `其他语言` 相似的部分 就能把 Web 应用开发搞定了
 
-**注意**：这一节的内容对新人来说还是特别晦涩的， 此物的引用出于让你关注 `Javascript` 不为你所知部分的重要性。
+**注意**：这一节的内容对新人来说还是特别晦涩的， 特别提示的目的 第一是这本书确实是经典 ，第二是希望你关注 `Javascript` 中哪些与众不同的设计。
 
 :::
 
