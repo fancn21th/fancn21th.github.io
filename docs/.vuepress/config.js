@@ -89,7 +89,8 @@ module.exports = {
               children: [
                 "/zh/javascript/README.md",
                 "/zh/javascript/getting-started.md",
-                "/zh/javascript/action.md",
+                "/zh/javascript/algorithm-data.md",
+                "/zh/javascript/algorithm-perf.md",
               ],
             },
           ],
