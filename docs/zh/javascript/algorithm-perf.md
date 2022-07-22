@@ -59,7 +59,7 @@
 - 讨论
 
   - `reduce` 方法减少了循环的次数因此性能更好
-  - [试一试](https://github.com/fancn21th/frontend-algorithm-cookbook/blob/main/src/reduce-is-faster/reduce-is-faster.test.js)
+  - [Code In Unit Test](https://github.com/fancn21th/frontend-algorithm-cookbook/blob/main/src/reduce-is-faster/reduce-is-faster.test.js)
 
   ::: tip
   当 数据集并不大的时候 依然建议用 `声明式` 的 [链式调用](https://zh.javascript.info/task/chain-calls)
