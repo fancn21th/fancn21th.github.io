@@ -6,7 +6,7 @@
 
 - 问题
 
-  给定一个大数据集， 针对它进行多个步骤的数据转换处理，常见的方案是链式调用数组方法， 有没有更好的方案？
+  给定一个大数据集， 针对它进行多个步骤的数据转换处理，常见的方案是 [链式调用](https://zh.javascript.info/task/chain-calls) 数组方法， 有没有更好的方案？
 
   ```javascript
   const length = 10_000_000;
@@ -17,6 +17,7 @@
 
   const double = (items) => items.map((item) => item * 2);
 
+  // 这是不是严格意义的链式调用的写法 但是 实际是同样的结果
   const filterMappedBigData = (items) => double(even(items));
 
   console.time("filter and map");
@@ -61,5 +62,5 @@
   - [试一试](https://github.com/fancn21th/frontend-algorithm-cookbook/blob/main/src/reduce-is-faster/reduce-is-faster.test.js)
 
   ::: tip
-  当 数据集并不大的时候 依然建议用声明式的 `链式调用`
+  当 数据集并不大的时候 依然建议用 `声明式` 的 [链式调用](https://zh.javascript.info/task/chain-calls)
   :::
