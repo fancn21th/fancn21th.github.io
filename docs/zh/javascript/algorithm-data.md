@@ -50,3 +50,53 @@
   - 借鉴了 [Unix Piping](https://www.geeksforgeeks.org/piping-in-unix-or-linux/) 思想
   - 利用 `Reduce` 实现
   - [Code In Unit Test](https://github.com/fancn21th/frontend-algorithm-cookbook/blob/main/src/compose-functions/compose-functions.test.js)
+
+## 获取嵌套 property
+
+- 问题
+
+  如何更灵活地，动态地 获取一个 对象嵌套属性 ?
+
+  ```javascript
+  // 直觉上 我们会直接 访问 character.master.master.name
+  const characterA = {
+    name: "悟空",
+    master: {
+      name: "唐僧",
+      master: {
+        name: "观音",
+      },
+    },
+  };
+
+  const characterB = {
+    name: "唐僧",
+    master: {
+      name: "观音",
+    },
+  };
+
+  // 如果你要迭代处理一个 对象数组， 并且针对相同的 嵌套属性 进行 访问和处理
+  // 这时候用传统的方式就显得力不从心而且要考虑各种各样的边界场景
+  const characters = [characterA, characterB];
+  ```
+
+- 方案
+
+  利用 `reduce` 方法实现的 一级一级的属性访问，如果失败就返回 `false`
+
+  ```javascript
+  const reducer = function (object, propName) {
+    if (object) {
+      return object[propName];
+    }
+    return false;
+  };
+
+  const getNestedPropByPath = (path) => (obj) =>
+    path.split(".").reduce(reducer, obj);
+  ```
+
+- 讨论
+  - 利用 `Reduce` 实现
+  - [Code In Unit Test](https://github.com/fancn21th/frontend-algorithm-cookbook/blob/main/src/nested-property/nested-property.test.js)
