@@ -64,6 +64,82 @@ function
 
 ### 区分 Primitive 和 Object 类型
 
+你可能会有疑惑， 因为很多人都会告诉你，在 `Javascript` 的世界里 所有的 值都是 对象类型。 嗯， 不急 我们先继续往下看。
+
+以下代码利用 [对象属性](https://zh.javascript.info/object#wen-ben-he-shu-xing) 赋值成功与否来判断 该值 属于 对象类型
+
+```javascript
+// primitive types  原始类型
+const _string = "hello world!";
+const _number = 1;
+const _boolean = true;
+const _null = null;
+const _undefined = undefined;
+const _bigint = 10n;
+const _symbol = Symbol();
+// object types 对象类型
+const _object = {};
+const _function = () => {};
+// array 并不是一个新的类型 这里只是用它来做迭代运算
+// 所以 js 一共有9种类型 就像九头鸟
+const array = [
+  _string,
+  _number,
+  _boolean,
+  _null, // 这是一个bug 所以 它的 类型名字 并不是 null 而是 object
+  _undefined,
+  _bigint,
+  _symbol,
+  _object,
+  _function,
+];
+
+// function is a object
+// console.log(typeof _function.__proto__.__proto__);
+
+// 基于 object 可以动态 赋值来判断 一个值是不是 object 类型
+const isObject = (value) => {
+  try {
+    value["foo"] = "bar";
+  } catch (err) {
+    return false;
+  }
+  return value["foo"] === "bar";
+};
+
+array.forEach((a) =>
+  console.log(typeof a, isObject(a) ? "is object" : "is NOT object")
+);
+```
+
+输出结果：
+
+```shell
+string is NOT object
+number is NOT object
+boolean is NOT object
+object is NOT object # this is null
+undefined is NOT object
+bigint is NOT object
+symbol is NOT object
+object is object
+function is object
+```
+
+::: details 代码沙盒 （点击展开）
+
+请检查 Console 中的内容
+
+<iframe src="https://codesandbox.io/embed/02-data-types-is-object-ud6kz8?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="02-data-types-is-object"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
+:::
+
+### 方法传参
+
 ## 5 个 范式
 
 ### prototype
