@@ -1,3 +1,77 @@
-# 起步
+# 快速上手
 
-> 摸爬滚打
+## Data Type 数据类型
+
+Javascript 一共 有 9 种数据类型， 其中 又分为 7 种原始类型和 2 种对象类型。
+
+### 检察类型
+
+以下代码 利用 [typeof 运算符](https://zh.javascript.info/types#type-typeof) 来检察一下这 9 种数据类型。 你可以在 浏览器的 开发者工具 中的控制台 或者在 nodejs shell 命令行 里面 执行这段代码。
+
+```javascript
+// primitive types  原始类型
+const _string = "hello world!";
+const _number = 1;
+const _boolean = true;
+const _null = null;
+const _undefined = undefined;
+const _bigint = 10n;
+const _symbol = Symbol();
+// object types 对象类型
+const _object = {};
+const _function = () => {};
+// array 并不是一个新的类型 这里只是用它来做迭代运算
+// 所以 js 一共有9种类型 就像九头鸟
+const array = [
+  _string,
+  _number,
+  _boolean,
+  _null, // 这是一个bug 所以 它的 类型名字 并不是 null 而是 object
+  _undefined,
+  _bigint,
+  _symbol,
+  _object,
+  _function,
+];
+array.forEach((a) => console.log(typeof a));
+```
+
+输出结果：
+
+```shell
+string
+number
+boolean
+object # this is a bug !!!!!
+undefined
+bigint
+symbol
+object
+function
+```
+
+::: details 代码沙盒 （点击展开）
+
+请检查 Console 中的内容
+
+<iframe src="https://codesandbox.io/embed/01-data-types-iusz9x?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="01-data-types"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
+:::
+
+### 区分 Primitive 和 Object 类型
+
+## 5 个 范式
+
+### prototype
+
+### callback
+
+### context aka this
+
+### scope
+
+### closure
