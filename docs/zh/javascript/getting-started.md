@@ -98,7 +98,7 @@ const array = [
 console.log(_function.__proto__ === Function.prototype);
 console.log(_function.__proto__.__proto__ === Object.prototype);
 
-// 基于 object 可以动态 赋值来判断 一个值是不是 object 类型
+// 基于 object 可以动态给对象增加属性 这个特点 我们来判断 一个值是不是 object 类型
 const isObject = (value) => {
   try {
     value["foo"] = "bar";
