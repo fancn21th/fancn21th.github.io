@@ -94,7 +94,7 @@ const array = [
   _function,
 ];
 
-// function is a object
+// function is an object
 console.log(_function.__proto__ === Function.prototype);
 console.log(_function.__proto__.__proto__ === Object.prototype);
 
