@@ -77,8 +77,13 @@
   };
 
   // 如果你要迭代处理一个 对象数组， 并且针对相同的 嵌套属性 进行 访问和处理
-  // 这时候用传统的方式就显得力不从心而且要考虑各种各样的边界场景
   const characters = [characterA, characterB];
+
+  characters.forEach((c, index) => {
+    const masterName = c.master.master.name;
+    // 处理 masterName
+    // 很显然如果这里会抛异常
+  });
   ```
 
 - 方案
@@ -95,6 +100,14 @@
 
   const getNestedPropByPath = (path) => (obj) =>
     path.split(".").reduce(reducer, obj);
+
+  const characters = [characterA, characterB];
+
+  characters.forEach((c, index) => {
+    const masterName = getNestedPropByPath(path)(c);
+    // 处理 masterName
+    // 可以针对 masterName 是否为 falsy 来判断
+  });
   ```
 
 - 讨论
