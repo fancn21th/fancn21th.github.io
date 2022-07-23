@@ -138,6 +138,22 @@ function is object
    ></iframe>
 :::
 
+我们再看看这个非常简单的代码
+
+```javascript
+console.log("hello".length); // 打印出 5
+```
+
+矛盾出现了，为什么 原始类型 也可以有 `property` 可以访问呢？
+
+这里解释也很简单就是 `Javascript` 为 原始类型 做了 `autoboxing`
+
+我们再看下面这段代码， `autoboxing` 的意思就是 `Javascript` 为各种原始类型的 `值` 通过 `__proto__` 自动绑定到了一个 预定义好的 原型对象 (后文会解释 [prototype](#prototype)) 所以原型对象上预定号的属性可以被访问
+
+```javascript
+console.log("".__proto__ === String.prototype); // 打印出 true ， 因为 String 的原型对象 实现了 `length` 属性
+```
+
 ### 方法传参
 
 ## 5 个 范式
