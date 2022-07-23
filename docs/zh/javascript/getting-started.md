@@ -95,7 +95,8 @@ const array = [
 ];
 
 // function is a object
-// console.log(typeof _function.__proto__.__proto__);
+console.log(_function.__proto__ === Function.prototype);
+console.log(_function.__proto__.__proto__ === Object.prototype);
 
 // 基于 object 可以动态 赋值来判断 一个值是不是 object 类型
 const isObject = (value) => {
