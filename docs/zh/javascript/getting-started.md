@@ -155,16 +155,110 @@ console.log("hello".length); // 打印出 5
 console.log("".__proto__ === String.prototype); // 打印出 true ， 因为 String 的原型对象 实现了 `length` 属性
 ```
 
-### 方法传参
-
 ## 5 个 范式
+
+Javascript 有 5 个 非常重要的编程范式
 
 ### prototype
 
 ### callback
 
-### context aka this
-
 ### scope
 
+- Function Scope
+
+  最开始 Javascript 只有函数作用域
+
+- Block Scope
+
+  ES6 引入了 [代码块作用域](https://zh.javascript.info/closure#dai-ma-kuai)
+
+### context aka this
+
 ### closure
+
+## Function 四种调用方式
+
+不同的调用方式，上下文的指向不同
+
+### 对象方法调用
+
+- example
+
+  ```javascript
+  const obj = {
+    foo: function () {
+      console.log(this); // 打印出 obj
+    },
+  };
+  obj.foo();
+  ```
+
+- this
+
+  指向 `.` 之前的对象
+
+### 函数调用
+
+- example
+  ```javascript
+  const foo = function () {
+    console.log(this); // 打印出 window
+  };
+  foo();
+  ```
+- this
+
+  指向 最近的 function 作用域中的 `this`，如果没有，则直到 找到 全局作用域中的 `this` （在浏览器中 全局 `this` 就是 `Window`）
+
+### 构造函数调用
+
+- example
+
+  ```javascript
+  const Foo = function (bar) {
+    this.bar = bar;
+    console.log(this); // 打印出 Foo { bar: 'bar' }
+  };
+
+  Foo.prototype.baz = () => {};
+
+  const obj = new Foo("bar");
+  ```
+
+- this
+
+  指向 创建的 对象本身
+
+### Apply & Call 调用
+
+首先 Apply 和 Call 是 `Function.prototype` 上的方法
+
+这是一个有趣的案例， [arguments](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/arguments) 并不是一个真正的数组，而是一个对象，但是我们可以通过 借用 `Array.prototype` 上定义的方法
+
+- example
+
+  ```javascript
+  const foo = function () {
+    // arguments 对象并不是数组
+    // 借用 数组的 forEach 方法
+    const forEach = Array.prototype.forEach;
+    forEach.call(arguments, function (a) {
+      console.log(a); // 打印出每个参数 1，2，3
+    });
+  };
+
+  foo(1, 2, 3);
+  ```
+
+- this
+
+  指向 apply 或者 call 方法的第一个参数
+
+## 箭头函数
+
+[Arrow Function](https://zh.javascript.info/arrow-functions)
+
+- 没有 `this`
+- 没有 `arguments`
+- 不能用作 构造函数
