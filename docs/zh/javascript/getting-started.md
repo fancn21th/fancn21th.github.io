@@ -203,6 +203,24 @@ Javascript 有 5 个 非常重要的编程范式
 
 ### closure
 
+闭包是 内嵌的方法 如何 访问 其 词法作用域中的变量
+
+- 特点
+
+  - nested function
+
+  - access lexical scope
+
+- Example 1
+
+  ```javascript
+  const doubled = [1, 2, 3].map(function (x) {
+    // 这就是内嵌方法
+    // 词法作用域包括了 map 方法作用域中的上下文 this 也就是 [1,2,3]
+    return x * 2;
+  });
+  ```
+
 ## Function 四种调用方式
 
 不同的调用方式，上下文的指向不同
