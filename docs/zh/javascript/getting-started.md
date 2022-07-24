@@ -185,11 +185,11 @@ console.log("".__proto__ === String.prototype); // 打印出 true ， 因为 Str
 
 Javascript 有 5 个 非常重要的编程范式
 
-### prototype
+### prototype 原型
 
-### callback
+### callback 回调
 
-### scope
+### scope 作用域
 
 - Function Scope
 
@@ -199,11 +199,11 @@ Javascript 有 5 个 非常重要的编程范式
 
   ES6 引入了 [代码块作用域](https://zh.javascript.info/closure#dai-ma-kuai)
 
-### context aka this
+### context aka this 上下文
 
-### closure
+### closure 闭包
 
-闭包是 内嵌的方法 如何 访问 其 词法作用域中的变量
+闭包是指 内嵌的方法 如何 访问 其 词法作用域中的变量
 
 - 特点
 
