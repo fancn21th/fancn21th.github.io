@@ -220,8 +220,6 @@ Javascript 有 5 个 非常重要的编程范式
   obj.foo();
   ```
 
-````
-
 - this
 
   指向 `.` 之前的对象
@@ -313,4 +311,3 @@ Javascript 有 5 个 非常重要的编程范式
   setTimeout(foo.increment, 100);
   setTimeout(foo.incrementWithLexicalThis(), 100);
   ```
-````
