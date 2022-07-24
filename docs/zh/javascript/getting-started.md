@@ -155,6 +155,32 @@ console.log("hello".length); // 打印出 5
 console.log("".__proto__ === String.prototype); // 打印出 true ， 因为 String 的原型对象 实现了 `length` 属性
 ```
 
+## Type Coercion
+
+[Type Coercion](https://developer.mozilla.org/en-US/docs/Glossary/Type_coercion)
+
+- 隐式转换
+
+  - Example 1
+
+  ```javascript
+  const arr = [];
+
+  // arr.length 会被 转换成 boolean 类型的值
+  if (arr.length) {
+    console.log("arr is not empty");
+  }
+  ```
+
+  - Example 2
+
+  ```javascript
+  const a = 1;
+  const b = "1";
+
+  console.log(a + b); // 打印出 "11"
+  ```
+
 ## 5 个 范式
 
 Javascript 有 5 个 非常重要的编程范式
@@ -193,6 +219,8 @@ Javascript 有 5 个 非常重要的编程范式
   };
   obj.foo();
   ```
+
+````
 
 - this
 
@@ -285,3 +313,4 @@ Javascript 有 5 个 非常重要的编程范式
   setTimeout(foo.increment, 100);
   setTimeout(foo.incrementWithLexicalThis(), 100);
   ```
+````
