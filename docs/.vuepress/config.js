@@ -70,6 +70,10 @@ module.exports = {
             text: "Vue",
             link: "/zh/vue/",
           },
+          {
+            text: "Node",
+            link: "/zh/node/",
+          },
         ],
         // sidebar
         sidebar: {
@@ -92,6 +96,12 @@ module.exports = {
                 "/zh/javascript/algorithm-data.md",
                 "/zh/javascript/algorithm-perf.md",
               ],
+            },
+          ],
+          "/zh/node/": [
+            {
+              text: "Nodejs",
+              children: ["/zh/node/README.md", "/zh/node/getting-started.md"],
             },
           ],
           "/zh/vue/": [
