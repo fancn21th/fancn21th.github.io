@@ -257,8 +257,31 @@ Javascript 有 5 个 非常重要的编程范式
 
 ## 箭头函数
 
-[Arrow Function](https://zh.javascript.info/arrow-functions)
+- [Arrow Function](https://zh.javascript.info/arrow-functions)
 
-- 没有 `this`
-- 没有 `arguments`
-- 不能用作 构造函数
+  - 没有 `this`
+  - 没有 `arguments`
+  - 不能用作 构造函数
+
+- example
+
+  ```javascript
+  const foo = {
+    count: 1,
+    increment() {
+      this.count++;
+      console.log(this === window); // 打印出 true
+      console.log(this.count); // 打印出 NaN
+    },
+    incrementWithLexicalThis() {
+      return () => {
+        this.count++;
+        console.log(this === foo); // 打印出 true
+        console.log(this.count); // 打印出 2
+      };
+    },
+  };
+
+  setTimeout(foo.increment, 100);
+  setTimeout(foo.incrementWithLexicalThis(), 100);
+  ```
