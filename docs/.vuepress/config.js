@@ -67,6 +67,10 @@ module.exports = {
             link: "/zh/javascript/",
           },
           {
+            text: "RxJs",
+            link: "/zh/rxjs/",
+          },
+          {
             text: "Vue",
             link: "/zh/vue/",
           },
@@ -96,6 +100,12 @@ module.exports = {
                 "/zh/javascript/algorithm-data.md",
                 "/zh/javascript/algorithm-perf.md",
               ],
+            },
+          ],
+          "/zh/rxjs/": [
+            {
+              text: "Rxjs",
+              children: ["/zh/rxjs/README.md", "/zh/rxjs/getting-started.md"],
             },
           ],
           "/zh/node/": [
