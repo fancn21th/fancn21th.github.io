@@ -269,10 +269,43 @@ Javascript 有 5 个 非常重要的编程范式
       foo: foo(),
     };
 
-    console.log(bar.foo()); // undefined
+    console.log(bar.foo());
     ```
 
     这个例子 打印了 `undefined` 你能理解是为什么吗?
+
+    最后我们来一起看看 到底 `this` 上下文指向了哪里
+
+    ```javascript
+    const foo = {
+      title: "bar",
+      show: function () {
+        return () => {
+          console.log(this === foo); // 打印 true
+          console.log(this.title);
+        };
+      },
+    };
+
+    setTimeout(foo.show(), 0);
+    ```
+
+    ```javascript
+    const foo = function () {
+      return () => {
+        console.log(this === window); // 打印 true 如果是 browser
+        console.log(this === global); // 打印 true 如果是 nodejs
+        console.log(this.title);
+      };
+    };
+
+    const bar = {
+      title: "bar",
+      foo: foo(),
+    };
+
+    console.log(bar.foo());
+    ```
 
 ### closure 闭包
 
