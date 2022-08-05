@@ -199,7 +199,80 @@ Javascript 有 5 个 非常重要的编程范式
 
   ES6 引入了 [代码块作用域](https://zh.javascript.info/closure#dai-ma-kuai)
 
-### context aka this 上下文
+### context 上下文
+
+> aka this
+
+- lexical this
+
+  > arrow function this
+
+  > lexical scope 不是 运行时的 function scope 而是 author time function scope
+
+  - 先看 2 段代码
+
+    ```javascript
+    const foo = {
+      title: "bar",
+      show: function () {
+        console.log(this.title); // 依次打印什么?
+      },
+    };
+
+    foo.show();
+    setTimeout(foo.show, 0);
+    ```
+
+    上面代码会依次打印 `bar` 和 `undefined`
+
+    ```javascript
+    const foo = {
+      title: "bar",
+      show: () => {
+        console.log(this.title); //  打印什么?
+      },
+    };
+
+    setTimeout(foo.show, 0);
+    ```
+
+    上面代码会打印 `undefined`， 这个可能和你想的不一样，那么说明 `arrow function lexical this` 你并没有完全掌握
+
+  - lexical scope
+
+    lexical scope 是指 代码编写时的作用域，其规则是找到最近的 非 `arrow function` 的作用域，然后把 `this` 绑定到该作用域
+
+    ```javascript
+    const foo = {
+      title: "bar",
+      show: function () {
+        return () => {
+          console.log(this.title);
+        };
+      },
+    };
+
+    setTimeout(foo.show(), 0);
+    ```
+
+    这次能正确打印 `bar` 了，这是因为 `arrow function` 的 lexical scope 是 `foo` 的 `show` 方法的 作用域
+
+    ```javascript
+    const foo = function () {
+      return () => {
+        console.log(this.title);
+      };
+    };
+
+    const bar = {
+      title: "bar",
+      foo: foo(),
+    };
+
+    console.log(bar.foo()); // undefined
+    ```
+
+    这个例子 打印了 `undefined` 你能理解是为什么吗?
 
 ### closure 闭包
 
@@ -207,19 +280,19 @@ Javascript 有 5 个 非常重要的编程范式
 
 - 特点
 
-  - nested function
+- nested function
 
-  - access lexical scope
+- access lexical scope
 
 - Example 1
 
-  ```javascript
-  const doubled = [1, 2, 3].map(function (x) {
-    // 这就是内嵌方法
-    // 词法作用域包括了 map 方法作用域中的上下文 this 也就是 [1,2,3]
-    return x * 2;
-  });
-  ```
+```javascript
+const doubled = [1, 2, 3].map(function (x) {
+  // 这就是内嵌方法
+  // 词法作用域包括了 map 方法作用域中的上下文 this 也就是 [1,2,3]
+  return x * 2;
+});
+```
 
 ## Function 四种调用方式
 
