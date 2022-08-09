@@ -67,6 +67,10 @@ module.exports = {
             link: "/zh/javascript/",
           },
           {
+            text: "Monorepos",
+            link: "/zh/monorepos/",
+          },
+          {
             text: "RxJs",
             link: "/zh/rxjs/",
           },
@@ -99,6 +103,15 @@ module.exports = {
                 "/zh/javascript/getting-started.md",
                 "/zh/javascript/algorithm-data.md",
                 "/zh/javascript/algorithm-perf.md",
+              ],
+            },
+          ],
+          "/zh/monorepos/": [
+            {
+              text: "Monorepos",
+              children: [
+                "/zh/monorepos/README.md",
+                "/zh/monorepos/getting-started.md",
               ],
             },
           ],
