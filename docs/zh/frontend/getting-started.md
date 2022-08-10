@@ -1,12 +1,20 @@
-# 什么是前端
+# 快速上手
 
 ::: warning
 
-- 下文有 大量的 新名词 出现，它们都带有链接，你可以去了解他们， 但是理解本文无需你掌握它们。
+- 下文有 大量的 新名词 出现，它们都带有链接，你可以去了解他们， 但是理解本篇文章， 无需你掌握它们。
 
 - 下文中 `本质` 和 `隐喻` 会交替使用 它们往往代表同一个含义
 
 :::
+
+## 为什么学习前端
+
+这是后期插入的段落，因为我觉得下文中提到的 `为什么选择前端` 的原因一定是会引起你的共鸣。 这绝对 **值得一提**。
+
+Natalia: It's a really interesting question because I'm not a well-established web developer, considering my experience in years. I had only three and a half years experience in web development, and previously I worked as a database administrator. I decided to switch my career, I think, after I had a maternity leave, because I was always interested in web development. I was playing with HTML in Notepad when I was in high school, and I decided to give it a try. And it went surprisingly good, because from my experience, **frontend development is one of the most exciting, because you can almost immediately see the result of your work without even compiling step, usually**.
+
+因为你能立即看到你工作的结果，这让人非常开心。
 
 ## 隐喻
 
