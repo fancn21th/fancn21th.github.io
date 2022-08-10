@@ -75,6 +75,10 @@ module.exports = {
             link: "/zh/rxjs/",
           },
           {
+            text: "Typescript",
+            link: "/zh/typescript/",
+          },
+          {
             text: "Vue",
             link: "/zh/vue/",
           },
@@ -112,6 +116,15 @@ module.exports = {
               children: [
                 "/zh/monorepos/README.md",
                 "/zh/monorepos/getting-started.md",
+              ],
+            },
+          ],
+          "/zh/typescript/": [
+            {
+              text: "TS",
+              children: [
+                "/zh/typescript/README.md",
+                "/zh/typescript/getting-started.md",
               ],
             },
           ],
