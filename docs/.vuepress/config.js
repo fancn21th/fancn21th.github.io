@@ -136,8 +136,12 @@ module.exports = {
           ],
           "/zh/node/": [
             {
-              text: "Nodejs",
-              children: ["/zh/node/README.md", "/zh/node/getting-started.md"],
+              text: "Node",
+              children: [
+                "/zh/node/README.md",
+                "/zh/node/getting-started.md",
+                "/zh/node/npm.md",
+              ],
             },
           ],
           "/zh/vue/": [
