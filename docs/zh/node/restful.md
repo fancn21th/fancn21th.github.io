@@ -140,7 +140,7 @@ req.on("end", function () {
       ? router[trimmedPath]
       : handlers.notFound;
 
-  // 构造
+  // 构造上下文
   var context = {
     trimmedPath: trimmedPath,
     queryStringObject: queryStringObject,
@@ -149,14 +149,18 @@ req.on("end", function () {
     payload: buffer,
   };
 
+  // 调用 匹配的 路由回调
   matchedHandler(context, function (statusCode, payload) {
-    statusCode = typeof statusCode == "number" ? statusCode : 200;
+    // 通用 回调定义
 
+    statusCode = typeof statusCode == "number" ? statusCode : 200;
     payload = typeof payload == "object" ? payload : {};
 
     // Convert the payload to a string
     var payloadString = JSON.stringify(payload);
 
+    // https://nodejs.org/dist/latest-v18.x/docs/api/http.html#responsewriteheadstatuscode-statusmessage-headers
+    res.setHeader("Content-Type", "application/json");
     res.writeHead(statusCode);
     res.end(payloadString);
   });
