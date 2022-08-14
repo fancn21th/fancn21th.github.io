@@ -2,6 +2,8 @@
 
 ## package.json
 
+> consumed by npm
+
 ### init
 
 ```shell

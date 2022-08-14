@@ -43,9 +43,9 @@
 
 - Node.js 使用的是 `v8`。
 
-## Node.js
+## Node.js is WTF
 
-- `Node.js` 本身是 C++ 编写的程序
+- `Node.js` 是 C++ 编写的程序
 - 服务端 Javascript 运行时环境
 - `V8`是它的引擎
 - 有了 运行时环境 你就能在服务端运行 用 `JavaScript` 语言编写的程序
