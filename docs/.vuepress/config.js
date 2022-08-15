@@ -144,6 +144,7 @@ module.exports = {
                 "/zh/node/restful.md",
                 "/zh/node/web-app.md",
                 "/zh/node/cli.md",
+                "/zh/node/convention.md",
               ],
             },
           ],
