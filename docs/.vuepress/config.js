@@ -16,7 +16,7 @@ module.exports = {
     },
     "/zh/": {
       lang: "zh-CN",
-      title: "快学前端",
+      title: "快学前端（内测）",
       description: "一个学习前端的地方",
     },
   },
@@ -107,6 +107,7 @@ module.exports = {
                 "/zh/javascript/getting-started.md",
                 "/zh/javascript/algorithm-data.md",
                 "/zh/javascript/algorithm-perf.md",
+                "/zh/javascript/convention.md",
               ],
             },
           ],
