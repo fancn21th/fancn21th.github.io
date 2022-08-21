@@ -79,6 +79,10 @@ module.exports = {
             link: "/zh/typescript/",
           },
           {
+            text: "React",
+            link: "/zh/react/",
+          },
+          {
             text: "Vue",
             link: "/zh/vue/",
           },
@@ -96,6 +100,7 @@ module.exports = {
                 "/zh/frontend/README.md",
                 "/zh/frontend/getting-started.md",
                 "/zh/frontend/todo-list.md",
+                "/zh/frontend/architect.md",
               ],
             },
           ],
@@ -157,6 +162,16 @@ module.exports = {
                 "/zh/vue/getting-started.md",
                 "/zh/vue/essentials.md",
                 "/zh/vue/advanced.md",
+              ],
+            },
+          ],
+          "/zh/react/": [
+            {
+              text: "React",
+              children: [
+                "/zh/react/README.md",
+                "/zh/react/getting-started.md",
+                "/zh/react/react-query.md",
               ],
             },
           ],
