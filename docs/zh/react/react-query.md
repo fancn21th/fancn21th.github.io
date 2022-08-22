@@ -8,18 +8,22 @@
 
 ## 前提条件
 
-你应该至少熟悉 [react hooks](https://reactjs.org/docs/hooks-intro.html)
+你应该熟悉 [React Hooks](https://reactjs.org/docs/hooks-intro.html)， 你可以参考 [Hooks](hooks.md)一文
 
-首先我们来梳理一下 `react hooks` 到底是为了解决什么问题。
+## 核心功能
 
-回顾 `ui = fn(state)`，这里 `fn` 就是函数式组件负责渲染，常见的形式就是 返回一个 `JSX` 模板。 我们简单理解 `fn` 就是带了 很多 占位符的 模板。这些占位符最终会被 `状态` 替换掉。
+- Auto Fetching
+- Auto Caching
+- GC
+- staleTime
+- cacheTime
 
-模板的复用对于程序员来说是比较容易理解的，因为他们和 设计图上的 组件 一一对应， 这样 `渲染级别的组件复用` 相对很容易实现。他们的内容其实主要就是 `HTML + CSS`。
+## 核心概念
 
-但是 `state` 状态的复用呢？ 这就是 [React Hooks 诞生的 动机 （英文）](https://reactjs.org/docs/hooks-intro.html#motivation)
+- [Queries](https://tanstack.com/query/v4/docs/guides/queries)
+- [Mutations](https://tanstack.com/query/v4/docs/guides/mutations)
+- [Query Invalidation](https://tanstack.com/query/v4/docs/guides/query-invalidation)
 
-首先我们要清楚 `状态的复用` 到底是指什么？
+## Refs
 
-这里 我想从 一个 特别的角度 来切入观察 `状态`， `状态` 可以认为是 前端程序 `业务逻辑` 部分和 `模板` 的接口， 抛开 `状态` 相关的业务逻辑不讲， 我们可以只需要考虑 每个 业务场景下面 到底有多少个状态会被渲染到 `模板里面`， 将它们都设置成 函数式组件的 `入参`，即可。
-
-那么很明显 这个接口是因 `模板` 而异的，组件状态的 个数，每个状态的类型，都是千差万别。 那么到底复用的是什么呢？
+- [Let's Build React Query in 150 Lines of Code! ](https://www.youtube.com/watch?v=9SrIirrnwk0)

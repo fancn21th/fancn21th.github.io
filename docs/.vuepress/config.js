@@ -172,6 +172,7 @@ module.exports = {
               children: [
                 "/zh/react/README.md",
                 "/zh/react/getting-started.md",
+                "/zh/react/hooks.md",
                 "/zh/react/react-query.md",
               ],
             },
