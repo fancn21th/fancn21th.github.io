@@ -4,13 +4,13 @@ title: 首页
 heroImage: https://images.unsplash.com/photo-1653778005824-4bc7dc887603?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE3fGJvOGpRS1RhRTBZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60
 actions:
   - text: 即刻开始
-    link: /zh/frontend/
+    link: /zh/frontend/howto/
     type: primary
   - text: JS
     link: /zh/javascript/
     type: secondary
-  - text: Vue
-    link: /zh/vue/
+  - text: Node
+    link: /zh/node/
     type: secondary
 features:
   - title: 化繁为简

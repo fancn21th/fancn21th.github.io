@@ -5,6 +5,8 @@ const {
 } = require("@vuepress/plugin-register-components");
 const { googleAnalyticsPlugin } = require("@vuepress/plugin-google-analytics");
 
+const { navbarZh, sidebarZh } = require("./configs/index.js");
+
 module.exports = {
   base: "/",
   // site-level locales config
@@ -57,124 +59,9 @@ module.exports = {
         selectLanguageText: "选择语言",
         selectLanguageAriaLabel: "选择语言",
         //  navbar
-        navbar: [
-          {
-            text: "前端",
-            link: "/zh/frontend/",
-          },
-          {
-            text: "Javascript",
-            link: "/zh/javascript/",
-          },
-          {
-            text: "Node",
-            link: "/zh/node/",
-          },
-          {
-            text: "现代前端技术",
-            children: [
-              {
-                text: "语言",
-                children: ["/zh/typescript/"],
-              },
-              {
-                text: "技术栈",
-                children: ["/zh/react/", "/zh/vue/"],
-              },
-              {
-                text: "工具链",
-                children: ["/zh/monorepos/", "/zh/rxjs/"],
-              },
-            ],
-          },
-        ],
+        navbar: navbarZh,
         // sidebar
-        sidebar: {
-          "/zh/frontend/": [
-            {
-              text: "前端",
-              children: [
-                "/zh/frontend/README.md",
-                "/zh/frontend/getting-started.md",
-                "/zh/frontend/todo-list.md",
-                "/zh/frontend/architect.md",
-              ],
-            },
-          ],
-          "/zh/javascript/": [
-            {
-              text: "Javascript",
-              children: [
-                "/zh/javascript/README.md",
-                "/zh/javascript/getting-started.md",
-                "/zh/javascript/algorithm-data.md",
-                "/zh/javascript/algorithm-perf.md",
-                "/zh/javascript/convention.md",
-              ],
-            },
-          ],
-          "/zh/monorepos/": [
-            {
-              text: "Monorepos",
-              children: [
-                "/zh/monorepos/README.md",
-                "/zh/monorepos/getting-started.md",
-              ],
-            },
-          ],
-          "/zh/typescript/": [
-            {
-              text: "TS",
-              children: [
-                "/zh/typescript/README.md",
-                "/zh/typescript/getting-started.md",
-              ],
-            },
-          ],
-          "/zh/rxjs/": [
-            {
-              text: "Rxjs",
-              children: ["/zh/rxjs/README.md", "/zh/rxjs/getting-started.md"],
-            },
-          ],
-          "/zh/node/": [
-            {
-              text: "Node",
-              children: [
-                "/zh/node/README.md",
-                "/zh/node/getting-started.md",
-                "/zh/node/npm.md",
-                "/zh/node/restful.md",
-                "/zh/node/web-app.md",
-                "/zh/node/cli.md",
-                "/zh/node/convention.md",
-                "/zh/node/serverless.md",
-              ],
-            },
-          ],
-          "/zh/vue/": [
-            {
-              text: "Vue",
-              children: [
-                "/zh/vue/README.md",
-                "/zh/vue/getting-started.md",
-                "/zh/vue/essentials.md",
-                "/zh/vue/advanced.md",
-              ],
-            },
-          ],
-          "/zh/react/": [
-            {
-              text: "React",
-              children: [
-                "/zh/react/README.md",
-                "/zh/react/getting-started.md",
-                "/zh/react/hooks.md",
-                "/zh/react/react-query.md",
-              ],
-            },
-          ],
-        },
+        sidebar: sidebarZh,
         // page meta
         editLinkText: "在 GitHub 上编辑此页",
         lastUpdatedText: "上次更新",

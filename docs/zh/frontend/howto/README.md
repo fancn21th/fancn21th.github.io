@@ -1,4 +1,4 @@
-# 介绍
+# How to
 
 无论是 [极客时间](https://time.geekbang.org/column/intro/100023201?tab=catalog) 的前端课程， 还是 [阮一峰](https://www.ruanyifeng.com/blog/javascript/) 的前端网络日志。 它们看起来，都会让你觉得在短时间内快速学习掌握前端开发应该不会是一件很困难的事情。
 
