@@ -67,28 +67,25 @@ module.exports = {
             link: "/zh/javascript/",
           },
           {
-            text: "Monorepos",
-            link: "/zh/monorepos/",
-          },
-          {
-            text: "RxJs",
-            link: "/zh/rxjs/",
-          },
-          {
-            text: "Typescript",
-            link: "/zh/typescript/",
-          },
-          {
-            text: "React",
-            link: "/zh/react/",
-          },
-          {
-            text: "Vue",
-            link: "/zh/vue/",
-          },
-          {
             text: "Node",
             link: "/zh/node/",
+          },
+          {
+            text: "现代前端技术",
+            children: [
+              {
+                text: "语言",
+                children: ["/zh/typescript/"],
+              },
+              {
+                text: "技术栈",
+                children: ["/zh/react/", "/zh/vue/"],
+              },
+              {
+                text: "工具链",
+                children: ["/zh/monorepos/", "/zh/rxjs/"],
+              },
+            ],
           },
         ],
         // sidebar
