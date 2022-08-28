@@ -36,6 +36,7 @@ module.exports = {
         "/zh/javascript/algorithm-data.md",
         "/zh/javascript/algorithm-perf.md",
         "/zh/javascript/convention.md",
+        "/zh/javascript/regex.md",
       ],
     },
   ],
