@@ -169,4 +169,46 @@ req.on("end", function () {
 
 ## https
 
+- 创建 `ssl` 证书
+
+  ```shell
+  open ssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out cert.pem
+  ```
+
+  - country name
+  - state and province name
+  - locality name
+  - organization name
+  - organization unit name
+  - common name
+    - `localhost` for 开发环境
+  - email address
+
+- 更新代码
+
+  ```javascript
+  const https = require("https");
+  // ...
+  const httpsServerOptions = {
+    key: fs.readFileSync("./https/key.pem"),
+    cert: fs.readFileSync("./https/cert.pem"),
+  };
+
+  const httpsServer = https.createServer(
+    httpsServerOptions,
+    function (req, res) {
+      requestHandler(req, res);
+    }
+  );
+
+  // Start the HTTPS server
+  httpsServer.listen(config.httpsPort, function () {
+    console.log("The HTTPS server is running on port " + config.httpsPort);
+  });
+  ```
+
 ## ping
+
+```
+
+```
