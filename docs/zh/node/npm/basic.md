@@ -1,6 +1,6 @@
 # npm
 
-## package.json
+## 创建 package.json
 
 > consumed by npm
 

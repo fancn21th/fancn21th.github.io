@@ -26,7 +26,28 @@ module.exports = [
   },
   {
     text: "Node",
-    link: "/zh/node/",
+    children: [
+      {
+        text: "基础",
+        children: [
+          "/zh/node/basic/timeline/",
+          "/zh/node/basic/wtf/",
+          "/zh/node/basic/restful/",
+        ],
+      },
+      {
+        text: "Npm",
+        children: ["/zh/node/npm/basic/", "/zh/node/npm/package/"],
+      },
+      {
+        text: "CLI",
+        children: ["/zh/node/cli/executable/"],
+      },
+      {
+        text: "Convention",
+        children: ["/zh/node/convention/basic/", "/zh/node/convention/trick/"],
+      },
+    ],
   },
   {
     text: "现代前端技术",

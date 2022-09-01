@@ -10,7 +10,7 @@ actions:
     link: /zh/javascript/
     type: secondary
   - text: Node
-    link: /zh/node/
+    link: /zh/node/basic/timeline/
     type: secondary
 features:
   - title: 化繁为简

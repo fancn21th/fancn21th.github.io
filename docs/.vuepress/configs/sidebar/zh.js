@@ -43,16 +43,30 @@ module.exports = {
   // NodeJS
   "/zh/node/": [
     {
-      text: "Node",
+      text: "基础",
+      collapsible: true,
       children: [
-        "/zh/node/README.md",
-        "/zh/node/getting-started.md",
-        "/zh/node/npm.md",
-        "/zh/node/restful.md",
-        "/zh/node/web-app.md",
-        "/zh/node/cli.md",
-        "/zh/node/convention.md",
-        "/zh/node/serverless.md",
+        "/zh/node/basic/timeline.md",
+        "/zh/node/basic/wtf.md",
+        "/zh/node/basic/restful.md",
+      ],
+    },
+    {
+      text: "Npm",
+      collapsible: true,
+      children: ["/zh/node/npm/basic.md", "/zh/node/npm/package.md"],
+    },
+    {
+      text: "CLI",
+      collapsible: true,
+      children: ["/zh/node/cli/executable.md"],
+    },
+    {
+      text: "Convention",
+      collapsible: true,
+      children: [
+        "/zh/node/convention/basic.md",
+        "/zh/node/convention/trick.md",
       ],
     },
   ],
