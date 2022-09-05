@@ -11,11 +11,6 @@ module.exports = {
       ],
     },
     {
-      text: "Blogs",
-      collapsible: true,
-      children: ["/zh/frontend/blogs/README.md"],
-    },
-    {
       text: "Architect",
       collapsible: true,
       children: ["/zh/frontend/architect/README.md"],

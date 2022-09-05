@@ -7,10 +7,6 @@ module.exports = [
         children: ["/zh/frontend/howto/"],
       },
       {
-        text: "博客",
-        children: ["/zh/frontend/blogs/"],
-      },
-      {
         text: "Convention",
         children: ["/zh/frontend/convention/"],
       },

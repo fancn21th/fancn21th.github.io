@@ -206,9 +206,3 @@ req.on("end", function () {
     console.log("The HTTPS server is running on port " + config.httpsPort);
   });
   ```
-
-## ping
-
-```
-
-```
