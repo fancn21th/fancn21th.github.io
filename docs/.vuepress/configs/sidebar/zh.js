@@ -52,6 +52,11 @@ module.exports = {
       children: ["/zh/node/npm/basic.md", "/zh/node/npm/package.md"],
     },
     {
+      text: "File",
+      collapsible: true,
+      children: ["/zh/node/file/path.md"],
+    },
+    {
       text: "CLI",
       collapsible: true,
       children: ["/zh/node/cli/executable.md"],

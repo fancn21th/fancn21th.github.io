@@ -36,6 +36,10 @@ module.exports = [
         children: ["/zh/node/npm/basic/", "/zh/node/npm/package/"],
       },
       {
+        text: "File",
+        children: ["/zh/node/file/path"],
+      },
+      {
         text: "CLI",
         children: ["/zh/node/cli/executable/"],
       },
