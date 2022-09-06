@@ -6,11 +6,8 @@ actions:
   - text: Get Started (zh)
     link: /zh/frontend/howto/
     type: primary
-  - text: JS
-    link: /zh/javascript/
-    type: secondary
   - text: Node
-    link: /zh/node/basic/timeline/
+    link: /node/aws/lambda/
     type: secondary
 features:
   - title: Simplicity

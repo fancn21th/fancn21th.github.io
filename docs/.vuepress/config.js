@@ -5,7 +5,12 @@ const {
 } = require("@vuepress/plugin-register-components");
 const { googleAnalyticsPlugin } = require("@vuepress/plugin-google-analytics");
 
-const { navbarZh, sidebarZh } = require("./configs/index.js");
+const {
+  navbarEn,
+  sidebarEn,
+  navbarZh,
+  sidebarZh,
+} = require("./configs/index.js");
 
 module.exports = {
   base: "/",
@@ -14,7 +19,7 @@ module.exports = {
     "/": {
       lang: "en-US",
       title: "Learn FE a smart way",
-      description: "English Version is in progress...",
+      description: "Serverless is coming",
     },
     "/zh/": {
       lang: "zh-CN",
@@ -34,19 +39,10 @@ module.exports = {
        * we don't need to set all of the locale fields
        */
       "/": {
+        // navbar
+        navbar: navbarEn,
         // sidebar
-        sidebar: {
-          "/frontend/": [
-            {
-              text: "前端概览",
-              children: [
-                "/frontend/README.md",
-                "/frontend/getting-started.md",
-                "/frontend/todo-list.md",
-              ],
-            },
-          ],
-        },
+        sidebar: sidebarEn,
         // page meta
         editLinkText: "Edit this page on GitHub",
       },
