@@ -4,7 +4,7 @@ module.exports = {
     {
       text: "aws",
       collapsible: true,
-      children: ["/node/aws/lambda.md"],
+      children: ["/node/aws/lambda.md", "/node/aws/api-gateway.md"],
     },
   ],
 };

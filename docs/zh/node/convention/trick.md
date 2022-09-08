@@ -7,3 +7,7 @@
 ```shell
 curl -X GET 'https://....' -H 'accept: application/json' -H 'Authorization: Bearer ...' | pbcopy
 ```
+
+## how to require a pure EMS module
+
+[See this](https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c)
