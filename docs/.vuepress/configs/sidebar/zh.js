@@ -115,10 +115,11 @@ module.exports = {
       children: [
         {
           text: "Monorepos",
-          children: [
-            "/zh/technology/toolchain/monorepos/README.md",
-            "/zh/technology/toolchain/monorepos/getting-started.md",
-          ],
+          children: ["/zh/technology/toolchain/monorepos/README.md"],
+        },
+        {
+          text: "Nx",
+          children: ["/zh/technology/toolchain/nx/README.md"],
         },
         {
           text: "Rxjs",

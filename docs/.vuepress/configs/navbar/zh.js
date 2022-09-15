@@ -64,6 +64,7 @@ module.exports = [
         text: "工具链",
         children: [
           "/zh/technology/toolchain/monorepos/",
+          "/zh/technology/toolchain/nx/",
           "/zh/technology/toolchain/rxjs/",
         ],
       },
