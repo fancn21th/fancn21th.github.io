@@ -74,8 +74,12 @@ However I have to begin with [examples](https://github.com/serverless/examples) 
 
   Besides I don't want to reinvent the wheel. After awhile I found this nice JSON database lib.
 
+  `lowdb` only support ESM, so I have to alter the template accordingly. Pls refer to [source code](https://github.com/fancn21th/0_218_AWS_LAMBDA_CRUD_JSON)
+
   - adaptor
 
-  However there is no built-in `s3 adaptor` expect for [lowdb-adapter-aws-s3](https://github.com/nicekiwi/lowdb-adapter-aws-s3). I dived into the source code and fount out that it may not meed my requirement later on so I decided to create one on my own.
+  There is no built-in `s3 adaptor` expect for 3rd party one [lowdb-adapter-aws-s3](https://github.com/nicekiwi/lowdb-adapter-aws-s3).
 
-  - [s3Adaptor.js ](https://github.com/fancn21th/0_218_AWS_LAMBDA_CRUD_JSON/blob/main/s3Adaptor.js)
+  I dived into the source code and found out that it may not meed my requirement sooner or later. So I decided to create it on my own.
+
+  see the source code of [s3Adaptor.js ](https://github.com/fancn21th/0_218_AWS_LAMBDA_CRUD_JSON/blob/main/s3Adaptor.js)
