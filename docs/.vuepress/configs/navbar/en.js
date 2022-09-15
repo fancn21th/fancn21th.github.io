@@ -4,7 +4,11 @@ module.exports = [
     children: [
       {
         text: "AWS",
-        children: ["/node/aws/lambda/", "/node/aws/api-gateway/"],
+        children: [
+          "/node/aws/lambda/",
+          "/node/aws/api-gateway/",
+          "/node/aws/clean-up/",
+        ],
       },
     ],
   },
