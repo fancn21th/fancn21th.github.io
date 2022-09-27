@@ -58,7 +58,11 @@ module.exports = [
       },
       {
         text: "技术栈",
-        children: ["/zh/technology/stack/react/", "/zh/technology/stack/vue/"],
+        children: [
+          "/zh/technology/stack/css/",
+          "/zh/technology/stack/react/",
+          "/zh/technology/stack/vue/",
+        ],
       },
       {
         text: "工具链",

@@ -90,6 +90,13 @@ module.exports = {
       collapsible: true,
       children: [
         {
+          text: "CSS",
+          children: [
+            "/zh/technology/stack/css/README.md",
+            "/zh/technology/stack/css/comparisons.md",
+          ],
+        },
+        {
           text: "Vue",
           children: [
             "/zh/technology/stack/vue/README.md",
@@ -105,6 +112,7 @@ module.exports = {
             "/zh/technology/stack/react/getting-started.md",
             "/zh/technology/stack/react/hooks.md",
             "/zh/technology/stack/react/react-query.md",
+            "/zh/technology/stack/react/react-admin.md",
           ],
         },
       ],
