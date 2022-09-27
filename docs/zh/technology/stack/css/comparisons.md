@@ -11,3 +11,6 @@
 | [CSS In Js](https://cssinjs.org/?v=v10.9.2)                                | nextjs [styled jsx](https://github.com/vercel/styled-jsx)) |                  | 可编程接口， 动态样式， Scoped | 如何写好看的 CSS |
 | [Tailwind](https://tailwindcss.com/)                                       |                                                            |    utility class |                         Faster | No Component Lib |
 | [Bootstrap](https://getbootstrap.com/)                                     |                                                            |                  |                  Component Lib |       Unused CSS |
+| [mantine](https://mantine.dev/)                                            |                                                            |                  |                  Component Lib |                  |
+
+更多 常用组件库的比较 [npm trends](https://npmtrends.com/@chakra-ui/styled-system-vs-@mantine/core-vs-@material-ui/core-vs-@tamagui/core-node-vs-antd-vs-material-ui-vs-react-bootstrap-vs-reactstrap)
