@@ -113,6 +113,7 @@ module.exports = {
             "/zh/technology/stack/react/hooks.md",
             "/zh/technology/stack/react/react-query.md",
             "/zh/technology/stack/react/react-admin.md",
+            "/zh/technology/stack/react/react-dnd.md",
           ],
         },
       ],
