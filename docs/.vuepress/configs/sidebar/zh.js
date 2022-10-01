@@ -109,7 +109,7 @@ module.exports = {
           text: "React",
           children: [
             "/zh/technology/stack/react/README.md",
-            "/zh/technology/stack/react/getting-started.md",
+            "/zh/technology/stack/react/react-antd-lite.md",
             "/zh/technology/stack/react/hooks.md",
             "/zh/technology/stack/react/react-query.md",
             "/zh/technology/stack/react/react-admin.md",
