@@ -12,6 +12,7 @@
 - React DnD
   - DnD
   - demo
+- React Query
 - Styled Component
   - design system demo
 - Storybook
