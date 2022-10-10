@@ -1,30 +1,37 @@
 # React hooks
 
-## 问题
+## WTF
 
-首先我们来梳理一下 `react hooks` 到底是为了解决什么问题。
+讲清楚 `hooks` 可能是一件需要 把黑板 擦干净了然后写满，接着发现大家没有听明白， 然后 再擦干净，再写满的事情。
 
-- state
+因为它本身就是一个经过若干年进化才有的全新编程范式，自然地，对于缺乏经验的新手而言，太过于抽象以至于不好理解。
 
-回顾 `ui = fn(state)`，这里 `fn` 就是函数式组件负责渲染，常见的形式就是 返回一个 `JSX` 模板。 我们简单理解 `fn` 就是带了 很多 占位符的 模板。这些占位符最终会被 `状态` 替换掉。
+我们来看一段范例代码
 
-模板的复用对于程序员来说是比较容易理解的，因为他们和 设计图上的 组件 一一对应， 这样 `渲染级别的组件复用` 相对很容易实现。他们的内容其实主要就是 `HTML + CSS`。
+```jsx
+function App() {
+  const [todos, addTodo, removeTodo, toggleTodo] = useTodos();
 
-但是 `state` 状态的复用呢？ 这就是 [React Hooks 的 动机 （英文）](https://reactjs.org/docs/hooks-intro.html#motivation)
+  return (
+    <div className="App">
+      <h1>React + Typescript TODOs</h1>
+      <AddTodo onAddTodo={(title) => addTodo(title)} />
+      <hr />
+      <TodoList
+        todos={todos}
+        onRemoveTodo={(id) => removeTodo(id)}
+        onToggleTodo={(id) => toggleTodo(id)}
+      />
+    </div>
+  );
+}
+```
 
-首先我们要清楚 `状态的复用` 到底是指什么？
-
-这里 我想从 一个 特别的角度 来切入观察 `状态`， `状态` 可以认为是 前端程序 `业务逻辑` 部分和 `模板` 的接口， 抛开 `状态` 相关的业务逻辑不讲， 我们可以只需要考虑 每个 业务场景下面 到底有多少个状态会被渲染到 `模板` 里面， 将它们都设置成 函数式组件的 `入参`， 即可。 当然实际上我们 不会像 `Smart Component 包裹 Dumb Component` 模式那样将 `无状态` 组件 构造成一个 `纯函数` 的形态 去接受 接口定义的入参， 而是将 这些参数通过 一个个 `use-*` hooks 放在 组件的 内的头部，作为 `响应式` 的参数。
-
-那么很明显 这个接口是因 `模板` 而异的，组件状态的 个数，每个状态的类型，都是千差万别。 那么到底复用的是什么呢？
-
-- callback
-
-- flow
-
-  [hook-flow](https://github.com/donavon/hook-flow)
+如果这是一道面试题，需要你分别实现 `<AddTodo/>`， `<TodoList>` 以及 `useTodos()` 从而能实现 [TODO MVC React 版本在线演示](https://todomvc.com/examples/react/) 中的基本功能。 你会怎么做呢？
 
 ## 参考
 
+- [hook-flow](https://github.com/donavon/hook-flow)
+- [React Hooks 的 动机 （英文）](https://reactjs.org/docs/hooks-intro.html#motivation)
 - [react-use](https://streamich.github.io/react-use/)
 - [mantine hooks](https://mantine.dev/hooks/)
