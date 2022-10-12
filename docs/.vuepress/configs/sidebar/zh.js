@@ -78,7 +78,10 @@ module.exports = {
       children: [
         {
           text: "Typescript",
-          children: ["/zh/technology/language/typescript/README.md"],
+          children: [
+            "/zh/technology/language/typescript/README.md",
+            "/zh/technology/language/typescript/basic.md",
+          ],
         },
       ],
     },

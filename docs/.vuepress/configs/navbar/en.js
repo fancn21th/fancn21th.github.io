@@ -1,6 +1,6 @@
 module.exports = [
   {
-    text: "指南",
+    text: "Road Map",
     link: "/plan/",
   },
   {
