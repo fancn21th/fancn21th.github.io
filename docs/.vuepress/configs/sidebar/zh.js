@@ -13,7 +13,10 @@ module.exports = {
     {
       text: "Architect",
       collapsible: true,
-      children: ["/zh/frontend/architect/README.md"],
+      children: [
+        "/zh/frontend/architect/README.md",
+        "/zh/frontend/architect/react-vs-vue.md",
+      ],
     },
     {
       text: "Convention",
