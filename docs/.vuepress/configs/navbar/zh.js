@@ -54,7 +54,7 @@ module.exports = [
     children: [
       {
         text: "语言",
-        children: ["/zh/technology/language/typescript/"],
+        children: ["/zh/technology/language/typescript/what-is-ts"],
       },
       {
         text: "技术栈",
@@ -70,6 +70,7 @@ module.exports = [
           "/zh/technology/toolchain/monorepos/",
           "/zh/technology/toolchain/nx/",
           "/zh/technology/toolchain/rxjs/",
+          "/zh/technology/toolchain/git/tips/",
         ],
       },
     ],

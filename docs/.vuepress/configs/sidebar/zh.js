@@ -81,10 +81,7 @@ module.exports = {
       children: [
         {
           text: "Typescript",
-          children: [
-            "/zh/technology/language/typescript/README.md",
-            "/zh/technology/language/typescript/basic.md",
-          ],
+          children: ["/zh/technology/language/typescript/what-is-ts.md"],
         },
       ],
     },
@@ -139,6 +136,10 @@ module.exports = {
             "/zh/technology/toolchain/rxjs/README.md",
             "/zh/technology/toolchain/rxjs/getting-started.md",
           ],
+        },
+        {
+          text: "Git",
+          children: ["/zh/technology/toolchain/git/tips.md"],
         },
       ],
     },
