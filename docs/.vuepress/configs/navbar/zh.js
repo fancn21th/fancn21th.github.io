@@ -1,4 +1,5 @@
 module.exports = [
+  // 前端
   {
     text: "前端",
     children: [
@@ -16,10 +17,12 @@ module.exports = [
       },
     ],
   },
+  // Javascript
   {
     text: "Javascript",
     link: "/zh/javascript/",
   },
+  // Node
   {
     text: "Node",
     children: [
@@ -49,12 +52,17 @@ module.exports = [
       },
     ],
   },
+  // Technology
   {
     text: "现代前端技术",
     children: [
       {
         text: "语言",
         children: ["/zh/technology/language/typescript/what-is-ts"],
+      },
+      {
+        text: "ThreeJs",
+        children: ["/zh/technology/threejs/what-is-threejs"],
       },
       {
         text: "技术栈",

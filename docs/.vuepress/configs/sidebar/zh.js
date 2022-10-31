@@ -87,6 +87,16 @@ module.exports = {
       ],
     },
     {
+      text: "ThreeJS",
+      collapsible: true,
+      children: [
+        {
+          text: "Threejs",
+          children: ["/zh/technology/threejs/what-is-threejs.md"],
+        },
+      ],
+    },
+    {
       text: "技术栈",
       collapsible: true,
       children: [
