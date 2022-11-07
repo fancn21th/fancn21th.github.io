@@ -1,4 +1,4 @@
-# npm
+# Basic
 
 ## 创建 package.json
 
