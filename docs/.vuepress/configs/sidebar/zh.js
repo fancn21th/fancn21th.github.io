@@ -2,6 +2,15 @@ module.exports = {
   // 前端
   "/zh/frontend/": [
     {
+      text: "Prerequisite",
+      collapsible: true,
+      children: [
+        "/zh/frontend/prerequisite/README.md",
+        "/zh/frontend/prerequisite/dev-environment.md",
+        "/zh/frontend/prerequisite/javascript.md",
+      ],
+    },
+    {
       text: "How to",
       collapsible: true,
       children: [
@@ -54,7 +63,12 @@ module.exports = {
     {
       text: "Npm",
       collapsible: true,
-      children: ["/zh/node/npm/basic.md", "/zh/node/npm/package.md"],
+      children: [
+        "/zh/node/npm/basic.md",
+        "/zh/node/npm/package.md",
+        "/zh/node/npm/publish.md",
+        "/zh/node/npm/error-handler.md",
+      ],
     },
     {
       text: "File",

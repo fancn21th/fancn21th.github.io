@@ -4,6 +4,10 @@ module.exports = [
     text: "前端",
     children: [
       {
+        text: "前置条件",
+        children: ["/zh/frontend/prerequisite/"],
+      },
+      {
         text: "How To",
         children: ["/zh/frontend/howto/"],
       },
@@ -36,7 +40,12 @@ module.exports = [
       },
       {
         text: "Npm",
-        children: ["/zh/node/npm/basic/", "/zh/node/npm/package/"],
+        children: [
+          "/zh/node/npm/basic/",
+          "/zh/node/npm/package/",
+          "/zh/node/npm/publish/",
+          "/zh/node/npm/error-handler/",
+        ],
       },
       {
         text: "File",
