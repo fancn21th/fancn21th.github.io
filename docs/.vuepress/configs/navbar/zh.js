@@ -44,12 +44,15 @@ module.exports = [
           "/zh/node/npm/basic/",
           "/zh/node/npm/package/",
           "/zh/node/npm/publish/",
-          "/zh/node/npm/error-handler/",
         ],
       },
       {
-        text: "File",
-        children: ["/zh/node/file/path"],
+        text: "Prod",
+        children: [
+          "/zh/node/prod/process/",
+          "/zh/node/prod/fs/",
+          "/zh/node/prod/error-handler/",
+        ],
       },
       {
         text: "CLI",

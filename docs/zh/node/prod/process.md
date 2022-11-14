@@ -1,4 +1,4 @@
-# PATH
+# Process
 
 ## `__dirname` in ESM
 

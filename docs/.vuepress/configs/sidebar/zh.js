@@ -67,13 +67,16 @@ module.exports = {
         "/zh/node/npm/basic.md",
         "/zh/node/npm/package.md",
         "/zh/node/npm/publish.md",
-        "/zh/node/npm/error-handler.md",
       ],
     },
     {
-      text: "File",
+      text: "Production",
       collapsible: true,
-      children: ["/zh/node/file/path.md"],
+      children: [
+        "/zh/node/prod/process.md",
+        "/zh/node/prod/fs.md",
+        "/zh/node/prod/error-handler.md",
+      ],
     },
     {
       text: "CLI",
