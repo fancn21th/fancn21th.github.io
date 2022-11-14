@@ -1,11 +1,11 @@
 # React Vs Vue
 
-| 功能               |              React               |              Vue2               |                      Vue3                       |
-| ------------------ | :------------------------------: | :-----------------------------: | :---------------------------------------------: |
-| 响应式数据         |          useState(...)           |         { data:{...} }          | const foo = ref(...) /const foo = reactive(...) |
-| 派生数据/计算属性  |         const c = a + b          | { computed:{ foo: () => {...} } |        const foo = computed(() => {...})        |
-| Watch 监听         | useEffect(() => {...}, [target]) |   { watch:{foo: () => {...} }   |             [watch in vue3](#watch)             |
-| hook vs composable | const [ a, b, ...] = useXXX(...) |               N/A               |        const { a, b, ...} = useXXX(...)         |
+| 功能               | React <16.8 |           React >=16.8           |              Vue2               | Vue3                                            |
+| ------------------ | :---------: | :------------------------------: | :-----------------------------: | ----------------------------------------------- |
+| 响应式数据         |             |          useState(...)           |         { data:{...} }          | const foo = ref(...) /const foo = reactive(...) |
+| 派生数据/计算属性  |             |         const c = a + b          | { computed:{ foo: () => {...} } | const foo = computed(() => {...})               |
+| Watch 监听         |             | useEffect(() => {...}, [target]) |   { watch:{foo: () => {...} }   | [watch in vue3](#watch)                         |
+| hook vs composable |             | const [ a, b, ...] = useXXX(...) |               N/A               | const { a, b, ...} = useXXX(...)                |
 
 :::tip
 
