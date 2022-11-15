@@ -81,7 +81,7 @@ module.exports = {
     {
       text: "CLI",
       collapsible: true,
-      children: ["/zh/node/cli/executable.md"],
+      children: ["/zh/node/cli/executable.md", "/zh/node/cli/guidance.md"],
     },
     {
       text: "Convention",

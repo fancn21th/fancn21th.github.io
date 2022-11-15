@@ -56,7 +56,7 @@ module.exports = [
       },
       {
         text: "CLI",
-        children: ["/zh/node/cli/executable/"],
+        children: ["/zh/node/cli/executable/", "/zh/node/cli/guidance/"],
       },
       {
         text: "Convention",
