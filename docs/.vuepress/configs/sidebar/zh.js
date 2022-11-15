@@ -145,6 +145,13 @@ module.exports = {
             "/zh/technology/stack/react/react-dnd.md",
           ],
         },
+        {
+          text: "AngularJS",
+          children: [
+            "/zh/technology/stack/angularjs/README.md",
+            "/zh/technology/stack/angularjs/directives.md",
+          ],
+        },
       ],
     },
     {

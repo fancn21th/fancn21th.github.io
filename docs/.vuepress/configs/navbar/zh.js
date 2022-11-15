@@ -82,6 +82,7 @@ module.exports = [
           "/zh/technology/stack/css/",
           "/zh/technology/stack/react/",
           "/zh/technology/stack/vue/",
+          "/zh/technology/stack/angularjs/",
         ],
       },
       {
