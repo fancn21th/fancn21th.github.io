@@ -100,7 +100,10 @@ module.exports = {
       children: [
         {
           text: "Typescript",
-          children: ["/zh/technology/language/typescript/what-is-ts.md"],
+          children: [
+            "/zh/technology/language/typescript/what-is-ts.md",
+            "/zh/technology/language/typescript/trick.md",
+          ],
         },
       ],
     },

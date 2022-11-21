@@ -22,7 +22,7 @@
 
 - autocomplete
 
-## VSs
+## Comparison
 
 - `interface` vs `type`
 
