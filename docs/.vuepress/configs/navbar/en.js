@@ -16,4 +16,8 @@ module.exports = [
       },
     ],
   },
+  {
+    text: "Low Code",
+    link: "/lowcode/",
+  },
 ];

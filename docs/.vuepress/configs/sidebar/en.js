@@ -10,13 +10,21 @@ module.exports = {
   // AWS
   "/node/": [
     {
-      text: "aws",
+      text: "AWS",
       collapsible: true,
       children: [
         "/node/aws/lambda.md",
         "/node/aws/api-gateway.md",
         "/node/aws/clean-up.md",
       ],
+    },
+  ],
+  // Low Code
+  "/lowcode/": [
+    {
+      text: "Low Code",
+      collapsible: true,
+      children: ["/lowcode/README.md"],
     },
   ],
 };
