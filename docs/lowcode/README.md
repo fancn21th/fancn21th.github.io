@@ -35,13 +35,30 @@ Why low code is necessary ? How end-user would use the low code product without 
     - Details varies, Abstraction stays
     - we are designing the `Abstraction`
 
-### Model + View
+- Training for abstraction
+  - `Abstraction` is hard to understand without visualization
+  - `Details` is easy to grasp with misleading
 
 ### Model/Feature Table
 
+- application level
+
+| M \ F  | Nav |
+| ------ | --: |
+| Login  |     |
+| Logout |     |
+| Page   |     |
+| 404    |     |
+
+- business level
+
 | M \ F    | Nav | List | Search | Create | Read | Update | Delete |
-| -------- | --: | ---: | -----: | -----: | ---: | -----: | ------ |
+| -------- | --: | ---: | -----: | -----: | ---: | -----: | -----: |
 | User     |     |      |        |        |      |        |        |
 | Role     |     |      |        |        |      |        |        |
 | Post     |     |      |        |        |      |        |        |
 | Feedback |     |      |        |        |      |        |        |
+
+### MFV
+
+- TBD
