@@ -155,6 +155,10 @@ module.exports = {
             "/zh/technology/stack/angularjs/directives.md",
           ],
         },
+        {
+          text: "Next",
+          children: ["/zh/technology/stack/next/README.md"],
+        },
       ],
     },
     {
