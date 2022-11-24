@@ -153,6 +153,8 @@ export default MyDocument;
 
 - `getLayout` method
 
+> this is not official way
+
 ```tsx
 import type { ReactNode } from "react";
 import { Heading } from "@chakra-ui/react";
