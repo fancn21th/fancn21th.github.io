@@ -205,3 +205,93 @@ const App = ({ Component, pageProps }: AppPropsWithLayout) => {
 
 export default App;
 ```
+
+## SSG / ISR / SSR
+
+::: tip
+
+- SSG: Static Site Generation
+- SSR: Server Side Rendering
+- ISG: Incremental Static Regeneration
+
+:::
+
+### SSG
+
+- CI/CD machine build and deploy the static site bundle to server/cdn
+- Website is pre-built
+- Data is static too unless rebuild from CI/CD machine
+
+### SSR
+
+- Website is built at runtime
+  - Query data from DB
+  - Generate HTML on the fly
+  - Pre-Built is opt
+  - Cache
+- Server provide not only static assets but dynamic content
+
+### ISR
+
+- Partially SSG
+- Partially SSR
+- Versioning
+- Periodically
+
+### Comparison
+
+- @ which side HTML generate
+
+  | Cate \ Gen |     Client Side      |          Server Side          |
+  | ---------- | :------------------: | :---------------------------: |
+  | SSG        |                      |       HTML (Pre-built)        |
+  | SSR        |                      |    HTML (Build @ runtime)     |
+  | ISG        |                      | HTML (Pre-built periodically) |
+  | SPA        | HTML (Gen @ runtime) |                               |
+
+## SSG
+
+- `GetStaticProps`
+
+> invoked at server side
+
+```tsx
+import type { GetStaticProps } from "next";
+
+type Props = {
+  foo: string[];
+};
+
+const Home = ({ foo }: Props) => {
+  return (
+    <List>
+      {foo.map((f) => (
+        <span>{foo}</span>
+      ))}
+    </List>
+  );
+};
+
+export const getStaticProps: GetStaticProps<Props> = async (context) => {
+  return {
+    props: {
+      foo: ["a", "b", "c"],
+    },
+  };
+};
+
+export default Home;
+```
+
+- `GetStaticPaths`
+
+> generate static page
+
+## ISR
+
+- `GetStaticProps`
+  - revalidate
+
+## SSR
+
+- `getServerSideProps`
