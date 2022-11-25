@@ -369,7 +369,7 @@ export default Home;
 
 - `GetStaticPaths`
 
-> generate static page
+> generate static page @build time
 
 ## ISR
 
@@ -379,3 +379,16 @@ export default Home;
 ## SSR
 
 - `getServerSideProps`
+
+> generate static page @runtime on every request
+
+- vs `GetStaticProps`
+  - context
+    - query
+    - req
+      - header
+      - cookie
+      - auth
+    - res
+
+## API Route
