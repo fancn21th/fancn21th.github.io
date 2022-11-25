@@ -206,7 +206,7 @@ const App = ({ Component, pageProps }: AppPropsWithLayout) => {
 export default App;
 ```
 
-## SSG / ISR / SSR
+## SSG vs ISR vs SSR
 
 ::: tip
 
@@ -215,6 +215,11 @@ export default App;
 - ISG: Incremental Static Regeneration
 
 :::
+
+::: warning
+
+- Rendering 是指 HTML 标签 的创建过程
+  :::
 
 ### SSG
 
@@ -240,14 +245,93 @@ export default App;
 
 ### Comparison
 
-- @ which side HTML generate
+- 数据
 
-  | Cate \ Gen |     Client Side      |          Server Side          |
-  | ---------- | :------------------: | :---------------------------: |
-  | SSG        |                      |       HTML (Pre-built)        |
-  | SSR        |                      |    HTML (Build @ runtime)     |
-  | ISG        |                      | HTML (Pre-built periodically) |
-  | SPA        | HTML (Gen @ runtime) |                               |
+  - 更新的频率
+
+    <table>
+      <thead>
+        <tr>
+          <th rowspan="2">类型</th>
+          <th colspan="2">服务器</th>
+          <th rowspan="2">浏览器</th>
+        </tr>
+        <tr>
+          <th>编译时</th>
+          <th>运行时</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>SPA</td>
+          <td></td>
+          <td>Data</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>SSG</td>
+          <td>Data</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>SSR</td>
+          <td></td>
+          <td>Data</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>ISG</td>
+          <td colspan="2">Data ⏰ 🔄</td>
+          <td></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+- HTML
+
+  - 是在什么地方
+  - 什么时间渲染的
+
+    <table>
+      <thead>
+        <tr>
+          <th rowspan="2">类型</th>
+          <th colspan="2">服务器</th>
+          <th rowspan="2">浏览器</th>
+        </tr>
+        <tr>
+          <th>编译时</th>
+          <th>运行时</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>SPA</td>
+          <td></td>
+          <td></td>
+          <td>HTML</td>
+        </tr>
+        <tr>
+          <td>SSG</td>
+          <td>HTML</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>SSR</td>
+          <td></td>
+          <td>HTML</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>ISG</td>
+          <td colspan="2">HTML ⏰ 🔄</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
 
 ## SSG
 
