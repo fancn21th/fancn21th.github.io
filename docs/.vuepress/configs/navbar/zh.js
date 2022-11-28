@@ -50,6 +50,7 @@ module.exports = [
         text: "Prod",
         children: [
           "/zh/node/prod/process/",
+          "/zh/node/prod/child-process/",
           "/zh/node/prod/fs/",
           "/zh/node/prod/error-handler/",
         ],

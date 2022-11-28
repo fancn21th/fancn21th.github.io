@@ -74,6 +74,7 @@ module.exports = {
       collapsible: true,
       children: [
         "/zh/node/prod/process.md",
+        "/zh/node/prod/child-process.md",
         "/zh/node/prod/fs.md",
         "/zh/node/prod/error-handler.md",
       ],
