@@ -71,7 +71,10 @@ module.exports = [
     children: [
       {
         text: "语言",
-        children: ["/zh/technology/language/typescript/what-is-ts"],
+        children: [
+          "/zh/technology/language/typescript/what-is-ts",
+          "/zh/technology/language/fp/what-is-fp",
+        ],
       },
       {
         text: "ThreeJs",

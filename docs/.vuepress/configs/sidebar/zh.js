@@ -106,6 +106,13 @@ module.exports = {
             "/zh/technology/language/typescript/trick.md",
           ],
         },
+        {
+          text: "FP",
+          children: [
+            "/zh/technology/language/fp/what-is-fp.md",
+            "/zh/technology/language/fp/lodash-fp.md",
+          ],
+        },
       ],
     },
     {
