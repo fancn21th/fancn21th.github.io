@@ -187,37 +187,54 @@ Javascript 有 5 个 非常重要的编程范式
 
 :::tip
 
-`Robert C Martin` 在 他的 `clean architecture` 一书中写道， 一共只有 3 个编程范式。
+`Robert C Martin` 在 他的 `clean architecture` 一书中写道， 一共只有 3 个编程范式。他们分别是：
 
-- 结构化
-- 面向对象
-- 函数式
+- 结构化 编程
+- 面向对象 编程
+- 函数式 编程
 
-不过我想 借用 `Programming Paradigm` 编程范式 的概念去 描述这 5 个 典型的 Javascript 的 特定的设计。 我想强调的是 你应该从 编程范式的角度去思考 而不是单纯去记忆他们的定义。
+贸然为 JS 增加了 5 个 编程范式 的概念。 第一确实想不到更好的 术语去区别其他的 JS 概念。 从而 借用 `Programming Paradigm` 编程范式。 我想表达的是 你应该从 编程范式的角度去思考 而不是单纯去记忆他们的定义与实现。
 
-简而言之他们首先是编程思想 其次才是具体的定义与实现。
+简而言之他们首先是编程思想， 你需要想清楚他们可以解决什么问题，为什么这些问题是 JS 特有的 其次才是这些问题的方案是如何定义与实现。
 
 :::
 
 ### prototype 原型
 
+- 问题
+  - 如何复用代码
+
 ### callback 回调
+
+- 问题
+  - 人机交互模型
+  - 事件模型
 
 ### scope 作用域
 
-- Function Scope
+- 问题
 
-  最开始 Javascript 只有函数作用域
+  - 变量污染
 
-- Block Scope
+- 包括
 
-  ES6 引入了 [代码块作用域](https://zh.javascript.info/closure#dai-ma-kuai)
+  - Function Scope
+
+    最开始 Javascript 只有函数作用域
+
+  - Block Scope
+
+    ES6 引入了 [代码块作用域](https://zh.javascript.info/closure#dai-ma-kuai)
 
 ### context 上下文
 
 > aka this
 
-- lexical this
+- 问题
+
+  - 面向对象 ？
+
+- 难点 lexical this
 
   > arrow function this
 
