@@ -185,6 +185,20 @@ console.log("".__proto__ === String.prototype); // 打印出 true ， 因为 Str
 
 Javascript 有 5 个 非常重要的编程范式
 
+:::tip
+
+`Robert C Martin` 在 他的 `clean architecture` 一书中写道， 一共只有 3 个编程范式。
+
+- 结构化
+- 面向对象
+- 函数式
+
+不过我想 借用 `Programming Paradigm` 编程范式 的概念去 描述这 5 个 典型的 Javascript 的 特定的设计。 我想强调的是 你应该从 编程范式的角度去思考 而不是单纯去记忆他们的定义。
+
+简而言之他们首先是编程思想 其次才是具体的定义与实现。
+
+:::
+
 ### prototype 原型
 
 ### callback 回调
