@@ -6,7 +6,7 @@
 
 你可以看到在 `B` 站，有人声称自己创建了一个 `DDD` 的框架，从 `Eric Evans` 自己的观点来看， 这种说法是相对不正确的。
 
-### Stop, Leg, Itinerary
+## Stop, Leg, Itinerary
 
 `Eric Evans` 在 2019 年 的演讲 [What is DDD](https://www.youtube.com/watch?v=pMuiVlnGqjk) 中 阐述了 领域语言作为 `领域专家` 与 `软件专家` 共有的语言。
 
@@ -25,10 +25,58 @@
 
 这让我想起了 `Robert C Martin` 在他的 `Clean Architecture` 一书的第八章 `OCP 原则` 一文中 用到的 `财务报表` 案例， `Financial Report Generator` 作为核心的业务单元是处于整个设计的最顶层，所有其他的类都依赖于它。
 
-### Complexity
+## Complexity
 
 - Scale
 
   - like twitter
 
 - Domain
+
+## Bounded Context
+
+- context
+
+  - `宝贝`
+    - 如果 一对夫妻 使用 这个词汇 我们可以推测 这一般是指 他们的孩子
+    - 如果 你在指环王里面 听到这个 词汇 你很清楚这个指的是 `魔戒`
+
+  相同的词汇 在不同上下文里 有不同的含义
+
+- people with agreement
+
+  边界上下文必须对团队所有成员都可见并且认同他们如何出现在 在设计，架构与流程里
+
+  - developer
+  - team
+
+  ::: tip
+  Multiple models
+
+  Isolated in multiple bounded contexts
+
+  Focused on distinct problem sets
+  :::
+
+- example - bank
+
+  - contexts
+
+    - day 1
+
+      - 现金账号
+      - 信用卡账号
+
+    - day 10
+
+      - 商业用户
+      - 个人用户
+
+      ![Reorg](/images/Bounded-Contexts-Reorg-1.png)
+
+## Ubiquitous Language
+
+- 清晰地描述领域问题和解决方案
+
+- 上下文
+  - 不同的问题
