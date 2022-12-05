@@ -25,6 +25,7 @@ module.exports = {
       children: [
         "/zh/frontend/architect/README.md",
         "/zh/frontend/architect/react-vs-vue.md",
+        "/zh/frontend/architect/ddd.md",
       ],
     },
     {
