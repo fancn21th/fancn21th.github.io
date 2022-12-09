@@ -2,9 +2,9 @@
 
 ## DDD 没有 Lib
 
-`DDD` 目的是为了解决沟通问题，而不是解决技术层面问题，正因为不是解决技术问题，所以没有相关的 `Lib`
+`DDD` 的目的 首先是解决业务层面的沟通问题，而不是解决技术层面问题，正因为和具体的业务功能无关，所以没有相关的 `Lib`。
 
-你可以看到在 `B` 站，有人声称自己创建了一个 `DDD` 的框架，从 `Eric Evans` 自己的观点来看， 这种说法是相对不正确的。
+你可以看到在 `B` 站，有人声称自己创建了一个 `DDD` 的框架，从 `Eric Evans` 自己的观点来看， 这种说法是相对不正确的。`DDD` 没有提供任何具体的业务功能。
 
 ## Stop, Leg, Itinerary
 
@@ -25,15 +25,21 @@
 
 这让我想起了 `Robert C Martin` 在他的 `Clean Architecture` 一书的第八章 `OCP 原则` 一文中 用到的 `财务报表` 案例， `Financial Report Generator` 作为核心的业务单元是处于整个设计的最顶层，所有其他的类都依赖于它。
 
-## Complexity
+## Complexity 复杂度
 
 - Scale
+
+  可扩展的复杂度
 
   - like twitter
 
 - Domain
 
+  领域的复杂度
+
 ## Bounded Context
+
+限定上下文
 
 - context
 
@@ -45,10 +51,10 @@
 
 - people with agreement
 
-  边界上下文必须对团队所有成员都可见并且认同他们如何出现在 在设计，架构与流程里
+  边界上下文必须对团队所有成员都可见并且认同他们如何出现在 在`设计`，`架构`与`流程`里
 
   - developer
-  - team
+  - other team roles
 
   ::: tip
   Multiple models
@@ -58,7 +64,7 @@
   Focused on distinct problem sets
   :::
 
-- example - bank
+- Example - bank
 
   - contexts
 
@@ -80,3 +86,12 @@
 
 - 上下文
   - 不同的问题
+
+## 战略设计 与 战术设计
+
+- 战略
+
+  - 业务
+
+- 战术
+  - 技术
