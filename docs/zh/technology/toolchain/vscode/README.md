@@ -7,28 +7,40 @@
 | Command ⌘ | Control |
 | Option ⌥  | Alt     |
 | Shift ⇧   | Shift   |
-| Left <-   | Left    |
-| Right ->  | Right   |
+| Left ←    | Left    |
+| Right →   | Right   |
+| Up ↑      | Right   |
+| Down ↓    | Right   |
+| Control ⌃ |
 
 ## Workflow in editor
 
 ### Line
 
-- 移动光标到 `行末尾`
+- 移动光标到 `行首/尾`
 
-  - ⌘ + ->
+  - ⌘ + ←/→
 
 - 移动光标 单词步进
 
-  - ⌥ + ->
+  - ⌥ + ←/→
 
 - 选择整行
 
-  - ⌘ + ⇧ + ->
+  - ⌘ + ⇧ + ←/→
 
 - 选择单词
 
-  - ⌥+ ⇧ + ->
+  - ⌥+ ⇧ + ←/→
 
 - 删除当前行
+
   - ⌘ + ⇧ + K
+
+- 复制当前行
+
+  - ⌥ + ⇧ + ↑/↓
+
+- 移动当前行
+
+  - ⌥ + ↑/↓
