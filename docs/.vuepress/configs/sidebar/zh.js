@@ -175,6 +175,10 @@ module.exports = {
       collapsible: true,
       children: [
         {
+          text: "VsCode",
+          children: ["/zh/technology/toolchain/vscode/README.md"],
+        },
+        {
           text: "Monorepos",
           children: ["/zh/technology/toolchain/monorepos/README.md"],
         },
