@@ -176,7 +176,10 @@ module.exports = {
       children: [
         {
           text: "VsCode",
-          children: ["/zh/technology/toolchain/vscode/README.md"],
+          children: [
+            "/zh/technology/toolchain/vscode/README.md",
+            "/zh/technology/toolchain/vscode/javascript.md",
+          ],
         },
         {
           text: "Monorepos",

@@ -45,7 +45,7 @@
 
   - ⌥ + ↑/↓
 
-## Text
+### Text
 
 - 选下一个 相同的文本
 
@@ -59,7 +59,7 @@
 
   - ⌘ + D, ⌘ + K
 
-## Multi Cursor
+### Multi Cursor
 
 - 选择多行
 
@@ -76,3 +76,29 @@
 - 取消 上一个 cursor
 
   - ⌘ + U
+
+### 文件位置
+
+- 跳转到当前文件中的某个位置
+  - ⌘ + U, @
+
+## Zen mode
+
+- ⌘ + ⇧ + P
+  - search for Zen
+
+## Git
+
+### Stage Selected Ranges
+
+提交部分代码，避免一次提交包含多个功能修改
+
+### Github pull requests and issues extension
+
+## File Format
+
+- format on save
+
+```json
+"editor.formatOnSave": true,
+```
