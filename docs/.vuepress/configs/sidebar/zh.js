@@ -105,6 +105,7 @@ module.exports = {
           children: [
             "/zh/technology/language/typescript/what-is-ts.md",
             "/zh/technology/language/typescript/trick.md",
+            "/zh/technology/language/typescript/vue-in-ts.md",
           ],
         },
         {
@@ -199,6 +200,10 @@ module.exports = {
         {
           text: "Git",
           children: ["/zh/technology/toolchain/git/tips.md"],
+        },
+        {
+          text: "Vite",
+          children: ["/zh/technology/toolchain/vite/README.md"],
         },
       ],
     },

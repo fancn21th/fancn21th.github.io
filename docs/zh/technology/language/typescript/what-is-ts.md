@@ -1,5 +1,9 @@
 # What is TS
 
+## All or nothing
+
+Typescript 可以被渐进使用
+
 ## Typescript 的目的
 
 - 类型定义 Type Something
