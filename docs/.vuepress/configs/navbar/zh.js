@@ -98,6 +98,7 @@ module.exports = [
           "/zh/technology/toolchain/nx/",
           "/zh/technology/toolchain/rxjs/",
           "/zh/technology/toolchain/git/tips/",
+          "/zh/technology/toolchain/vite/",
         ],
       },
     ],
