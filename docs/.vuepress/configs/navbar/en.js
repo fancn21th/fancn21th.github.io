@@ -20,4 +20,8 @@ module.exports = [
     text: "Low Code",
     link: "/lowcode/",
   },
+  {
+    text: "Power BI",
+    link: "/powerbi/",
+  },
 ];

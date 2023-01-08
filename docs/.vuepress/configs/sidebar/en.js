@@ -27,4 +27,12 @@ module.exports = {
       children: ["/lowcode/README.md"],
     },
   ],
+  // Power BI
+  "/powerbi/": [
+    {
+      text: "Power BI",
+      collapsible: true,
+      children: ["/powerbi/README.md"],
+    },
+  ],
 };
