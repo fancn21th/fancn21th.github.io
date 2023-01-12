@@ -67,6 +67,57 @@
   - h
   - context
 
+## Scoped Slots + Render Props
+
+### Why?
+
+- Reusable
+
+  - Pass Props From `child` to `parent`
+  - `child` becomes customizable and `parent` becomes reusable
+
+### Use Cases
+
+- With `Template`
+
+  [Vue-MultiSelect](https://vue-multiselect.js.org/)
+
+- With `Render` Func
+
+  - `JSX` style
+
+  [Vue-AutoSuggest]()
+
+## Render Function
+
+### Why?
+
+- combile the complex rendering logic into the same place
+
+  - previously defined in template and javascript
+
+- nested template
+
+### Vue 2 vs Vue 3
+
+- Vue3
+
+  - Flat props structure
+  - Globally impored `h` helper
+
+  ```javascript
+  import { h } from 'vue'
+
+  render() {
+    return h('div', {
+      id: 'foo',
+      // on-*  become event listener
+      onClick: this.onClick
+    }, 'hello')
+  }
+
+  ```
+
 ## 受控组件
 
 ## 组件封装
