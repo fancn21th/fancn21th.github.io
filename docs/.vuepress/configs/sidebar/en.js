@@ -32,7 +32,11 @@ module.exports = {
     {
       text: "Power BI",
       collapsible: true,
-      children: ["/powerbi/README.md"],
+      children: [
+        "/powerbi/README.md",
+        "/powerbi/data-preparation.md",
+        "/powerbi/data-model.md",
+      ],
     },
   ],
 };

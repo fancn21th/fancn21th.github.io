@@ -88,10 +88,12 @@ Data Modeling, Star Schema, Mach Calculation
 
 - FACT
 
+  - quantitative data
   - single table
   - foreign keys
 
-- DIM
+- DIM Table
+  - descriptive data
   - at least one table with primary keys
 
 ### Reference vs Duplicate
@@ -106,3 +108,24 @@ Data Modeling, Star Schema, Mach Calculation
 ### Merging Queries
 
 - one column in both table are equal
+
+### Enter Data
+
+- create support table
+
+### Fix Merge Error
+
+- detect the unsuccessful merge
+
+  - 193 of 199 rows (6 rows are missing)
+
+- use `left outer anti join` to see what is the problem
+- create a new table with enter data
+
+### Conditional Column
+
+- based on value with condition in other column
+
+### Enable Load
+
+- disable if no need to load into `data model`
