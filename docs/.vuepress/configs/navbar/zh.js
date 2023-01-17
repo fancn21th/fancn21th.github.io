@@ -101,6 +101,10 @@ module.exports = [
           "/zh/technology/toolchain/vite/",
         ],
       },
+      {
+        text: "小程序",
+        children: ["/zh/technology/miniapp/wechat/"],
+      },
     ],
   },
 ];

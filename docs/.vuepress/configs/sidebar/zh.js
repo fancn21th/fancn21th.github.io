@@ -127,6 +127,7 @@ module.exports = {
         },
       ],
     },
+    //技术栈
     {
       text: "技术栈",
       collapsible: true,
@@ -204,6 +205,16 @@ module.exports = {
         {
           text: "Vite",
           children: ["/zh/technology/toolchain/vite/README.md"],
+        },
+      ],
+    },
+    {
+      text: "小程序",
+      collapsible: true,
+      children: [
+        {
+          text: "Wechat",
+          children: ["/zh/technology/miniapp/wechat/README.md"],
         },
       ],
     },
