@@ -11,4 +11,17 @@
 
 ## Organizing Visuals
 
-## Interaction
+## Interactions
+
+## Drill
+
+## Tuning the visual
+
+- Chart
+- Page
+- Filter Panel & Filter Card
+- General Settings
+
+## Slicer
+
+- filter view

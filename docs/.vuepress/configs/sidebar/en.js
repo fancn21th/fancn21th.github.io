@@ -36,6 +36,7 @@ module.exports = {
         "/powerbi/README.md",
         "/powerbi/data-preparation.md",
         "/powerbi/data-model.md",
+        "/powerbi/data-report.md",
       ],
     },
   ],
