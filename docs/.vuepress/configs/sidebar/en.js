@@ -1,10 +1,10 @@
 module.exports = {
   // Plan
-  "/plan/": [
+  "/ddd/": [
     {
-      text: "Plan",
+      text: "DDD",
       collapsible: true,
-      children: ["/plan/README.md"],
+      children: ["/ddd/README.md"],
     },
   ],
   // AWS

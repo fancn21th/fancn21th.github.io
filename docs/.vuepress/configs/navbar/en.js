@@ -1,7 +1,7 @@
 module.exports = [
   {
-    text: "Road Map",
-    link: "/plan/",
+    text: "DDD",
+    link: "/ddd/",
   },
   {
     text: "Node",
