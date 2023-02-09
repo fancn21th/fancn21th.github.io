@@ -25,3 +25,14 @@
 ## Slicer
 
 - filter view
+- sync across pages
+
+## Table
+
+- multiple fields
+
+## Filters
+
+- visual level
+- page level
+- report level (all pages)
