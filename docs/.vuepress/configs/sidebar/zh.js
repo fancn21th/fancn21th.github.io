@@ -93,6 +93,11 @@ module.exports = {
         "/zh/node/convention/trick.md",
       ],
     },
+    {
+      text: "AWS",
+      collapsible: true,
+      children: ["/zh/node/aws/webhook.md"],
+    },
   ],
   // 技术
   "/zh/technology/": [
@@ -215,6 +220,19 @@ module.exports = {
         {
           text: "Wechat",
           children: ["/zh/technology/miniapp/wechat/README.md"],
+        },
+      ],
+    },
+  ],
+  // 商业智能
+  "/zh/bi/": [
+    {
+      text: "数仓",
+      collapsible: true,
+      children: [
+        {
+          text: "数仓",
+          children: ["/zh/bi/datawarehouse/dwh.md"],
         },
       ],
     },

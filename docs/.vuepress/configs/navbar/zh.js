@@ -63,6 +63,10 @@ module.exports = [
         text: "Convention",
         children: ["/zh/node/convention/basic/", "/zh/node/convention/trick/"],
       },
+      {
+        text: "AWS",
+        children: ["/zh/node/aws/webhook/"],
+      },
     ],
   },
   // Technology
@@ -104,6 +108,16 @@ module.exports = [
       {
         text: "小程序",
         children: ["/zh/technology/miniapp/wechat/"],
+      },
+    ],
+  },
+  //
+  {
+    text: "商业智能",
+    children: [
+      {
+        text: "数据仓库",
+        children: ["/zh/bi/datawarehouse/dwh"],
       },
     ],
   },
