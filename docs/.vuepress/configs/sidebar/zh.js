@@ -1,4 +1,23 @@
 module.exports = {
+  // 编程
+  "/zh/programming/": [
+    {
+      text: "编程之道(JS)",
+      collapsible: true,
+      children: [
+        "/zh/programming/javascript/README.md",
+        "/zh/programming/javascript/way-of-js.md",
+      ],
+    },
+    {
+      text: "编程之道(Python)",
+      collapsible: true,
+      children: [
+        "/zh/programming/python/README.md",
+        "/zh/programming/python/way-of-python.md",
+      ],
+    },
+  ],
   // 前端
   "/zh/frontend/": [
     {

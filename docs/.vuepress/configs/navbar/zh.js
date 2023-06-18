@@ -1,4 +1,12 @@
 module.exports = [
+  // 编程
+  {
+    text: "编程",
+    children: [
+      { text: "编程之道(JS)", children: ["/zh/programming/javascript/"] },
+      { text: "编程之道(Python)", children: ["/zh/programming/python/"] },
+    ],
+  },
   // 前端
   {
     text: "前端",
