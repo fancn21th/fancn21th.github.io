@@ -21,7 +21,16 @@ module.exports = [
     link: "/lowcode/",
   },
   {
-    text: "Power BI",
-    link: "/powerbi/",
+    text: "Data & AI",
+    children: [
+      {
+        text: "AWS",
+        children: [
+          "/data_ai/langchain/",
+          "/data_ai/langflow/",
+          "/data_ai/powerbi/",
+        ],
+      },
+    ],
   },
 ];
