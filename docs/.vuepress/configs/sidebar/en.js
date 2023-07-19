@@ -33,6 +33,7 @@ module.exports = {
       text: "Data & AI",
       collapsible: true,
       children: [
+        "/data_ai/python/README.md",
         "/data_ai/langchain/README.md",
         "/data_ai/langflow/README.md",
         "/data_ai/powerbi/README.md",

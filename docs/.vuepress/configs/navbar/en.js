@@ -24,7 +24,7 @@ module.exports = [
     text: "Data & AI",
     children: [
       {
-        text: "AWS",
+        text: "Data & AI",
         children: [
           "/data_ai/langchain/",
           "/data_ai/langflow/",
