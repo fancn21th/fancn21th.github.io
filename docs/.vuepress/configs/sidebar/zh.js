@@ -1,4 +1,15 @@
 module.exports = {
+  // 规范化
+  "/zh/normalization/": [
+    {
+      text: "规范化",
+      collapsible: true,
+      children: [
+        "/zh/normalization/README.md",
+        "/zh/normalization/bigscreen/README.md",
+      ],
+    },
+  ],
   // 编程
   "/zh/programming/": [
     {
@@ -9,14 +20,14 @@ module.exports = {
         "/zh/programming/javascript/way-of-js.md",
       ],
     },
-    {
-      text: "编程之道(Python)",
-      collapsible: true,
-      children: [
-        "/zh/programming/python/README.md",
-        "/zh/programming/python/way-of-python.md",
-      ],
-    },
+    // {
+    //   text: "编程之道(Python)",
+    //   collapsible: true,
+    //   children: [
+    //     "/zh/programming/python/README.md",
+    //     "/zh/programming/python/way-of-python.md",
+    //   ],
+    // },
   ],
   // 前端
   "/zh/frontend/": [
@@ -244,16 +255,16 @@ module.exports = {
     },
   ],
   // 商业智能
-  "/zh/bi/": [
-    {
-      text: "数仓",
-      collapsible: true,
-      children: [
-        {
-          text: "数仓",
-          children: ["/zh/bi/datawarehouse/dwh.md"],
-        },
-      ],
-    },
-  ],
+  // "/zh/bi/": [
+  //   {
+  //     text: "数仓",
+  //     collapsible: true,
+  //     children: [
+  //       {
+  //         text: "数仓",
+  //         children: ["/zh/bi/datawarehouse/dwh.md"],
+  //       },
+  //     ],
+  //   },
+  // ],
 };

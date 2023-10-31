@@ -1,10 +1,28 @@
 module.exports = [
+  // 规范化
+  {
+    text: "规范化",
+    children: [
+      {
+        text: "规范化",
+        children: ["/zh/normalization/"],
+      },
+      {
+        text: "大屏",
+        children: ["/zh/normalization/bigscreen/"],
+      },
+      {
+        text: "中后台",
+        children: ["/zh/normalization/admin/"],
+      },
+    ],
+  },
   // 编程
   {
     text: "编程",
     children: [
       { text: "编程之道(JS)", children: ["/zh/programming/javascript/"] },
-      { text: "编程之道(Python)", children: ["/zh/programming/python/"] },
+      // { text: "编程之道(Python)", children: ["/zh/programming/python/"] },
     ],
   },
   // 前端
@@ -120,13 +138,13 @@ module.exports = [
     ],
   },
   //
-  {
-    text: "商业智能",
-    children: [
-      {
-        text: "数据仓库",
-        children: ["/zh/bi/datawarehouse/dwh"],
-      },
-    ],
-  },
+  // {
+  //   text: "商业智能",
+  //   children: [
+  //     {
+  //       text: "数据仓库",
+  //       children: ["/zh/bi/datawarehouse/dwh"],
+  //     },
+  //   ],
+  // },
 ];
