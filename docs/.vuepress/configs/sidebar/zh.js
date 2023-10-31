@@ -4,10 +4,17 @@ module.exports = {
     {
       text: "规范化",
       collapsible: true,
-      children: [
-        "/zh/normalization/README.md",
-        "/zh/normalization/bigscreen/README.md",
-      ],
+      children: ["/zh/normalization/README.md"],
+    },
+    {
+      text: "大屏规范",
+      collapsible: true,
+      children: ["/zh/normalization/bigscreen/README.md"],
+    },
+    {
+      text: "管理端规范",
+      collapsible: true,
+      children: ["/zh/normalization/admin/README.md"],
     },
   ],
   // 编程

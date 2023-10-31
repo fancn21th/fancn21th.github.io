@@ -12,7 +12,7 @@ module.exports = [
         children: ["/zh/normalization/bigscreen/"],
       },
       {
-        text: "中后台",
+        text: "管理端",
         children: ["/zh/normalization/admin/"],
       },
     ],
