@@ -9,7 +9,10 @@ module.exports = {
     {
       text: "大屏规范",
       collapsible: true,
-      children: ["/zh/normalization/bigscreen/README.md"],
+      children: [
+        "/zh/normalization/bigscreen/README.md",
+        "/zh/normalization/bigscreen/router-n-layering.md",
+      ],
     },
     {
       text: "管理端规范",
