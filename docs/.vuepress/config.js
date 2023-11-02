@@ -1,4 +1,5 @@
 const { defaultTheme } = require("@vuepress/theme-default");
+const { viteBundler } = require("@vuepress/bundler-vite");
 const { path } = require("@vuepress/utils");
 const {
   registerComponentsPlugin,
@@ -90,4 +91,8 @@ module.exports = {
       componentsDir: path.resolve(__dirname, "./components"),
     }),
   ],
+  bundler: viteBundler({
+    viteOptions: {},
+    vuePluginOptions: {},
+  }),
 };
