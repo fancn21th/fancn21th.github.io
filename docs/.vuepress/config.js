@@ -19,13 +19,14 @@ module.exports = {
   locales: {
     "/": {
       lang: "en-US",
-      title: "Learn FE a smart way",
-      description: "Serverless is coming",
+      title: "into frontend",
+      description:
+        "20% time, chop wood|complete delivery; 80% time, sharpen|strive for perfection",
     },
     "/zh/": {
       lang: "zh-CN",
-      title: "快学前端（内测）",
-      description: "一个学习前端的地方",
+      title: "快学前端（内测版）",
+      description: "20%时间, 劈柴|完成交付; 80%时间, 磨刀|精益求精",
     },
   },
   theme: defaultTheme({

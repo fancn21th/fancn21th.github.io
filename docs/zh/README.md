@@ -1,24 +1,19 @@
 ---
 home: true
 title: 首页
-heroImage: https://images.unsplash.com/photo-1653778005824-4bc7dc887603?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE3fGJvOGpRS1RhRTBZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60
+heroImage: https://images.unsplash.com/photo-1590682680695-43b964a3ae17?auto=format&fit=crop&q=80&w=2753&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 actions:
-  - text: 即刻开始
-    link: /zh/frontend/howto/
+  - text: 规范化
+    link: /zh/normalization/
     type: primary
-  - text: JS
-    link: /zh/javascript/
-    type: secondary
-  - text: Node
-    link: /zh/node/basic/timeline/
-    type: secondary
-features:
-  - title: 化繁为简
-    details: 以工程实践为核心，解决问题为目标，逐步解锁各项前端开发技能。
-  - title: 权威参考
-    details: 前端 多位大师的 心智模型，设计模式，经典著作 供你参考，知其所以然。
-  - title: 授人以渔
-    details: 学无止境，穷举一切不如指点迷津。
 
-footer: MIT Licensed | Copyright © 2022-present 范范
+features:
+  - title: 规范化
+    details: 没有规范化，就没有可持续发展。
+  - title: 自动化
+    details: 规范化后，自动化才可以实施。
+  - title: 人工智能
+    details: 自动化交给 AI 来做。
+
+footer: MIT Licensed | Copyright © 2022-present fancn21th.cn
 ---

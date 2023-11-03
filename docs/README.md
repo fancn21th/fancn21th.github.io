@@ -1,21 +1,18 @@
 ---
 home: true
 title: Home
-heroImage: https://images.unsplash.com/photo-1653778005824-4bc7dc887603?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE3fGJvOGpRS1RhRTBZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60
+heroImage: https://images.unsplash.com/photo-1590682680695-43b964a3ae17?auto=format&fit=crop&q=80&w=2753&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 actions:
   - text: Get Started (zh)
-    link: /zh/frontend/howto/
+    link: /zh/normalization/
     type: primary
-  - text: Node
-    link: /node/aws/lambda/
-    type: secondary
 features:
-  - title: Simplicity
+  - title: normalization
     details:
-  - title: Guidance
+  - title: automation
     details:
-  - title: Mental Model
+  - title: ai
     details:
 
-footer: MIT Licensed | Copyright © 2022-present FAN YIJIE
+footer: MIT Licensed | Copyright © 2022-present fancn21th.cn
 ---
