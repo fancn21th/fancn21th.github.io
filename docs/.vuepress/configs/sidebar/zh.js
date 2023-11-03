@@ -7,6 +7,7 @@ module.exports = {
       children: [
         "/zh/normalization/README.md",
         "/zh/normalization/stats/README.md",
+        "/zh/normalization/docs/README.md",
       ],
     },
     {
@@ -15,6 +16,14 @@ module.exports = {
       children: [
         "/zh/normalization/bigscreen/README.md",
         "/zh/normalization/bigscreen/router-n-layering.md",
+        "/zh/normalization/bigscreen/layout.md",
+        "/zh/normalization/bigscreen/map.md",
+        "/zh/normalization/bigscreen/business-card.md",
+        "/zh/normalization/bigscreen/chart.md",
+        "/zh/normalization/bigscreen/animation.md",
+        "/zh/normalization/bigscreen/tech-vue.md",
+        "/zh/normalization/bigscreen/tech-state-mgr.md",
+        "/zh/normalization/bigscreen/tech-api-mgr.md",
       ],
     },
     {

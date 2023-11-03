@@ -1,4 +1,4 @@
-# 大屏规范
+# 概述
 
 当看到大屏的设计稿, 想到的第一件事情是什么? 没错, 大脑 `惯性思维` 开始活动了. 我想到的是 `Layering 分层` 和 [gridster](https://dsmorse.github.io/gridster.js/) `布局系统` 以及 `进出场动画`.
 

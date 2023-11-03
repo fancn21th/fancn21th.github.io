@@ -2,12 +2,9 @@
 
 这块的设计与考虑完全是经验学. 技术侧为主, 考虑到大屏在页面级别交互高度统一, 路由有相应的 `规范化` 设计.
 
-## 交织
-
-`业务目的` 优先
+## 业务需求
 
 ::: tip
-业务需求:
 
 - 大屏有若干个业务模块组成
 - 每个业务模块都需要能下钻
@@ -15,7 +12,7 @@
 
 :::
 
-`实现手段` 其次
+## 技术方案
 
 - 路由是 `SPA` 的核心, [Vue Router](https://router.vuejs.org/zh/introduction.html) 是 [VueJS](https://cn.vuejs.org/guide/introduction.html) 标配, 进化到无以复加了.
 
@@ -28,6 +25,6 @@
     - 导航
     - 页头
 
-路由和分层是交织在一起的
+- 路由和分层是交织在一起的
 
-- [嵌套路由](https://router.vuejs.org/zh/guide/essentials/nested-routes.html)
+  - [嵌套路由](https://router.vuejs.org/zh/guide/essentials/nested-routes.html)
