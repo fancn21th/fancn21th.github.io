@@ -8,13 +8,24 @@
 
 - 术语
 
-  <Product href="https://v2.vuepress.vuejs.org/">Vuepress</Product>
+  <Term>最佳实践</Term>
 
 - 编程范式
 
   <Paradigm></Paradigm>
 
 - 设计模式
+
+  <Pattern></Pattern>
+
 - 最佳实践
+
+  <BestPractice></BestPractice>
+
 - 前端算法
+
+  <Algorithem></Algorithem>
+
 - 产品
+
+  <Product href="https://v2.vuepress.vuejs.org/">Vuepress</Product>
