@@ -1,19 +1,14 @@
-const { defaultTheme } = require("@vuepress/theme-default");
-const { viteBundler } = require("@vuepress/bundler-vite");
-const { path } = require("@vuepress/utils");
-const {
-  registerComponentsPlugin,
-} = require("@vuepress/plugin-register-components");
-const { googleAnalyticsPlugin } = require("@vuepress/plugin-google-analytics");
+import { defineUserConfig } from "@vuepress/cli";
+import { defaultTheme } from "@vuepress/theme-default";
+import { viteBundler } from "@vuepress/bundler-vite";
+import { getDirname, path } from "@vuepress/utils";
+import { registerComponentsPlugin } from "@vuepress/plugin-register-components";
+import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
+import { navbarEn, sidebarEn, navbarZh, sidebarZh } from "./configs/index.js";
 
-const {
-  navbarEn,
-  sidebarEn,
-  navbarZh,
-  sidebarZh,
-} = require("./configs/index.js");
+const __dirname = getDirname(import.meta.url);
 
-module.exports = {
+export default defineUserConfig({
   base: "/",
   // site-level locales config
   locales: {
@@ -86,7 +81,7 @@ module.exports = {
   plugins: [
     googleAnalyticsPlugin({
       // 配置项
-      id: "UA-150469501-1",
+      id: "G-5MFQK1QFYT",
     }),
     registerComponentsPlugin({
       componentsDir: path.resolve(__dirname, "./components"),
@@ -96,4 +91,4 @@ module.exports = {
     viteOptions: {},
     vuePluginOptions: {},
   }),
-};
+});

@@ -24,6 +24,7 @@ module.exports = {
         "/zh/normalization/bigscreen/tech-vue.md",
         "/zh/normalization/bigscreen/tech-state-mgr.md",
         "/zh/normalization/bigscreen/tech-api-mgr.md",
+        "/zh/normalization/bigscreen/tech-automation.md",
       ],
     },
     {

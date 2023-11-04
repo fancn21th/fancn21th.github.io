@@ -53,9 +53,9 @@ To help solve this problem, we created TodoMVC - a project which offers the same
 ::: details 范例源代码（Vue3） （点击展开）
 
 MyTodoList.vue
-@[code](../../.vuepress/components/MyTodoList.vue)
+@[code](../../../.vuepress/components/MyTodoList.vue)
 MyTodoList.store.js
-@[code](../../.vuepress/components/MyTodoList.store.js)
+@[code](../../../.vuepress/components/MyTodoList.store.js)
 
 :::
 

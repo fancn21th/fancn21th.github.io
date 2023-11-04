@@ -38,12 +38,12 @@ module.exports = [
         children: ["/zh/frontend/howto/"],
       },
       {
-        text: "Convention",
-        children: ["/zh/frontend/convention/"],
-      },
-      {
         text: "架构",
         children: ["/zh/frontend/architect/"],
+      },
+      {
+        text: "Convention",
+        children: ["/zh/frontend/convention/"],
       },
     ],
   },
