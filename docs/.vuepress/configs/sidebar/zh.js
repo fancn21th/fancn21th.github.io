@@ -33,24 +33,43 @@ module.exports = {
       children: ["/zh/normalization/admin/README.md"],
     },
   ],
-  // 编程
-  "/zh/programming/": [
+  // 数据
+  "/zh/data/": [
     {
-      text: "编程之道(JS)",
+      text: "数据",
       collapsible: true,
-      children: [
-        "/zh/programming/javascript/README.md",
-        "/zh/programming/javascript/way-of-js.md",
-      ],
+      children: ["/zh/data/README.md"],
     },
-    // {
-    //   text: "编程之道(Python)",
-    //   collapsible: true,
-    //   children: [
-    //     "/zh/programming/python/README.md",
-    //     "/zh/programming/python/way-of-python.md",
-    //   ],
-    // },
+    {
+      text: "术语",
+      collapsible: true,
+      children: ["/zh/data/term/README.md"],
+    },
+    {
+      text: "编程范式",
+      collapsible: true,
+      children: ["/zh/data/paradigm/README.md"],
+    },
+    {
+      text: "设计模式",
+      collapsible: true,
+      children: ["/zh/data/pattern/README.md"],
+    },
+    {
+      text: "最佳实践",
+      collapsible: true,
+      children: ["/zh/data/best-practice/README.md"],
+    },
+    {
+      text: "前端算法",
+      collapsible: true,
+      children: ["/zh/data/algorithm/README.md"],
+    },
+    {
+      text: "产品",
+      collapsible: true,
+      children: ["/zh/data/product/README.md"],
+    },
   ],
   // 前端
   "/zh/frontend/": [

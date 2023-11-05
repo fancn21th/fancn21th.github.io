@@ -26,7 +26,7 @@
 
 - 前端算法
 
-  <Algorithem></Algorithem>
+  <Algorithm></Algorithm>
 
 - 产品
 

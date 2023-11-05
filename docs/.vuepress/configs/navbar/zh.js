@@ -19,10 +19,33 @@ module.exports = [
   },
   // 编程
   {
-    text: "编程",
+    text: "数据",
     children: [
-      { text: "编程之道(JS)", children: ["/zh/programming/javascript/"] },
-      // { text: "编程之道(Python)", children: ["/zh/programming/python/"] },
+      { text: "数据", children: ["/zh/data/"] },
+      {
+        text: "术语",
+        children: ["/zh/data/term/"],
+      },
+      {
+        text: "编程范式",
+        children: ["/zh/data/paradigm/"],
+      },
+      {
+        text: "设计模式",
+        children: ["/zh/data/pattern/"],
+      },
+      {
+        text: "最佳实践",
+        children: ["/zh/data/best-practice/"],
+      },
+      {
+        text: "前端算法",
+        children: ["/zh/data/algorithm/"],
+      },
+      {
+        text: "产品",
+        children: ["/zh/data/product/"],
+      },
     ],
   },
   // 前端
