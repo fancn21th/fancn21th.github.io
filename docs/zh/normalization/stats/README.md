@@ -30,4 +30,4 @@
 
 - 产品
 
-  <Product href="https://v2.vuepress.vuejs.org/">Vuepress</Product>
+  <Product>Vuepress</Product>
