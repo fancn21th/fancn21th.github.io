@@ -1,5 +1,5 @@
 <script setup>
-import { ref, watch, unref } from "vue";
+import { ref, watch } from "vue";
 
 const titleRef = ref(null);
 const href = ref("#");
