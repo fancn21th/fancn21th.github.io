@@ -14,3 +14,9 @@
 ## 源代码
 
 [NEW: 布局 Fix #2](https://github.com/fancn21th/scream/commit/e0b06eca718028b2b53283d15818649d68d86ed9)
+
+功能点:
+
+- 树干, 树枝, 树叶 文件夹结构
+- 卡片布局组件 (gridster.js)
+- 卡片配置
