@@ -71,6 +71,21 @@ module.exports = {
       children: ["/zh/data/product/README.md"],
     },
   ],
+  // 组件化开发
+  "/zh/howto/component/": [
+    {
+      text: "组件化开发",
+      collapsible: true,
+      children: [
+        "/zh/howto/component/README.md",
+        "/zh/howto/component/business-card.md",
+      ],
+    },
+  ],
+  /**
+   *  以下内容都被 归档 不再维护
+   **/
+
   // 前端
   "/zh/frontend/": [
     {

@@ -19,32 +19,32 @@ module.exports = [
   },
   // 编程
   {
-    text: "数据",
+    text: "数据化",
     children: [
-      { text: "数据", children: ["/zh/data/"] },
       {
-        text: "术语",
-        children: ["/zh/data/term/"],
+        text: "数据",
+        children: [
+          "/zh/data/term/",
+          "/zh/data/paradigm/",
+          "/zh/data/pattern/",
+          "/zh/data/best-practice/",
+          "/zh/data/algorithm/",
+          "/zh/data/product/",
+        ],
       },
+    ],
+  },
+  // 组件化开发
+  {
+    text: "组件",
+    children: [
+      // 前端
       {
-        text: "编程范式",
-        children: ["/zh/data/paradigm/"],
-      },
-      {
-        text: "设计模式",
-        children: ["/zh/data/pattern/"],
-      },
-      {
-        text: "最佳实践",
-        children: ["/zh/data/best-practice/"],
-      },
-      {
-        text: "前端算法",
-        children: ["/zh/data/algorithm/"],
-      },
-      {
-        text: "产品",
-        children: ["/zh/data/product/"],
+        text: "案例",
+        children: [
+          "/zh/howto/component/",
+          "/zh/howto/component/business-card.md",
+        ],
       },
     ],
   },
@@ -111,7 +111,6 @@ module.exports = [
       },
     ],
   },
-
   //
   // {
   //   text: "商业智能",

@@ -10,7 +10,8 @@
 
 ## 逻辑复用
 
-[单文件组件](https://cn.vuejs.org/guide/scaling-up/sfc.html)
-[组合函数](https://cn.vuejs.org/guide/reusability/composables.html)
-[指令](https://cn.vuejs.org/guide/reusability/custom-directives.html)
-[插件](https://cn.vuejs.org/guide/reusability/plugins.html)
+- Vue3
+  - [单文件组件](https://cn.vuejs.org/guide/scaling-up/sfc.html)
+  - [组合函数](https://cn.vuejs.org/guide/reusability/composables.html)
+  - [指令](https://cn.vuejs.org/guide/reusability/custom-directives.html)
+  - [插件](https://cn.vuejs.org/guide/reusability/plugins.html)
