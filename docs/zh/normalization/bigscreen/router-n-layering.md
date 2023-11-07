@@ -58,16 +58,18 @@
 - [teleport](https://cn.vuejs.org/guide/built-ins/teleport.html#teleport)
 - [嵌套路由](https://router.vuejs.org/zh/guide/essentials/nested-routes.html)
 
-## 源代码
+## 源码
 
-[📦 NEW: 实现路由与分层 Close #1](https://github.com/fancn21th/scream/commit/8d2d4cdf209572d4680eca500a32254a7ce6bea2)
+- 提交
 
-功能点:
+  - [📦 NEW: 实现路由与分层 Close #1](https://github.com/fancn21th/scream/commit/8d2d4cdf209572d4680eca500a32254a7ce6bea2)
 
-- 等比缩放
-- 分层组件 (Teleport)
-- 分层配置
-- 分层重叠鼠标事件问题的解决方案
-- 页面的文件夹结构
-- vite alias 配置
-- 背景 gradient-patterns
+- 功能点
+
+  - 等比缩放
+  - 分层组件 (Teleport)
+  - 分层配置
+  - 分层重叠鼠标事件问题的解决方案
+  - 页面的文件夹结构
+  - vite alias 配置
+  - 背景 gradient-patterns
