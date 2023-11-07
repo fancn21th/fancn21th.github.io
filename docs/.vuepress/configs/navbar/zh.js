@@ -48,118 +48,70 @@ module.exports = [
       },
     ],
   },
-  // 前端
+  // archived
   {
-    text: "前端",
+    text: "归档",
     children: [
+      // 前端
       {
-        text: "前置条件",
-        children: ["/zh/frontend/prerequisite/"],
+        text: "前端",
+        children: [
+          "/zh/frontend/prerequisite/",
+          "/zh/frontend/howto/",
+          "/zh/frontend/architect/",
+          "/zh/frontend/convention/",
+        ],
       },
+      // Javascript
       {
-        text: "How To",
-        children: ["/zh/frontend/howto/"],
+        text: "Javascript",
+        children: ["/zh/javascript/"],
       },
+      // Node
       {
-        text: "架构",
-        children: ["/zh/frontend/architect/"],
-      },
-      {
-        text: "Convention",
-        children: ["/zh/frontend/convention/"],
-      },
-    ],
-  },
-  // Javascript
-  {
-    text: "Javascript",
-    link: "/zh/javascript/",
-  },
-  // Node
-  {
-    text: "Node",
-    children: [
-      {
-        text: "基础",
+        text: "Node",
         children: [
           "/zh/node/basic/timeline/",
           "/zh/node/basic/wtf/",
           "/zh/node/basic/restful/",
-        ],
-      },
-      {
-        text: "Npm",
-        children: [
           "/zh/node/npm/basic/",
           "/zh/node/npm/package/",
           "/zh/node/npm/publish/",
-        ],
-      },
-      {
-        text: "Prod",
-        children: [
           "/zh/node/prod/process/",
           "/zh/node/prod/child-process/",
           "/zh/node/prod/fs/",
           "/zh/node/prod/error-handler/",
+          "/zh/node/cli/executable/",
+          "/zh/node/cli/guidance/",
+          "/zh/node/convention/basic/",
+          // "/zh/node/aws/webhook/",
+          "/zh/node/convention/trick/",
         ],
       },
+      // Technology
       {
-        text: "CLI",
-        children: ["/zh/node/cli/executable/", "/zh/node/cli/guidance/"],
-      },
-      {
-        text: "Convention",
-        children: ["/zh/node/convention/basic/", "/zh/node/convention/trick/"],
-      },
-      {
-        text: "AWS",
-        children: ["/zh/node/aws/webhook/"],
-      },
-    ],
-  },
-  // Technology
-  {
-    text: "现代前端技术",
-    children: [
-      {
-        text: "语言",
+        text: "现代前端技术",
         children: [
           "/zh/technology/language/typescript/what-is-ts",
           "/zh/technology/language/fp/what-is-fp",
-        ],
-      },
-      {
-        text: "ThreeJs",
-        children: ["/zh/technology/threejs/what-is-threejs"],
-      },
-      {
-        text: "技术栈",
-        children: [
+          "/zh/technology/threejs/what-is-threejs",
           "/zh/technology/stack/css/",
           "/zh/technology/stack/react/",
           "/zh/technology/stack/vue/",
           "/zh/technology/stack/angularjs/",
           "/zh/technology/stack/next/",
-        ],
-      },
-      {
-        text: "工具链",
-        children: [
           "/zh/technology/toolchain/vscode/",
           "/zh/technology/toolchain/monorepos/",
           "/zh/technology/toolchain/nx/",
           "/zh/technology/toolchain/rxjs/",
           "/zh/technology/toolchain/git/tips/",
           "/zh/technology/toolchain/vite/",
+          "/zh/technology/miniapp/wechat/",
         ],
-      },
-      {
-        text: "小程序",
-        children: ["/zh/technology/miniapp/wechat/"],
       },
     ],
   },
+
   //
   // {
   //   text: "商业智能",
