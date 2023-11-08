@@ -1,12 +1,23 @@
 <script setup>
-defineProps({});
+import { ref, watch } from "vue";
 
-const href =
-  "https://www.freecodecamp.org/news/tag/object-oriented-programming/";
+const titleRef = ref(null);
+const href = ref("#");
+
+// 监听
+watch(
+  () => titleRef.value,
+  () => {
+    href.value = `/zh/data/paradigm/#${titleRef.value?.innerHTML?.trim()}`;
+  },
+  {
+    immediate: true,
+  }
+);
 </script>
 
 <template>
-  <a :href="href" target="_blank">面向对象</a>
+  <a :href="href" target="_blank" ref="titleRef"><slot /></a>
 </template>
 
 <style scoped></style>

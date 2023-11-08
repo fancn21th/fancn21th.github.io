@@ -76,10 +76,12 @@ module.exports = {
     {
       text: "组件化开发",
       collapsible: true,
-      children: [
-        "/zh/howto/component/README.md",
-        "/zh/howto/component/business-card.md",
-      ],
+      children: ["/zh/howto/component/README.md"],
+    },
+    {
+      text: "案例",
+      collapsible: true,
+      children: ["/zh/howto/component/business-card.md"],
     },
   ],
   /**

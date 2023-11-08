@@ -36,15 +36,15 @@ module.exports = [
   },
   // 组件化开发
   {
-    text: "组件",
+    text: "组件化",
     children: [
-      // 前端
+      {
+        text: "设计思想",
+        children: ["/zh/howto/component/"],
+      },
       {
         text: "案例",
-        children: [
-          "/zh/howto/component/",
-          "/zh/howto/component/business-card.md",
-        ],
+        children: ["/zh/howto/component/business-card.md"],
       },
     ],
   },
