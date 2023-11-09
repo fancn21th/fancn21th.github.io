@@ -10,7 +10,7 @@ const isBigScreen = ref(false);
 watch(
   () => route.path,
   async (value) => {
-    if (value.indexOf("bigscreen") > -1) {
+    if (value.includes("bigscreen")) {
       isBigScreen.value = true;
     } else {
       isBigScreen.value = false;
@@ -41,8 +41,8 @@ watch(
   position: relative;
 }
 .website a {
-  position: absolute;
-  top: 0;
+  position: fixed;
+  top: var(--navbar-height);
   right: 0;
   padding: 10px;
   color: #fff;
