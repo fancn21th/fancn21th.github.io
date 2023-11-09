@@ -6,6 +6,7 @@ module.exports = {
       collapsible: true,
       children: [
         "/zh/normalization/README.md",
+        "/zh/normalization/design/README.md",
         "/zh/normalization/stats/README.md",
         "/zh/normalization/docs/README.md",
       ],
