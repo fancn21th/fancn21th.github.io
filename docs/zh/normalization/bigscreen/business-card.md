@@ -15,7 +15,9 @@
 
 很明显 信息卡组件 会在整个大屏项目中 反复出现, 封装组件是必然的.
 
-Vue3 官方提供了 <Term>逻辑复用</Term> 的多种方式. 但是很显然, 这已经超出了 Vue3 基础的范畴.
+Vue3 官方提供了 <Term>逻辑复用</Term> 的多种方式.
+
+很显然, 这已经超出了 Vue3 基础的范畴.
 
 设计模式 终于登场了, 这里我们要用的是 <Pattern>Compound Component</Pattern>.
 
@@ -24,3 +26,22 @@ Vue3 官方提供了 <Term>逻辑复用</Term> 的多种方式. 但是很显然,
 [业务单元 信息卡 设计](/zh/howto/component/business-card.md)
 
 ## 源码
+
+- 提交
+
+  - [📦 NEW: 业务单元信息卡 Fix #5](https://github.com/fancn21th/scream/commit/6cd947f2394aac1ad38381a8cae1c409f948bba6)
+  - [📦 NEW: 业务单元信息卡 内部的布局组件 Fix #6](https://github.com/fancn21th/scream/commit/e2b0d3e54404e111d1632b6fad64c1d6f12d2801)
+
+- 功能点
+
+  ::: tip
+  详细设计 请参考 [业务单元 信息卡 设计](/zh/howto/component/business-card.md)
+
+  实际上组件随着业务发展会越来越复杂.
+  :::
+
+  - 信息卡组件
+  - 头部的标题
+  - 头部的 Tabs
+  - 主体的 Tab
+  - 头部 Tabs 切换和 主体 Tab 的联动

@@ -86,4 +86,6 @@
 
 ### 技术细节
 
+- <Pattern>Compound Component</Pattern>
+
 - [依赖注入](https://cn.vuejs.org/guide/components/provide-inject.html)
