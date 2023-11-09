@@ -1,11 +1,23 @@
 <script setup>
-defineProps({});
+import { ref, watch } from "vue";
 
-const href = "https://vuedose.tips/data-provider-component-in-vue-js";
+const titleRef = ref(null);
+const href = ref("#");
+
+// 监听
+watch(
+  () => titleRef.value,
+  () => {
+    href.value = `/zh/data/best-practice/#${titleRef.value?.innerHTML?.trim()}`;
+  },
+  {
+    immediate: true,
+  }
+);
 </script>
 
 <template>
-  <a :href="href" target="_blank">变量命名</a>
+  <a :href="href" target="_blank" ref="titleRef"><slot /></a>
 </template>
 
 <style scoped></style>

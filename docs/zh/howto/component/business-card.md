@@ -3,7 +3,7 @@
 ## UI
 
 - 头部
-  - 业务单元 名称
+  - <BestPractice>业务单元</BestPractice> 名称
   - Tabs 业务功能 名称
 - 主体
   - TabItem

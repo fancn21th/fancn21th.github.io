@@ -14,20 +14,20 @@
 
 - 编程范式
 
-  <Paradigm></Paradigm>
+  <Paradigm>编程范式</Paradigm>
 
 - 设计模式
 
-  <Pattern></Pattern>
+  <Pattern>设计模式</Pattern>
 
 - 最佳实践
 
-  <BestPractice></BestPractice>
+  <BestPractice>最佳实践</BestPractice>
 
 - 前端算法
 
-  <Algorithm></Algorithm>
+  <Algorithm>前端算法</Algorithm>
 
 - 产品
 
-  <Product>Vuepress</Product>
+  <Product>产品</Product>
