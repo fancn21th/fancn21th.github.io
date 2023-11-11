@@ -17,11 +17,11 @@
 
 Vue3 官方提供了 <Term>逻辑复用</Term> 的多种方式.
 
-很显然, 这已经超出了 Vue3 基础的范畴.
+但是怎么把 这些 技术细节结合到一起 这已经超出了 Vue3 基础的范畴.
 
 设计模式 终于登场了, 这里我们要用的是 <Pattern>Compound Component</Pattern>.
 
-## 设计
+### 详细设计
 
 [业务单元 信息卡 设计](/zh/howto/component/business-card.md)
 

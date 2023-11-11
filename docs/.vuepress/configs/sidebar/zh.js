@@ -85,6 +85,18 @@ module.exports = {
       children: ["/zh/howto/component/business-card.md"],
     },
   ],
+  "/zh/howto/framework/": [
+    {
+      text: "框架开发",
+      collapsible: true,
+      children: ["/zh/howto/framework/README.md"],
+    },
+    {
+      text: "案例",
+      collapsible: true,
+      children: ["/zh/howto/framework/map/README.md"],
+    },
+  ],
   /**
    *  以下内容都被 归档 不再维护
    **/

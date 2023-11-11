@@ -19,3 +19,13 @@
   - [组合函数](https://cn.vuejs.org/guide/reusability/composables.html)
   - [指令](https://cn.vuejs.org/guide/reusability/custom-directives.html)
   - [插件](https://cn.vuejs.org/guide/reusability/plugins.html)
+
+## 心智模型
+
+心智模型 并没有权威的解释, 我对它的 理解 更多 接近于 [mental-models](https://justjavascript.com/learn/01-mental-models) 一文.
+
+我们可以 类比 <Product>Vue</Product> 和 <Product>React</Product> 可以说他们目标相同. 但是 方法 思路 不一样. 殊途同归.
+
+## 惯性思维
+
+用习惯代替思考

@@ -48,6 +48,20 @@ module.exports = [
       },
     ],
   },
+  // 框架开发
+  {
+    text: "🌱微型框架",
+    children: [
+      {
+        text: "设计思想",
+        children: ["/zh/howto/framework/"],
+      },
+      {
+        text: "案例",
+        children: ["/zh/howto/framework/map/README.md"],
+      },
+    ],
+  },
   // archived
   {
     text: "归档",
