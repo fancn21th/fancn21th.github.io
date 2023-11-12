@@ -50,7 +50,7 @@ module.exports = [
   },
   // 框架开发
   {
-    text: "🌱微型框架",
+    text: "🌿微框架",
     children: [
       {
         text: "设计思想",
