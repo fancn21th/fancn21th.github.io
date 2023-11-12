@@ -26,7 +26,7 @@
 
 我们来看看 最基础的 一个 Echarts 案例, [绘制一个简单的图表](https://echarts.apache.org/handbook/zh/get-started#%E7%BB%98%E5%88%B6%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E5%9B%BE%E8%A1%A8). 注意高亮的 17-36 行
 
-<Product>Echarts</Product> 的 API 可以 幼稚地 来说就是 设置 一个 [option](https://echarts.apache.org/zh/option.html) 对象.
+<Badge type="danger" text="重点" vertical="middle" /> <Product>Echarts</Product> 的 API 可以 幼稚地 来说就是 设置 一个 [option](https://echarts.apache.org/zh/option.html) 对象.
 
 ::: details 绘制一个简单的图表 点击查看源代码
 
@@ -79,7 +79,7 @@
 
 再来看看 [map-usa](https://echarts.apache.org/examples/zh/editor.html?c=map-usa) 这个地图类型 案例. 可以 发现 `option` 明显变大了很多.
 
-::: details map-usa 点击查看源代码
+::: details Echarts 美国地图案例 点击查看源代码
 
 ```javascript {29-141}
 import * as echarts from "echarts";
@@ -247,9 +247,9 @@ option && myChart.setOption(option);
 
 随着 用户的交互 这些 `option` 还会动态变化.
 
-下面我给了一个 demo 程序中的 `option`. 生产环境的 `option` 会更加复杂, 大小会成倍增加.
+下面是 demo 程序中的 `option`. 生产环境的 `option` 会更加复杂, 代码行数 会成倍增加.
 
-::: details 点击查看 一个 地图 demo 的 `option` 有大
+::: details 地图 demo 的 option 点击查看 源代码
 
 ```javascript
 {
@@ -614,6 +614,20 @@ option && myChart.setOption(option);
 
 :::
 
+## 方案
+
+问题复杂 必然就会 考虑如何 <Term>分而治之</Term>
+
+### SOLID 原则
+
+- <Pattern>依赖倒置</Pattern>
+
+<Badge type="danger" text="重点" vertical="middle" /> 把 `option` 作为 `底层的基础操作`. 将 `绘制地图的业务需求` 作为 `高层的业务抽象`.
+
 ### 编程范式
 
-如何规范 地图的 研发. <Paradigm>函数式</Paradigm> 编程范式应该是最佳选择.
+- <Paradigm>函数式</Paradigm>
+
+<Badge type="danger" text="重点" vertical="middle" /> 借鉴 [reducers](https://redux.js.org/tutorials/fundamentals/part-2-concepts-data-flow#reducers) 把上文 提到的 `绘制地图的业务需求` 作为 <Paradigm>纯函数</Paradigm> 来实现.
+
+### 设计图
