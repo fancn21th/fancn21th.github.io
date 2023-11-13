@@ -36,6 +36,7 @@ module.exports = {
         "/data_ai/python/README.md",
         "/data_ai/langchain/README.md",
         "/data_ai/langflow/README.md",
+        "/data_ai/toolbench/README.md",
         "/data_ai/powerbi/README.md",
         "/data_ai/powerbi/data-preparation.md",
         "/data_ai/powerbi/data-model.md",

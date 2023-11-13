@@ -33,3 +33,8 @@ Echarts 虽然 也是业务需求的一部分, 但是 其本身 确实也是 开
 [离线地图 设计](/zh/howto/framework/map/README.md)
 
 ## 源码
+
+- 提交
+
+  - [📦 NEW: OOS map 依赖的 geo json 文件](https://github.com/fancn21th/scream/commit/d72b53185458bd3620cdd9e76b80c62962ba1d72)
+  - [📦 NEW: 在地图工程中显示一个湖北省地图 Fix #8](https://github.com/fancn21th/scream/commit/949532bc03053748d0e983d84535b91407fc630c)

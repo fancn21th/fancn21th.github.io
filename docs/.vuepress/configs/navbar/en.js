@@ -28,6 +28,7 @@ module.exports = [
         children: [
           "/data_ai/langchain/",
           "/data_ai/langflow/",
+          "/data_ai/toolbench/",
           "/data_ai/powerbi/",
         ],
       },
