@@ -4,6 +4,8 @@
 
 ## Vue3
 
+## Pinia
+
 ## React
 
 ## Vuepress
