@@ -1,32 +1,45 @@
 # Langchain 学习指南
 
+## 基本概念
+
 ![alt text](./assets/langchain_arch.png "Title")
 
-## I/O
+### I/O
 
 ![alt text](./assets/io.jpg "Title")
 
-## 大模型
+将 LLM 和其他数据源进行连接
 
-## Proprietary Data
+### 大模型
+
+### Proprietary Data
 
 ![alt text](./assets/proprietary_data.jpg "Title")
 
-## Chains
+### Chains
 
-### Async API
+- Async API
 
-支持并发调用
+  支持并发调用
 
-### Call Methods
+- Call Methods
 
-- `__call__`
-- run
-- apply
-- generate
-- predict
-- predict_and_parser
+  - `__call__`
+  - run
+  - apply
+  - generate
+  - predict
+  - predict_and_parser
 
-### Serialization
+- Serialization
 
-## Agents
+### Agents
+
+使用 LLM 来做决策
+
+## Models Module
+
+- LLMs
+  - PROMPT ==> LLM ==> Completion
+- Chat Models
+- Text Embedding Models
