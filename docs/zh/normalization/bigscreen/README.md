@@ -35,7 +35,7 @@
 
 - Vue3 与 其它 技术栈选择
 
-  用 `vue` 作为技术栈往往都写在 `需求规格说明书` 里面. 甚至 图表组件库也要求使用 `Echarts`.
+  用 <Product>Vue</Product> 作为技术栈往往都写在 `需求规格说明书` 里面. 甚至 图表组件库也要求使用 <Product>Echarts</Product>.
 
   既然是 <Term>业务需求</Term>, 照办.
 
