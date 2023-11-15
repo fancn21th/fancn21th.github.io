@@ -24,12 +24,15 @@ module.exports = [
     text: "Data & AI",
     children: [
       {
-        text: "Data & AI",
+        text: "Data",
+        children: ["/data_ai/powerbi/"],
+      },
+      {
+        text: "AI",
         children: [
           "/data_ai/langchain/",
           "/data_ai/langflow/",
           "/data_ai/toolbench/",
-          "/data_ai/powerbi/",
         ],
       },
     ],

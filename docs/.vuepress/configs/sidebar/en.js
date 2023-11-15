@@ -30,17 +30,24 @@ module.exports = {
   // Data & AI
   "/data_ai/": [
     {
-      text: "Data & AI",
+      text: "Data",
       collapsible: true,
       children: [
         "/data_ai/python/README.md",
-        "/data_ai/langchain/README.md",
-        "/data_ai/langflow/README.md",
-        "/data_ai/toolbench/README.md",
         "/data_ai/powerbi/README.md",
         "/data_ai/powerbi/data-preparation.md",
         "/data_ai/powerbi/data-model.md",
         "/data_ai/powerbi/data-report.md",
+      ],
+    },
+    {
+      text: "AI",
+      collapsible: true,
+      children: [
+        "/data_ai/langchain/README.md",
+        "/data_ai/langflow/README.md",
+        "/data_ai/toolbench/README.md",
+        "/data_ai/toolbench/data-vis.md",
       ],
     },
   ],

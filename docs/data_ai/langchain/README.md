@@ -42,4 +42,14 @@
 - LLMs
   - PROMPT ==> LLM ==> Completion
 - Chat Models
+  - System Message
+  - AI Message
+  - Human Message
 - Text Embedding Models
+  - word ==> word embedding ==> dimension reduction ( 7d => 2d ) ==> visual in 2d
+
+## Prompts Module
+
+- Prompt Template
+- Example Selectors
+- Output Parsers

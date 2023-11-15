@@ -42,15 +42,20 @@ We would like to explore the insight of business data by having a chat with LLM 
 
 ### Stages
 
-- 1st stage: find the metrics and dimensions from conversation
+- 1st stage: find the measure, metrics and dimensions from conversation
+
+  > by prompt / example selectors
 
   [metrics](https://developers.google.com/analytics/devguides/reporting/core/v3/reference#metrics) need to break down into [dimensions](https://developers.google.com/analytics/devguides/reporting/core/v3/reference#dimensions)
 
   - in the given example above
+    - the measure is 'number of sales in 1000 units'
     - the metric is 'product'
     - the dimension is 'year'
 
 - 2nd stage: retrieve the data from database
+
+  > by prompt / example selectors
 
   - by SQL API ?
 
