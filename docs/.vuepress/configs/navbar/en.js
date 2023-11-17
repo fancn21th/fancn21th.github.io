@@ -30,10 +30,16 @@ module.exports = [
       {
         text: "AI",
         children: [
+          "/data_ai/ai/",
+          "/data_ai/llms/",
           "/data_ai/langchain/",
           "/data_ai/langflow/",
           "/data_ai/toolbench/",
         ],
+      },
+      {
+        text: "Cookbook",
+        children: ["/data_ai/cookbook/"],
       },
     ],
   },

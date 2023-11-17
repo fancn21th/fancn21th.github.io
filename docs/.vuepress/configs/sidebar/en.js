@@ -44,11 +44,17 @@ module.exports = {
       text: "AI",
       collapsible: true,
       children: [
+        "/data_ai/ai/README.md",
+        "/data_ai/llms/README.md",
         "/data_ai/langchain/README.md",
         "/data_ai/langflow/README.md",
         "/data_ai/toolbench/README.md",
-        "/data_ai/toolbench/data-vis.md",
       ],
+    },
+    {
+      text: "Cookbook",
+      collapsible: true,
+      children: ["/data_ai/cookbook/data-vis.md"],
     },
   ],
 };
