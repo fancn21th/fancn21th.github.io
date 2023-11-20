@@ -13,3 +13,7 @@ Learning AI is a long journey. Finding the right resources to learn is key to su
 <Avatar name="Jay Alammar" src="https://pbs.twimg.com/profile_images/1325460517922729984/xDO9dBt-_400x400.jpg" />
 
 ## Resources
+
+- First thing first
+
+  we need to know how ai sits in the big picture of computer science and industry. [AI is Eating The World](https://www.youtube.com/watch?v=oTqG2DbXl2Y) is a good start.

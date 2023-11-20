@@ -54,7 +54,10 @@ module.exports = {
     {
       text: "Cookbook",
       collapsible: true,
-      children: ["/data_ai/cookbook/data-vis.md"],
+      children: [
+        "/data_ai/cookbook/data-vis-0.md",
+        "/data_ai/cookbook/data-vis-1.md",
+      ],
     },
   ],
 };

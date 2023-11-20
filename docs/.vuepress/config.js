@@ -14,7 +14,7 @@ export default defineUserConfig({
   locales: {
     "/": {
       lang: "en-US",
-      title: "into frontend",
+      title: "A_ll I_nn",
       description:
         "20% time, chop wood|complete delivery; 80% time, sharpen|strive for perfection",
     },
