@@ -1,4 +1,12 @@
 module.exports = {
+  // Flutter
+  "/flutter/": [
+    {
+      text: "Flutter",
+      collapsible: true,
+      children: ["/flutter/README.md"],
+    },
+  ],
   // Plan
   "/ddd/": [
     {

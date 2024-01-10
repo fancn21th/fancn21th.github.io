@@ -1,5 +1,9 @@
 module.exports = [
   {
+    text: "Flutter",
+    link: "/flutter/",
+  },
+  {
     text: "DDD",
     link: "/ddd/",
   },
