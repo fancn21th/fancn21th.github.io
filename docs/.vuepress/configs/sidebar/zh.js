@@ -275,7 +275,10 @@ module.exports = {
         },
         {
           text: "Next",
-          children: ["/zh/technology/stack/next/README.md"],
+          children: [
+            "/zh/technology/stack/next/README.md",
+            "/zh/technology/stack/next/app-router.md",
+          ],
         },
       ],
     },
