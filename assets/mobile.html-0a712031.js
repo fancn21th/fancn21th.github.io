@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-77218529","path":"/data_ai/powerbi/mobile.html","title":"","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1689644013000,"contributors":[{"name":"fancn21th","email":"fancn21th@gmail.com","commits":1}]},"filePathRelative":"data_ai/powerbi/mobile.md"}');export{a as data};

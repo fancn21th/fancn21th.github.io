@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-560502d9","path":"/zh/node/aws/webhook.html","title":"企业微信 GitHub Webhook","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1687051965000,"contributors":[{"name":"fancn21th","email":"fancn21th@gmail.com","commits":1}]},"filePathRelative":"zh/node/aws/webhook.md"}');export{t as data};

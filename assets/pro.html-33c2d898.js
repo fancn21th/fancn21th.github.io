@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-f26a404c","path":"/data_ai/powerbi/pro.html","title":"Power BI Pro","lang":"en-US","frontmatter":{},"headers":[{"level":2,"title":"","slug":"","link":"#","children":[]}],"git":{"updatedTime":1689644013000,"contributors":[{"name":"fancn21th","email":"fancn21th@gmail.com","commits":1}]},"filePathRelative":"data_ai/powerbi/pro.md"}');export{t as data};

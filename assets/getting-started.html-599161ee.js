@@ -1,0 +1,1 @@
+import{_ as t,o as a,c as r,a as e,b as c}from"./app-e3dbf12f.js";const s={},n=e("h1",{id:"快速上手",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#快速上手","aria-hidden":"true"},"#"),c(" 快速上手")],-1),o=[n];function _(d,i){return a(),r("div",null,o)}const l=t(s,[["render",_],["__file","getting-started.html.vue"]]);export{l as default};

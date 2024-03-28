@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-22017986","path":"/zh/technology/miniapp/wechat/architecture.html","title":"Architecture","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1673937630000,"contributors":[{"name":"fancn21th","email":"fancn21th@gmail.com","commits":1}]},"filePathRelative":"zh/technology/miniapp/wechat/architecture.md"}');export{t as data};

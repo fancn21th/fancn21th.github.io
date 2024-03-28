@@ -1,0 +1,1 @@
+import{_ as t,o as r,c as s,a as e,b as a}from"./app-e3dbf12f.js";const o={},c=e("h1",{id:"threejs-intro",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#threejs-intro","aria-hidden":"true"},"#"),a(" ThreeJs Intro")],-1),n=[c];function h(_,i){return r(),s("div",null,n)}const l=t(o,[["render",h],["__file","what-is-threejs.html.vue"]]);export{l as default};

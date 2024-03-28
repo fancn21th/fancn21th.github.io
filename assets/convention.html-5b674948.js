@@ -1,0 +1,30 @@
+import{_ as n,o as s,c as a,e}from"./app-e3dbf12f.js";const t={},o=e(`<h1 id="convention" tabindex="-1"><a class="header-anchor" href="#convention" aria-hidden="true">#</a> Convention</h1><h2 id="function-hoist" tabindex="-1"><a class="header-anchor" href="#function-hoist" aria-hidden="true">#</a> function hoist</h2><div class="language-javascript line-numbers-mode" data-ext="js"><pre class="language-javascript"><code><span class="token keyword">const</span> f <span class="token operator">=</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// function foo is hoisted</span>
+<span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;foo&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> b <span class="token operator">=</span> <span class="token function">bar</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Uncaught ReferenceError: bar is not defined</span>
+
+<span class="token comment">// bar is function expression and not hoisted</span>
+<span class="token keyword">const</span> <span class="token function-variable function">bar</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;bar&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="named-function-params" tabindex="-1"><a class="header-anchor" href="#named-function-params" aria-hidden="true">#</a> named function params</h2><div class="language-javascript line-numbers-mode" data-ext="js"><pre class="language-javascript"><code><span class="token comment">// 参数很多的时候 不宜这样定义参数列表</span>
+<span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">foo<span class="token punctuation">,</span> bar<span class="token punctuation">,</span> baz</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 定义成一个对象 参数的次序也无关紧要了</span>
+<span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">options</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token punctuation">{</span> foo<span class="token punctuation">,</span> bar<span class="token punctuation">,</span> baz <span class="token punctuation">}</span> <span class="token operator">=</span> options<span class="token punctuation">;</span>
+  <span class="token comment">// ...</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="lexical-environment" tabindex="-1"><a class="header-anchor" href="#lexical-environment" aria-hidden="true">#</a> lexical environment</h2><div class="language-javascript line-numbers-mode" data-ext="js"><pre class="language-javascript"><code><span class="token comment">// lexical environment global</span>
+<span class="token keyword">const</span> <span class="token function-variable function">outer</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token comment">// lexical environment outer</span>
+  <span class="token keyword">const</span> <span class="token function-variable function">inner</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token comment">// lexical environment inner</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,7),c=[o];function p(i,l){return s(),a("div",null,c)}const r=n(t,[["render",p],["__file","convention.html.vue"]]);export{r as default};

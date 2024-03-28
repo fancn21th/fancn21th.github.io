@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-1d2b62fd","path":"/zh/data/algorithm/","title":"算法","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1699338251000,"contributors":[{"name":"fancn21th","email":"fancn21th@gmail.com","commits":2}]},"filePathRelative":"zh/data/algorithm/README.md"}');export{t as data};

@@ -1,0 +1,1 @@
+import{_ as a,o as t,c,a as e,b as r}from"./app-e3dbf12f.js";const n={},d=e("h1",{id:"react-admin",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#react-admin","aria-hidden":"true"},"#"),r(" React Admin")],-1),o=[d];function s(i,_){return t(),c("div",null,o)}const h=a(n,[["render",s],["__file","react-admin.html.vue"]]);export{h as default};

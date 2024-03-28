@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-b1b64ecc","path":"/zh/normalization/admin/","title":"admin 规范","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1698737776000,"contributors":[{"name":"fancn21th","email":"fancn21th@gmail.com","commits":2}]},"filePathRelative":"zh/normalization/admin/README.md"}');export{a as data};

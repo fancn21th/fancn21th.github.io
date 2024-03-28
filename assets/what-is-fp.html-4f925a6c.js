@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-37744e68","path":"/zh/technology/language/fp/what-is-fp.html","title":"What is fp","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1669598328000,"contributors":[{"name":"fancn21th","email":"fancn21th@gmail.com","commits":1}]},"filePathRelative":"zh/technology/language/fp/what-is-fp.md"}');export{t as data};

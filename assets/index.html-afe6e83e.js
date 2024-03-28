@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-59a96abf","path":"/zh/technology/toolchain/rxjs/","title":"RxJs","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1661595768000,"contributors":[{"name":"fancn21th","email":"fancn21th@gmail.com","commits":1}]},"filePathRelative":"zh/technology/toolchain/rxjs/README.md"}');export{t as data};

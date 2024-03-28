@@ -1,0 +1,1 @@
+import{_ as a,o as t,c as n,a as e,b as c}from"./app-e3dbf12f.js";const d={},o=e("h1",{id:"admin-规范",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#admin-规范","aria-hidden":"true"},"#"),c(" admin 规范")],-1),r=[o];function s(i,_){return t(),n("div",null,r)}const l=a(d,[["render",s],["__file","index.html.vue"]]);export{l as default};

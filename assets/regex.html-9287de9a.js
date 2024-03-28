@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-52a4caa8","path":"/zh/javascript/regex.html","title":"Regex","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"工具","slug":"工具","link":"#工具","children":[]}],"git":{"updatedTime":1661691878000,"contributors":[{"name":"fancn21th","email":"fancn21th@gmail.com","commits":1}]},"filePathRelative":"zh/javascript/regex.md"}');export{e as data};

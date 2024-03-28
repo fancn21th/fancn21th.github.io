@@ -1,0 +1,1 @@
+import{_ as a,o as t,c as o,a as e,b as r}from"./app-e3dbf12f.js";const s={},c=e("h1",{id:"data-warehouse",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#data-warehouse","aria-hidden":"true"},"#"),r(" Data Warehouse")],-1),d=[c];function n(_,h){return t(),o("div",null,d)}const l=a(s,[["render",n],["__file","dwh.html.vue"]]);export{l as default};

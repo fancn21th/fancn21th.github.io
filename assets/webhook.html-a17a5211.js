@@ -1,0 +1,1 @@
+import{_ as o,o as t,c as a,a as e,b as c}from"./app-e3dbf12f.js";const r={},s=e("h1",{id:"企业微信-github-webhook",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#企业微信-github-webhook","aria-hidden":"true"},"#"),c(" 企业微信 GitHub Webhook")],-1),h=[s];function n(_,i){return t(),a("div",null,h)}const b=o(r,[["render",n],["__file","webhook.html.vue"]]);export{b as default};

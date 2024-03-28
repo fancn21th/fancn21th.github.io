@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-258efba2","path":"/zh/technology/threejs/what-is-threejs.html","title":"ThreeJs Intro","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1667182537000,"contributors":[{"name":"fancn21th","email":"fancn21th@gmail.com","commits":1}]},"filePathRelative":"zh/technology/threejs/what-is-threejs.md"}');export{t as data};

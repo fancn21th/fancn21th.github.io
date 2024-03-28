@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-46267b93","path":"/data_ai/cookbook/","title":"Cookbook","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1700211324000,"contributors":[{"name":"fancn21th","email":"fancn21th@gmail.com","commits":1}]},"filePathRelative":"data_ai/cookbook/README.md"}');export{a as data};

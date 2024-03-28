@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-a8a0ebc0","path":"/zh/technology/toolchain/rxjs/getting-started.html","title":"快速上手","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1661595768000,"contributors":[{"name":"fancn21th","email":"fancn21th@gmail.com","commits":1}]},"filePathRelative":"zh/technology/toolchain/rxjs/getting-started.md"}');export{t as data};
